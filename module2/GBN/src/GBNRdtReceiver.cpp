@@ -42,7 +42,7 @@ void GBNRdtReceiver::receive(const Packet &packet) {
             pUtils->printPacket("Packet Refused (Packet Duplicated): ", packet);
         } else {
             pUtils->printPacket("Receiver Resend lastAckPkt: ", lastAckPkt);
-
+            pns->sendToNetworkLayer(SENDER, lastAckPkt);
         }
     }
 }
