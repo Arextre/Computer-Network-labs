@@ -4,15 +4,15 @@
 class GBNRdtSender: public RdtSender {
 private:
 	int expectSequenceNumberSend;	// expected next sent seqnum 
-	bool waitingState;				// whether at waiting ACL status
+	bool waitingState;				// whether at waiting ACK status
 	Packet packetWaitingAck;		// packet sent and waited to be ACK
 
 public:
 
 	bool getWaitingState();
-	bool send(const Message &message);						// 发送应用层下来的Message，由NetworkServiceSimulator调用,如果发送方成功地将Message发送到网络层，返回true;如果因为发送方处于等待正确确认状态而拒绝发送Message，则返回false
-	void receive(const Packet &ackPkt);						// 接受确认Ack，将被NetworkServiceSimulator调用	
-	void timeoutHandler(int seqNum);					// Timeout handler，将被NetworkServiceSimulator调用
+	bool send(const Message &message);						// send packet from AppLayer, invoked by NetworkService Simulator. True if send sucessfully to NetworkLayer, else return false if at waiting-ACK status and refuse sending the packet.
+	void receive(const Packet &ackPkt);						// receive ACK, invoked by NetworkServiceSimulator	
+	void timeoutHandler(int seqNum);						// Timeout handler, invoked by NetworkServiceSimulator
 
 public:
 	GBNRdtSender();

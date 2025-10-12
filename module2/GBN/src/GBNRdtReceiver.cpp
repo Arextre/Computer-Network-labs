@@ -24,7 +24,7 @@ void GBNRdtReceiver::receive(const Packet &packet) {
         pns->delivertoAppLayer(RECEIVER, msg);
         
         // update lastAckPkt
-        lastAckPkt.seqnum = packet.seqnum;
+        this->lastAckPkt.seqnum = packet.seqnum;
         lastAckPkt.checksum = pUtils->calculateCheckSum(lastAckPkt);
         pUtils->printPacket("GBNRdtReceiver acknowledge receive: ", lastAckPkt);
 
@@ -41,7 +41,8 @@ void GBNRdtReceiver::receive(const Packet &packet) {
         } else if (this->expectSequenceNumberRcvd != packet.seqnum) {
             pUtils->printPacket("Packet Refused (Packet Duplicated): ", packet);
         } else {
-            throw std::logic_error("Should not be here.");
+            pUtils->printPacket("Receiver Resend lastAckPkt: ", lastAckPkt);
+
         }
     }
 }
