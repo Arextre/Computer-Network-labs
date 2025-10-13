@@ -15,8 +15,11 @@ GBNRdtReceiver::~GBNRdtReceiver() {
 
 void GBNRdtReceiver::receive(const Packet &packet) {
     int checksum = pUtils->calculateCheckSum(packet);
-    if (checksum == packet.checksum && packet.seqnum == this->expectSequenceNumberRcvd) {
-        // two conditions: 1. not corrupted; 2. seqnum is right;
+    if (
+        checksum == packet.checksum
+        && packet.seqnum == this->expectSequenceNumberRcvd
+    ) {
+        // two conditions: 1. packet incorrupted; 2. seqnum is right;
 
         // extract and deliver
         Message msg;
@@ -24,25 +27,30 @@ void GBNRdtReceiver::receive(const Packet &packet) {
         pns->delivertoAppLayer(RECEIVER, msg);
         
         // update lastAckPkt
-        this->lastAckPkt.seqnum = packet.seqnum;
+        this->lastAckPkt.acknum = packet.seqnum;
         lastAckPkt.checksum = pUtils->calculateCheckSum(lastAckPkt);
-        pUtils->printPacket("GBNRdtReceiver acknowledge receive: ", lastAckPkt);
+        pUtils->printPacket("[Receiver] Acknowledge receive: ", lastAckPkt);
 
-        // send ACK
+        // send ACK and received seqnum
         pns->sendToNetworkLayer(SENDER, lastAckPkt);
 
         // update expected seqnum
-        this->expectSequenceNumberRcvd = (this->expectSequenceNumberRcvd + 1) % this->seqlen;
+        this->expectSequenceNumberRcvd =
+            (this->expectSequenceNumberRcvd + 1) % this->seqlen;
     } else {
-        // refuse receiver
+        // refuse receive
         if (checksum != packet.checksum) {
             // packet corrupt
-            pUtils->printPacket("Packet refused (Packet Corrupt): ", packet);
+            pUtils->printPacket("[Receiver] Packet refused " \
+                                "(Packet Corrupt): ", packet);
         } else if (this->expectSequenceNumberRcvd != packet.seqnum) {
-            pUtils->printPacket("Packet Refused (Packet Duplicated): ", packet);
-        } else {
-            pUtils->printPacket("Receiver Resend lastAckPkt: ", lastAckPkt);
-            pns->sendToNetworkLayer(SENDER, lastAckPkt);
+            // unknown or duplicate packet
+            pUtils->printPacket("[Receiver] Packet Refused " \
+                                "(Packet Duplicated): ", packet);
         }
+        // default behavior, udt_sent
+        pUtils->printPacket("[Receiver] Resend lastAckPkt " \
+                            "(Default Behavior): ", lastAckPkt);
+        pns->sendToNetworkLayer(SENDER, lastAckPkt);
     }
 }
