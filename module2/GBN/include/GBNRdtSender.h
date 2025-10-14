@@ -16,11 +16,13 @@ private:
 
 public:
 
-	bool getWaitingState();
-	void printWindow(char split, char ends);										// Print the contents of current window
-	bool send(const Message &msg);						// send packet from AppLayer, invoked by NetworkService Simulator. True if send sucessfully to NetworkLayer, else return false if at waiting-ACK status and refuse sending the packet.
-	void receive(const Packet &ackPkt);						// receive ACK, invoked by NetworkServiceSimulator	
-	void timeoutHandler(int seqnum);						// Timeout handler, invoked by NetworkServiceSimulator
+	bool getWaitingState() override;
+	bool send(const Message &msg) override;						        // send packet from AppLayer, invoked by NetworkService Simulator. True if send sucessfully to NetworkLayer, else return false if at waiting-ACK status and refuse sending the packet.
+	void receive(const Packet &ackPkt) override;						// receive ACK, invoked by NetworkServiceSimulator	
+	void timeoutHandler(int seqnum) override;						    // Timeout handler, invoked by NetworkServiceSimulator
+
+public:
+	void printWindow(FILE *out, char split, char ends) const;						// Print the contents of current window
 
 public:
 	GBNRdtSender();

@@ -17,13 +17,15 @@ bool GBNRdtSender::getWaitingState() {
     return this->waitingState = (this->window.size() == this->winlen);
 }
 
-void GBNRdtSender::printWindow(char split = ',', char ends = '\n') {
+void GBNRdtSender::printWindow(FILE *out = stdout,
+                               char split = ',',
+                               char ends = '\n') const {
     int len = static_cast<int>(this->window.size());
     for (int i = 0; i < len; ++i) {
-        printf("%d", (this->base + i) % this->seqlen);
-        if (i != len - 1) putchar(split);
+        fprintf(out, "%d", (this->base + i) % this->seqlen);
+        if (i != len - 1) fprintf(out, "%c", split);
     }
-    putchar(ends);
+    fprintf(out, "%c", ends);
 }
 
 bool GBNRdtSender::send(const Message &msg) {
@@ -70,9 +72,10 @@ void GBNRdtSender::receive(const Packet &ackPkt) {
 
         // print the contents of window
         int acknum = ackPkt.acknum;
-        printf("[Sender] base = %d, target = %d, window_size = %d\n", this->base, (acknum + 1) % this->seqlen, window_size);
-        printf("[Sender] Contents of window before update: ");
-        this->printWindow();
+        FILE *windowlog = fopen("./logs/window_log_sender.txt", "a");
+        fprintf(windowlog, "[Sender] base = %d, target = %d, window_size = %d\n", this->base, (acknum + 1) % this->seqlen, window_size);
+        fprintf(windowlog, "[Sender] Contents of window before update: ");
+        this->printWindow(windowlog);
         
         // update window
         while (this->base != (acknum + 1) % this->seqlen) {
@@ -82,9 +85,9 @@ void GBNRdtSender::receive(const Packet &ackPkt) {
         }
 
         // print the contents of window after updating
-        printf("[Sender] Contents of window after update: ");
-        this->printWindow();
-        printf("[Sender] base = %d, window_size = %d\n", this->base, static_cast<int>(window.size()));
+        fprintf(windowlog, "[Sender] Contents of window after update: ");
+        this->printWindow(windowlog);
+        fprintf(windowlog, "[Sender] base = %d, window_size = %d\n", this->base, static_cast<int>(window.size()));
 
         // restart timer if window not empty
         if (!window.empty())

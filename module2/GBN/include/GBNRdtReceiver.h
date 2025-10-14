@@ -13,7 +13,7 @@ public:
 
 public:
 	
-	void receive(const Packet &packet);	// receive packet, invoked by NetworkService
+	void receive(const Packet &packet) override;	// receive packet, invoked by NetworkService
 };
 
 #endif

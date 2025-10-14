@@ -1,0 +1,1791 @@
+******模拟网络环境******：模拟网络环境初始化...
+******模拟网络环境******：模拟网络环境启动...
+[Sender] Send packet: : seqnum = 0, acknum = -1, checksum = 29556, AAAAAAAAAAAAAAAAAAAA
+******模拟网络环境******：启动定时器, 当前时间 = 0.96, 定时器报文序号 = 0, 定时器Timeout时间 = 20.96
+******模拟网络环境******：网络层数据包损坏,损坏的包为-->seqnum = 0, acknum = -1,checksum = 29556,payload = BAAAAAAAAAAAAAAAAAAA
+******模拟网络环境******：发送方的数据包将在4.31到达对方, 数据包为-->seqnum = 0, acknum = -1,checksum = 29556,payload = BAAAAAAAAAAAAAAAAAAA
+[Receiver] Packet refused (Packet Corrupt): : seqnum = 0, acknum = -1, checksum = 29556, BAAAAAAAAAAAAAAAAAAA
+[Receiver] Resend lastAckPkt (Default Behavior): : seqnum = -1, acknum = -1, checksum = 12852, ....................
+******模拟网络环境******：接收方的确认包将在7.77到达对方, 确认包为-->seqnum = -1, acknum = -1,checksum = 12852,payload = .....................
+[Sender] ackPkt refused (duplicate ACK): : seqnum = -1, acknum = -1, checksum = 12852, ....................
+******模拟网络环境******：关闭定时器, 当前时间 = 20.96, 定时器报文序号 = 0
+******模拟网络环境******：启动定时器, 当前时间 = 20.96, 定时器报文序号 = 0, 定时器Timeout时间 = 40.96
+[Sender] Time out, resend packet: : seqnum = 0, acknum = -1, checksum = 29556, AAAAAAAAAAAAAAAAAAAA
+******模拟网络环境******：发送方的数据包将在24.7到达对方, 数据包为-->seqnum = 0, acknum = -1,checksum = 29556,payload = AAAAAAAAAAAAAAAAAAAA
+******模拟网络环境******：向上递交给应用层数据：AAAAAAAAAAAAAAAAAAAA
+[Receiver] Acknowledge receive: : seqnum = -1, acknum = 0, checksum = 12851, ....................
+******模拟网络环境******：接收方的确认包将在30.25到达对方, 确认包为-->seqnum = -1, acknum = 0,checksum = 12851,payload = .....................
+[Sender] Receive ackPkt successfully: : seqnum = -1, acknum = 0, checksum = 12851, ....................
+******模拟网络环境******：关闭定时器, 当前时间 = 30.25, 定时器报文序号 = 0
+[Sender] Send packet: : seqnum = 1, acknum = -1, checksum = 41321, 
+BBBBBBBBBBBBBBBBBBB
+******模拟网络环境******：启动定时器, 当前时间 = 30.385, 定时器报文序号 = 1, 定时器Timeout时间 = 50.385
+******模拟网络环境******：网络层数据包损坏,损坏的包为-->seqnum = 1, acknum = -1,checksum = 41321,payload = BBBBBBBBBBBBBBBBBBBB
+******模拟网络环境******：发送方的数据包将在33.185到达对方, 数据包为-->seqnum = 1, acknum = -1,checksum = 41321,payload = BBBBBBBBBBBBBBBBBBBB
+[Sender] Send packet: : seqnum = 2, acknum = -1, checksum = 38295, 
+CCCCCCCCCCCCCCCCCC
+******模拟网络环境******：发送方的数据包将在40.675到达对方, 数据包为-->seqnum = 2, acknum = -1,checksum = 38295,payload = CCCCCCCCCCCCCCCCCCC
+[Sender] Send packet: : seqnum = 3, acknum = -1, checksum = 37002, C
+DDDDDDDDDDDDDDDDD
+******模拟网络环境******：发送方的数据包将在48.695到达对方, 数据包为-->seqnum = 3, acknum = -1,checksum = 37002,payload = CDDDDDDDDDDDDDDDDDD
+[Sender] Send packet: : seqnum = 4, acknum = -1, checksum = 33924, DD
+EEEEEEEEEEEEEEEE
+******模拟网络环境******：发送方的数据包将在54.075到达对方, 数据包为-->seqnum = 4, acknum = -1,checksum = 33924,payload = DDEEEEEEEEEEEEEEEEE
+[Receiver] Packet refused (Packet Corrupt): : seqnum = 1, acknum = -1, checksum = 41321, BBBBBBBBBBBBBBBBBBB
+[Receiver] Resend lastAckPkt (Default Behavior): : seqnum = -1, acknum = 0, checksum = 12851, ....................
+******模拟网络环境******：接收方的确认包将在43.175到达对方, 确认包为-->seqnum = -1, acknum = 0,checksum = 12851,payload = .....................
+[Receiver] Packet Refused (Packet Duplicated): : seqnum = 2, acknum = -1, checksum = 38295, 
+CCCCCCCCCCCCCCCCCC
+[Receiver] Resend lastAckPkt (Default Behavior): : seqnum = -1, acknum = 0, checksum = 12851, ....................
+******模拟网络环境******：接收方的确认包将在51.205到达对方, 确认包为-->seqnum = -1, acknum = 0,checksum = 12851,payload = .....................
+[Sender] ackPkt refused (duplicate ACK): : seqnum = -1, acknum = 0, checksum = 12851, ....................
+[Receiver] Packet Refused (Packet Duplicated): : seqnum = 3, acknum = -1, checksum = 37002, C
+DDDDDDDDDDDDDDDDD
+[Receiver] Resend lastAckPkt (Default Behavior): : seqnum = -1, acknum = 0, checksum = 12851, ....................
+******模拟网络环境******：接收方发送的确认包丢失：seqnum = -1, acknum = 0,checksum = 12851,payload = .....................
+******模拟网络环境******：关闭定时器, 当前时间 = 50.385, 定时器报文序号 = 1
+******模拟网络环境******：启动定时器, 当前时间 = 50.385, 定时器报文序号 = 1, 定时器Timeout时间 = 70.385
+[Sender] Time out, resend packet: : seqnum = 1, acknum = -1, checksum = 41321, 
+BBBBBBBBBBBBBBBBBBB
+******模拟网络环境******：发送方的数据包将在57.905到达对方, 数据包为-->seqnum = 1, acknum = -1,checksum = 41321,payload = BBBBBBBBBBBBBBBBBBBB
+[Sender] Time out, resend packet: : seqnum = 2, acknum = -1, checksum = 38295, 
+CCCCCCCCCCCCCCCCCC
+******模拟网络环境******：发送方的数据包将在59.805到达对方, 数据包为-->seqnum = 2, acknum = -1,checksum = 38295,payload = CCCCCCCCCCCCCCCCCCC
+[Sender] Time out, resend packet: : seqnum = 3, acknum = -1, checksum = 37002, C
+DDDDDDDDDDDDDDDDD
+******模拟网络环境******：发送方的数据包将在69.345到达对方, 数据包为-->seqnum = 3, acknum = -1,checksum = 37002,payload = CDDDDDDDDDDDDDDDDDD
+[Sender] Time out, resend packet: : seqnum = 4, acknum = -1, checksum = 33924, DD
+EEEEEEEEEEEEEEEE
+******模拟网络环境******：发送方的数据包将在71.665到达对方, 数据包为-->seqnum = 4, acknum = -1,checksum = 33924,payload = DDEEEEEEEEEEEEEEEEE
+[Sender] ackPkt refused (duplicate ACK): : seqnum = -1, acknum = 0, checksum = 12851, ....................
+[Receiver] Packet Refused (Packet Duplicated): : seqnum = 4, acknum = -1, checksum = 33924, DD
+EEEEEEEEEEEEEEEE
+[Receiver] Resend lastAckPkt (Default Behavior): : seqnum = -1, acknum = 0, checksum = 12851, ....................
+******模拟网络环境******：接收方的确认包将在58.195到达对方, 确认包为-->seqnum = -1, acknum = 0,checksum = 12851,payload = .....................
+******模拟网络环境******：向上递交给应用层数据：BBBBBBBBBBBBBBBBBBBB
+[Receiver] Acknowledge receive: : seqnum = -1, acknum = 1, checksum = 12850, ....................
+******模拟网络环境******：接收方的确认包将在62.335到达对方, 确认包为-->seqnum = -1, acknum = 1,checksum = 12850,payload = .....................
+[Sender] ackPkt refused (duplicate ACK): : seqnum = -1, acknum = 0, checksum = 12851, ....................
+******模拟网络环境******：向上递交给应用层数据：CCCCCCCCCCCCCCCCCCC
+[Receiver] Acknowledge receive: : seqnum = -1, acknum = 2, checksum = 12849, ....................
+******模拟网络环境******：网络层数据包损坏,损坏的包为-->seqnum = -1, acknum = 2,checksum = 12849,payload = /....................
+******模拟网络环境******：接收方的确认包将在64.845到达对方, 确认包为-->seqnum = -1, acknum = 2,checksum = 12849,payload = /....................
+[Sender] Receive ackPkt successfully: : seqnum = -1, acknum = 1, checksum = 12850, ....................
+******模拟网络环境******：关闭定时器, 当前时间 = 62.335, 定时器报文序号 = 1
+******模拟网络环境******：启动定时器, 当前时间 = 62.335, 定时器报文序号 = 2, 定时器Timeout时间 = 82.335
+[Sender] ackPkt refused (packet corrupt): : seqnum = -1, acknum = 2, checksum = 12849, /...................
+******模拟网络环境******：向上递交给应用层数据：CDDDDDDDDDDDDDDDDDD
+[Receiver] Acknowledge receive: : seqnum = -1, acknum = 3, checksum = 12848, ....................
+******模拟网络环境******：接收方的确认包将在77.135到达对方, 确认包为-->seqnum = -1, acknum = 3,checksum = 12848,payload = .....................
+******模拟网络环境******：向上递交给应用层数据：DDEEEEEEEEEEEEEEEEE
+[Receiver] Acknowledge receive: : seqnum = -1, acknum = 4, checksum = 12847, ....................
+******模拟网络环境******：接收方的确认包将在86.075到达对方, 确认包为-->seqnum = -1, acknum = 4,checksum = 12847,payload = .....................
+[Sender] Receive ackPkt successfully: : seqnum = -1, acknum = 3, checksum = 12848, ....................
+******模拟网络环境******：关闭定时器, 当前时间 = 77.135, 定时器报文序号 = 2
+******模拟网络环境******：启动定时器, 当前时间 = 77.135, 定时器报文序号 = 4, 定时器Timeout时间 = 97.135
+[Sender] Receive ackPkt successfully: : seqnum = -1, acknum = 4, checksum = 12847, ....................
+******模拟网络环境******：关闭定时器, 当前时间 = 86.075, 定时器报文序号 = 4
+[Sender] Send packet: : seqnum = 5, acknum = -1, checksum = 32631, EEE
+FFFFFFFFFFFFFFF
+******模拟网络环境******：启动定时器, 当前时间 = 86.155, 定时器报文序号 = 5, 定时器Timeout时间 = 106.155
+******模拟网络环境******：发送方的数据包将在96.925到达对方, 数据包为-->seqnum = 5, acknum = -1,checksum = 32631,payload = EEEFFFFFFFFFFFFFFFF
+[Sender] Send packet: : seqnum = 6, acknum = -1, checksum = 29553, FFFF
+GGGGGGGGGGGGGG
+******模拟网络环境******：发送方的数据包将在107.695到达对方, 数据包为-->seqnum = 6, acknum = -1,checksum = 29553,payload = FFFFGGGGGGGGGGGGGGG
+[Sender] Send packet: : seqnum = 7, acknum = -1, checksum = 28260, GGGGG
+HHHHHHHHHHHHH
+******模拟网络环境******：发送方的数据包将在114.915到达对方, 数据包为-->seqnum = 7, acknum = -1,checksum = 28260,payload = GGGGGHHHHHHHHHHHHHH
+[Sender] Send packet: : seqnum = 0, acknum = -1, checksum = 25190, HHHHHH
+IIIIIIIIIIII
+******模拟网络环境******：发送方的数据包将在120.235到达对方, 数据包为-->seqnum = 0, acknum = -1,checksum = 25190,payload = HHHHHHIIIIIIIIIIIII
+******模拟网络环境******：向上递交给应用层数据：EEEFFFFFFFFFFFFFFFF
+[Receiver] Acknowledge receive: : seqnum = -1, acknum = 5, checksum = 12846, ....................
+******模拟网络环境******：接收方的确认包将在106.705到达对方, 确认包为-->seqnum = -1, acknum = 5,checksum = 12846,payload = .....................
+******模拟网络环境******：关闭定时器, 当前时间 = 106.155, 定时器报文序号 = 5
+******模拟网络环境******：启动定时器, 当前时间 = 106.155, 定时器报文序号 = 5, 定时器Timeout时间 = 126.155
+[Sender] Time out, resend packet: : seqnum = 5, acknum = -1, checksum = 32631, EEE
+FFFFFFFFFFFFFFF
+******模拟网络环境******：发送方的数据包将在130.435到达对方, 数据包为-->seqnum = 5, acknum = -1,checksum = 32631,payload = EEEFFFFFFFFFFFFFFFF
+[Sender] Time out, resend packet: : seqnum = 6, acknum = -1, checksum = 29553, FFFF
+GGGGGGGGGGGGGG
+******模拟网络环境******：发送方的数据包将在138.475到达对方, 数据包为-->seqnum = 6, acknum = -1,checksum = 29553,payload = FFFFGGGGGGGGGGGGGGG
+[Sender] Time out, resend packet: : seqnum = 7, acknum = -1, checksum = 28260, GGGGG
+HHHHHHHHHHHHH
+******模拟网络环境******：发送方的数据包将在146.175到达对方, 数据包为-->seqnum = 7, acknum = -1,checksum = 28260,payload = GGGGGHHHHHHHHHHHHHH
+[Sender] Time out, resend packet: : seqnum = 0, acknum = -1, checksum = 25190, HHHHHH
+IIIIIIIIIIII
+******模拟网络环境******：发送方的数据包将在154.865到达对方, 数据包为-->seqnum = 0, acknum = -1,checksum = 25190,payload = HHHHHHIIIIIIIIIIIII
+[Sender] Receive ackPkt successfully: : seqnum = -1, acknum = 5, checksum = 12846, ....................
+******模拟网络环境******：关闭定时器, 当前时间 = 106.705, 定时器报文序号 = 5
+******模拟网络环境******：启动定时器, 当前时间 = 106.705, 定时器报文序号 = 6, 定时器Timeout时间 = 126.705
+******模拟网络环境******：向上递交给应用层数据：FFFFGGGGGGGGGGGGGGG
+[Receiver] Acknowledge receive: : seqnum = -1, acknum = 6, checksum = 12845, ....................
+******模拟网络环境******：接收方的确认包将在108.795到达对方, 确认包为-->seqnum = -1, acknum = 6,checksum = 12845,payload = .....................
+[Sender] Receive ackPkt successfully: : seqnum = -1, acknum = 6, checksum = 12845, ....................
+******模拟网络环境******：关闭定时器, 当前时间 = 108.795, 定时器报文序号 = 6
+******模拟网络环境******：启动定时器, 当前时间 = 108.795, 定时器报文序号 = 7, 定时器Timeout时间 = 128.795
+******模拟网络环境******：向上递交给应用层数据：GGGGGHHHHHHHHHHHHHH
+[Receiver] Acknowledge receive: : seqnum = -1, acknum = 7, checksum = 12844, ....................
+******模拟网络环境******：接收方的确认包将在116.665到达对方, 确认包为-->seqnum = -1, acknum = 7,checksum = 12844,payload = .....................
+[Sender] Receive ackPkt successfully: : seqnum = -1, acknum = 7, checksum = 12844, ....................
+******模拟网络环境******：关闭定时器, 当前时间 = 116.665, 定时器报文序号 = 7
+******模拟网络环境******：启动定时器, 当前时间 = 116.665, 定时器报文序号 = 0, 定时器Timeout时间 = 136.665
+******模拟网络环境******：向上递交给应用层数据：HHHHHHIIIIIIIIIIIII
+[Receiver] Acknowledge receive: : seqnum = -1, acknum = 0, checksum = 12851, ....................
+******模拟网络环境******：接收方的确认包将在125.685到达对方, 确认包为-->seqnum = -1, acknum = 0,checksum = 12851,payload = .....................
+[Sender] Receive ackPkt successfully: : seqnum = -1, acknum = 0, checksum = 12851, ....................
+******模拟网络环境******：关闭定时器, 当前时间 = 125.685, 定时器报文序号 = 0
+[Receiver] Packet Refused (Packet Duplicated): : seqnum = 5, acknum = -1, checksum = 32631, EEE
+FFFFFFFFFFFFFFF
+[Receiver] Resend lastAckPkt (Default Behavior): : seqnum = -1, acknum = 0, checksum = 12851, ....................
+******模拟网络环境******：接收方的确认包将在135.865到达对方, 确认包为-->seqnum = -1, acknum = 0,checksum = 12851,payload = .....................
+[Sender] ackPkt refused (duplicate ACK): : seqnum = -1, acknum = 0, checksum = 12851, ....................
+[Receiver] Packet Refused (Packet Duplicated): : seqnum = 6, acknum = -1, checksum = 29553, FFFF
+GGGGGGGGGGGGGG
+[Receiver] Resend lastAckPkt (Default Behavior): : seqnum = -1, acknum = 0, checksum = 12851, ....................
+******模拟网络环境******：接收方的确认包将在141.085到达对方, 确认包为-->seqnum = -1, acknum = 0,checksum = 12851,payload = .....................
+[Sender] ackPkt refused (duplicate ACK): : seqnum = -1, acknum = 0, checksum = 12851, ....................
+[Receiver] Packet Refused (Packet Duplicated): : seqnum = 7, acknum = -1, checksum = 28260, GGGGG
+HHHHHHHHHHHHH
+[Receiver] Resend lastAckPkt (Default Behavior): : seqnum = -1, acknum = 0, checksum = 12851, ....................
+******模拟网络环境******：接收方的确认包将在150.725到达对方, 确认包为-->seqnum = -1, acknum = 0,checksum = 12851,payload = .....................
+[Sender] ackPkt refused (duplicate ACK): : seqnum = -1, acknum = 0, checksum = 12851, ....................
+[Receiver] Packet Refused (Packet Duplicated): : seqnum = 0, acknum = -1, checksum = 25190, HHHHHH
+IIIIIIIIIIII
+[Receiver] Resend lastAckPkt (Default Behavior): : seqnum = -1, acknum = 0, checksum = 12851, ....................
+******模拟网络环境******：接收方的确认包将在160.785到达对方, 确认包为-->seqnum = -1, acknum = 0,checksum = 12851,payload = .....................
+[Sender] ackPkt refused (duplicate ACK): : seqnum = -1, acknum = 0, checksum = 12851, ....................
+[Sender] Send packet: : seqnum = 1, acknum = -1, checksum = 23897, IIIIIII
+JJJJJJJJJJJ
+******模拟网络环境******：启动定时器, 当前时间 = 160.84, 定时器报文序号 = 1, 定时器Timeout时间 = 180.84
+******模拟网络环境******：发送方的数据包将在169.86到达对方, 数据包为-->seqnum = 1, acknum = -1,checksum = 23897,payload = IIIIIIIJJJJJJJJJJJJ
+[Sender] Send packet: : seqnum = 2, acknum = -1, checksum = 20819, JJJJJJJJ
+KKKKKKKKKK
+******模拟网络环境******：发送方的数据包将在177.82到达对方, 数据包为-->seqnum = 2, acknum = -1,checksum = 20819,payload = JJJJJJJJKKKKKKKKKKK
+[Sender] Send packet: : seqnum = 3, acknum = -1, checksum = 19526, KKKKKKKKK
+LLLLLLLLL
+******模拟网络环境******：发送方的数据包将在185.03到达对方, 数据包为-->seqnum = 3, acknum = -1,checksum = 19526,payload = KKKKKKKKKLLLLLLLLLL
+[Sender] Send packet: : seqnum = 4, acknum = -1, checksum = 16448, LLLLLLLLLL
+MMMMMMMM
+******模拟网络环境******：网络层数据包损坏,损坏的包为-->seqnum = 4, acknum = -1,checksum = 16448,payload = MLLLLLLLLLMMMMMMMMM
+******模拟网络环境******：发送方的数据包将在189.05到达对方, 数据包为-->seqnum = 4, acknum = -1,checksum = 16448,payload = MLLLLLLLLLMMMMMMMMM
+******模拟网络环境******：向上递交给应用层数据：IIIIIIIJJJJJJJJJJJJ
+[Receiver] Acknowledge receive: : seqnum = -1, acknum = 1, checksum = 12850, ....................
+******模拟网络环境******：接收方的确认包将在171.2到达对方, 确认包为-->seqnum = -1, acknum = 1,checksum = 12850,payload = .....................
+[Sender] Receive ackPkt successfully: : seqnum = -1, acknum = 1, checksum = 12850, ....................
+******模拟网络环境******：关闭定时器, 当前时间 = 171.2, 定时器报文序号 = 1
+******模拟网络环境******：启动定时器, 当前时间 = 171.2, 定时器报文序号 = 2, 定时器Timeout时间 = 191.2
+******模拟网络环境******：向上递交给应用层数据：JJJJJJJJKKKKKKKKKKK
+[Receiver] Acknowledge receive: : seqnum = -1, acknum = 2, checksum = 12849, ....................
+******模拟网络环境******：接收方的确认包将在188.66到达对方, 确认包为-->seqnum = -1, acknum = 2,checksum = 12849,payload = .....................
+******模拟网络环境******：向上递交给应用层数据：KKKKKKKKKLLLLLLLLLL
+[Receiver] Acknowledge receive: : seqnum = -1, acknum = 3, checksum = 12848, ....................
+******模拟网络环境******：接收方的确认包将在191.35到达对方, 确认包为-->seqnum = -1, acknum = 3,checksum = 12848,payload = .....................
+[Sender] Receive ackPkt successfully: : seqnum = -1, acknum = 2, checksum = 12849, ....................
+******模拟网络环境******：关闭定时器, 当前时间 = 188.66, 定时器报文序号 = 2
+******模拟网络环境******：启动定时器, 当前时间 = 188.66, 定时器报文序号 = 3, 定时器Timeout时间 = 208.66
+[Receiver] Packet refused (Packet Corrupt): : seqnum = 4, acknum = -1, checksum = 16448, MLLLLLLLLL
+MMMMMMMM
+[Receiver] Resend lastAckPkt (Default Behavior): : seqnum = -1, acknum = 3, checksum = 12848, ....................
+******模拟网络环境******：接收方的确认包将在194.9到达对方, 确认包为-->seqnum = -1, acknum = 3,checksum = 12848,payload = .....................
+[Sender] Receive ackPkt successfully: : seqnum = -1, acknum = 3, checksum = 12848, ....................
+******模拟网络环境******：关闭定时器, 当前时间 = 191.35, 定时器报文序号 = 3
+******模拟网络环境******：启动定时器, 当前时间 = 191.35, 定时器报文序号 = 4, 定时器Timeout时间 = 211.35
+[Sender] ackPkt refused (duplicate ACK): : seqnum = -1, acknum = 3, checksum = 12848, ....................
+******模拟网络环境******：关闭定时器, 当前时间 = 211.35, 定时器报文序号 = 4
+******模拟网络环境******：启动定时器, 当前时间 = 211.35, 定时器报文序号 = 4, 定时器Timeout时间 = 231.35
+[Sender] Time out, resend packet: : seqnum = 4, acknum = -1, checksum = 16448, LLLLLLLLLL
+MMMMMMMM
+******模拟网络环境******：发送方的数据包将在217.89到达对方, 数据包为-->seqnum = 4, acknum = -1,checksum = 16448,payload = LLLLLLLLLLMMMMMMMMM
+******模拟网络环境******：向上递交给应用层数据：LLLLLLLLLLMMMMMMMMM
+[Receiver] Acknowledge receive: : seqnum = -1, acknum = 4, checksum = 12847, ....................
+******模拟网络环境******：接收方的确认包将在228.17到达对方, 确认包为-->seqnum = -1, acknum = 4,checksum = 12847,payload = .....................
+[Sender] Receive ackPkt successfully: : seqnum = -1, acknum = 4, checksum = 12847, ....................
+******模拟网络环境******：关闭定时器, 当前时间 = 228.17, 定时器报文序号 = 4
+[Sender] Send packet: : seqnum = 5, acknum = -1, checksum = 15155, MMMMMMMMMMM
+NNNNNNN
+******模拟网络环境******：启动定时器, 当前时间 = 228.375, 定时器报文序号 = 5, 定时器Timeout时间 = 248.375
+******模拟网络环境******：发送方的数据包将在231.965到达对方, 数据包为-->seqnum = 5, acknum = -1,checksum = 15155,payload = MMMMMMMMMMMNNNNNNNN
+[Sender] Send packet: : seqnum = 6, acknum = -1, checksum = 12077, NNNNNNNNNNNN
+OOOOOO
+******模拟网络环境******：发送方的数据包将在236.305到达对方, 数据包为-->seqnum = 6, acknum = -1,checksum = 12077,payload = NNNNNNNNNNNNOOOOOOO
+[Sender] Send packet: : seqnum = 7, acknum = -1, checksum = 10784, OOOOOOOOOOOOO
+PPPPP
+******模拟网络环境******：网络层数据包损坏,损坏的包为-->seqnum = 7, acknum = -1,checksum = 10784,payload = POOOOOOOOOOOOPPPPPP
+******模拟网络环境******：发送方的数据包将在241.155到达对方, 数据包为-->seqnum = 7, acknum = -1,checksum = 10784,payload = POOOOOOOOOOOOPPPPPP
+[Sender] Send packet: : seqnum = 0, acknum = -1, checksum = 7714, PPPPPPPPPPPPPP
+QQQQ
+******模拟网络环境******：发送方的数据包将在249.155到达对方, 数据包为-->seqnum = 0, acknum = -1,checksum = 7714,payload = PPPPPPPPPPPPPPQQQQQ
+******模拟网络环境******：向上递交给应用层数据：MMMMMMMMMMMNNNNNNNN
+[Receiver] Acknowledge receive: : seqnum = -1, acknum = 5, checksum = 12846, ....................
+******模拟网络环境******：接收方的确认包将在233.025到达对方, 确认包为-->seqnum = -1, acknum = 5,checksum = 12846,payload = .....................
+[Sender] Receive ackPkt successfully: : seqnum = -1, acknum = 5, checksum = 12846, ....................
+******模拟网络环境******：关闭定时器, 当前时间 = 233.025, 定时器报文序号 = 5
+******模拟网络环境******：启动定时器, 当前时间 = 233.025, 定时器报文序号 = 6, 定时器Timeout时间 = 253.025
+******模拟网络环境******：向上递交给应用层数据：NNNNNNNNNNNNOOOOOOO
+[Receiver] Acknowledge receive: : seqnum = -1, acknum = 6, checksum = 12845, ....................
+******模拟网络环境******：接收方的确认包将在242.075到达对方, 确认包为-->seqnum = -1, acknum = 6,checksum = 12845,payload = .....................
+[Receiver] Packet refused (Packet Corrupt): : seqnum = 7, acknum = -1, checksum = 10784, POOOOOOOOOOOO
+PPPPP
+[Receiver] Resend lastAckPkt (Default Behavior): : seqnum = -1, acknum = 6, checksum = 12845, ....................
+******模拟网络环境******：接收方的确认包将在243.965到达对方, 确认包为-->seqnum = -1, acknum = 6,checksum = 12845,payload = .....................
+[Sender] Receive ackPkt successfully: : seqnum = -1, acknum = 6, checksum = 12845, ....................
+******模拟网络环境******：关闭定时器, 当前时间 = 242.075, 定时器报文序号 = 6
+******模拟网络环境******：启动定时器, 当前时间 = 242.075, 定时器报文序号 = 7, 定时器Timeout时间 = 262.075
+[Sender] ackPkt refused (duplicate ACK): : seqnum = -1, acknum = 6, checksum = 12845, ....................
+[Receiver] Packet Refused (Packet Duplicated): : seqnum = 0, acknum = -1, checksum = 7714, PPPPPPPPPPPPPP
+QQQQ
+[Receiver] Resend lastAckPkt (Default Behavior): : seqnum = -1, acknum = 6, checksum = 12845, ....................
+******模拟网络环境******：接收方的确认包将在255.635到达对方, 确认包为-->seqnum = -1, acknum = 6,checksum = 12845,payload = .....................
+[Sender] ackPkt refused (duplicate ACK): : seqnum = -1, acknum = 6, checksum = 12845, ....................
+******模拟网络环境******：关闭定时器, 当前时间 = 262.075, 定时器报文序号 = 7
+******模拟网络环境******：启动定时器, 当前时间 = 262.075, 定时器报文序号 = 7, 定时器Timeout时间 = 282.075
+[Sender] Time out, resend packet: : seqnum = 7, acknum = -1, checksum = 10784, OOOOOOOOOOOOO
+PPPPP
+******模拟网络环境******：发送方的数据包将在268.295到达对方, 数据包为-->seqnum = 7, acknum = -1,checksum = 10784,payload = OOOOOOOOOOOOOPPPPPP
+[Sender] Time out, resend packet: : seqnum = 0, acknum = -1, checksum = 7714, PPPPPPPPPPPPPP
+QQQQ
+******模拟网络环境******：发送方的数据包将在277.115到达对方, 数据包为-->seqnum = 0, acknum = -1,checksum = 7714,payload = PPPPPPPPPPPPPPQQQQQ
+******模拟网络环境******：向上递交给应用层数据：OOOOOOOOOOOOOPPPPPP
+[Receiver] Acknowledge receive: : seqnum = -1, acknum = 7, checksum = 12844, ....................
+******模拟网络环境******：接收方的确认包将在273.225到达对方, 确认包为-->seqnum = -1, acknum = 7,checksum = 12844,payload = .....................
+[Sender] Receive ackPkt successfully: : seqnum = -1, acknum = 7, checksum = 12844, ....................
+******模拟网络环境******：关闭定时器, 当前时间 = 273.225, 定时器报文序号 = 7
+******模拟网络环境******：启动定时器, 当前时间 = 273.225, 定时器报文序号 = 0, 定时器Timeout时间 = 293.225
+******模拟网络环境******：向上递交给应用层数据：PPPPPPPPPPPPPPQQQQQ
+[Receiver] Acknowledge receive: : seqnum = -1, acknum = 0, checksum = 12851, ....................
+******模拟网络环境******：接收方的确认包将在285.385到达对方, 确认包为-->seqnum = -1, acknum = 0,checksum = 12851,payload = .....................
+[Sender] Receive ackPkt successfully: : seqnum = -1, acknum = 0, checksum = 12851, ....................
+******模拟网络环境******：关闭定时器, 当前时间 = 285.385, 定时器报文序号 = 0
+[Sender] Send packet: : seqnum = 1, acknum = -1, checksum = 6421, QQQQQQQQQQQQQQQ
+RRR
+******模拟网络环境******：启动定时器, 当前时间 = 286.382, 定时器报文序号 = 1, 定时器Timeout时间 = 306.382
+******模拟网络环境******：发送方的数据包将在291.873到达对方, 数据包为-->seqnum = 1, acknum = -1,checksum = 6421,payload = QQQQQQQQQQQQQQQRRRR
+[Sender] Send packet: : seqnum = 2, acknum = -1, checksum = 3343, RRRRRRRRRRRRRRRR
+SS
+******模拟网络环境******：发送方的数据包将在297.152到达对方, 数据包为-->seqnum = 2, acknum = -1,checksum = 3343,payload = RRRRRRRRRRRRRRRRSSS
+[Sender] Send packet: : seqnum = 3, acknum = -1, checksum = 2050, SSSSSSSSSSSSSSSSS
+T
+******模拟网络环境******：发送方的数据包将在298.302到达对方, 数据包为-->seqnum = 3, acknum = -1,checksum = 2050,payload = SSSSSSSSSSSSSSSSSTT
+[Sender] Send packet: : seqnum = 4, acknum = -1, checksum = 64507, TTTTTTTTTTTTTTTTTT
+
+******模拟网络环境******：发送方的数据包将在300.852到达对方, 数据包为-->seqnum = 4, acknum = -1,checksum = 64507,payload = TTTTTTTTTTTTTTTTTTU
+******模拟网络环境******：向上递交给应用层数据：QQQQQQQQQQQQQQQRRRR
+[Receiver] Acknowledge receive: : seqnum = -1, acknum = 1, checksum = 12850, ....................
+******模拟网络环境******：接收方的确认包将在298.632到达对方, 确认包为-->seqnum = -1, acknum = 1,checksum = 12850,payload = .....................
+******模拟网络环境******：向上递交给应用层数据：RRRRRRRRRRRRRRRRSSS
+[Receiver] Acknowledge receive: : seqnum = -1, acknum = 2, checksum = 12849, ....................
+******模拟网络环境******：接收方的确认包将在303.942到达对方, 确认包为-->seqnum = -1, acknum = 2,checksum = 12849,payload = .....................
+******模拟网络环境******：向上递交给应用层数据：SSSSSSSSSSSSSSSSSTT
+[Receiver] Acknowledge receive: : seqnum = -1, acknum = 3, checksum = 12848, ....................
+******模拟网络环境******：接收方的确认包将在309.103到达对方, 确认包为-->seqnum = -1, acknum = 3,checksum = 12848,payload = .....................
+[Sender] Receive ackPkt successfully: : seqnum = -1, acknum = 1, checksum = 12850, ....................
+******模拟网络环境******：关闭定时器, 当前时间 = 298.632, 定时器报文序号 = 1
+******模拟网络环境******：启动定时器, 当前时间 = 298.632, 定时器报文序号 = 2, 定时器Timeout时间 = 318.632
+******模拟网络环境******：向上递交给应用层数据：TTTTTTTTTTTTTTTTTTU
+[Receiver] Acknowledge receive: : seqnum = -1, acknum = 4, checksum = 12847, ....................
+******模拟网络环境******：接收方的确认包将在318.123到达对方, 确认包为-->seqnum = -1, acknum = 4,checksum = 12847,payload = .....................
+[Sender] Receive ackPkt successfully: : seqnum = -1, acknum = 2, checksum = 12849, ....................
+******模拟网络环境******：关闭定时器, 当前时间 = 303.942, 定时器报文序号 = 2
+******模拟网络环境******：启动定时器, 当前时间 = 303.942, 定时器报文序号 = 3, 定时器Timeout时间 = 323.942
+[Sender] Receive ackPkt successfully: : seqnum = -1, acknum = 3, checksum = 12848, ....................
+******模拟网络环境******：关闭定时器, 当前时间 = 309.103, 定时器报文序号 = 3
+******模拟网络环境******：启动定时器, 当前时间 = 309.103, 定时器报文序号 = 4, 定时器Timeout时间 = 329.103
+[Sender] Receive ackPkt successfully: : seqnum = -1, acknum = 4, checksum = 12847, ....................
+******模拟网络环境******：关闭定时器, 当前时间 = 318.123, 定时器报文序号 = 4
+[Sender] Send packet: : seqnum = 5, acknum = -1, checksum = 43758, UUUUUUUUUUUUUUUUUUU
+******模拟网络环境******：启动定时器, 当前时间 = 319.132, 定时器报文序号 = 5, 定时器Timeout时间 = 339.132
+******模拟网络环境******：发送方的数据包将在325.082到达对方, 数据包为-->seqnum = 5, acknum = -1,checksum = 43758,payload = UUUUUUUUUUUUUUUUUUU
+[Sender] Send packet: : seqnum = 6, acknum = -1, checksum = 41115, VVVVVVVVVVVVVVVVVVVV
+******模拟网络环境******：发送方发送的数据包丢失：seqnum = 6, acknum = -1,checksum = 41115,payload = VVVVVVVVVVVVVVVVVVVV
+[Sender] Send packet: : seqnum = 7, acknum = -1, checksum = 58256, 
+WWWWWWWWWWWWWWWWWWW
+******模拟网络环境******：发送方的数据包将在334.352到达对方, 数据包为-->seqnum = 7, acknum = -1,checksum = 58256,payload = WWWWWWWWWWWWWWWWWWWW
+[Sender] Send packet: : seqnum = 0, acknum = -1, checksum = 55259, 
+XXXXXXXXXXXXXXXXXX
+******模拟网络环境******：发送方发送的数据包丢失：seqnum = 0, acknum = -1,checksum = 55259,payload = XXXXXXXXXXXXXXXXXXX
+******模拟网络环境******：向上递交给应用层数据：UUUUUUUUUUUUUUUUUUU
+[Receiver] Acknowledge receive: : seqnum = -1, acknum = 5, checksum = 12846, ....................
+******模拟网络环境******：接收方的确认包将在326.702到达对方, 确认包为-->seqnum = -1, acknum = 5,checksum = 12846,payload = .....................
+[Sender] Receive ackPkt successfully: : seqnum = -1, acknum = 5, checksum = 12846, ....................
+******模拟网络环境******：关闭定时器, 当前时间 = 326.702, 定时器报文序号 = 5
+******模拟网络环境******：启动定时器, 当前时间 = 326.702, 定时器报文序号 = 6, 定时器Timeout时间 = 346.702
+[Receiver] Packet Refused (Packet Duplicated): : seqnum = 7, acknum = -1, checksum = 58256, 
+WWWWWWWWWWWWWWWWWWW
+[Receiver] Resend lastAckPkt (Default Behavior): : seqnum = -1, acknum = 5, checksum = 12846, ....................
+******模拟网络环境******：接收方发送的确认包丢失：seqnum = -1, acknum = 5,checksum = 12846,payload = .....................
+******模拟网络环境******：关闭定时器, 当前时间 = 346.702, 定时器报文序号 = 6
+******模拟网络环境******：启动定时器, 当前时间 = 346.702, 定时器报文序号 = 6, 定时器Timeout时间 = 366.702
+[Sender] Time out, resend packet: : seqnum = 6, acknum = -1, checksum = 41115, VVVVVVVVVVVVVVVVVVVV
+******模拟网络环境******：发送方的数据包将在356.472到达对方, 数据包为-->seqnum = 6, acknum = -1,checksum = 41115,payload = VVVVVVVVVVVVVVVVVVVV
+[Sender] Time out, resend packet: : seqnum = 7, acknum = -1, checksum = 58256, 
+WWWWWWWWWWWWWWWWWWW
+******模拟网络环境******：发送方的数据包将在367.052到达对方, 数据包为-->seqnum = 7, acknum = -1,checksum = 58256,payload = WWWWWWWWWWWWWWWWWWWW
+[Sender] Time out, resend packet: : seqnum = 0, acknum = -1, checksum = 55259, 
+XXXXXXXXXXXXXXXXXX
+******模拟网络环境******：发送方的数据包将在370.062到达对方, 数据包为-->seqnum = 0, acknum = -1,checksum = 55259,payload = XXXXXXXXXXXXXXXXXXX
+******模拟网络环境******：向上递交给应用层数据：VVVVVVVVVVVVVVVVVVVV
+[Receiver] Acknowledge receive: : seqnum = -1, acknum = 6, checksum = 12845, ....................
+******模拟网络环境******：接收方的确认包将在364.802到达对方, 确认包为-->seqnum = -1, acknum = 6,checksum = 12845,payload = .....................
+[Sender] Receive ackPkt successfully: : seqnum = -1, acknum = 6, checksum = 12845, ....................
+******模拟网络环境******：关闭定时器, 当前时间 = 364.802, 定时器报文序号 = 6
+******模拟网络环境******：启动定时器, 当前时间 = 364.802, 定时器报文序号 = 7, 定时器Timeout时间 = 384.802
+******模拟网络环境******：向上递交给应用层数据：WWWWWWWWWWWWWWWWWWWW
+[Receiver] Acknowledge receive: : seqnum = -1, acknum = 7, checksum = 12844, ....................
+******模拟网络环境******：接收方的确认包将在368.492到达对方, 确认包为-->seqnum = -1, acknum = 7,checksum = 12844,payload = .....................
+[Sender] Receive ackPkt successfully: : seqnum = -1, acknum = 7, checksum = 12844, ....................
+******模拟网络环境******：关闭定时器, 当前时间 = 368.492, 定时器报文序号 = 7
+******模拟网络环境******：启动定时器, 当前时间 = 368.492, 定时器报文序号 = 0, 定时器Timeout时间 = 388.492
+******模拟网络环境******：向上递交给应用层数据：XXXXXXXXXXXXXXXXXXX
+[Receiver] Acknowledge receive: : seqnum = -1, acknum = 0, checksum = 12851, ....................
+******模拟网络环境******：接收方的确认包将在379.782到达对方, 确认包为-->seqnum = -1, acknum = 0,checksum = 12851,payload = .....................
+[Sender] Receive ackPkt successfully: : seqnum = -1, acknum = 0, checksum = 12851, ....................
+******模拟网络环境******：关闭定时器, 当前时间 = 379.782, 定时器报文序号 = 0
+[Sender] Send packet: : seqnum = 1, acknum = -1, checksum = 53966, X
+YYYYYYYYYYYYYYYYY
+******模拟网络环境******：启动定时器, 当前时间 = 379.887, 定时器报文序号 = 1, 定时器Timeout时间 = 399.887
+******模拟网络环境******：发送方的数据包将在381.678到达对方, 数据包为-->seqnum = 1, acknum = -1,checksum = 53966,payload = XYYYYYYYYYYYYYYYYYY
+[Sender] Send packet: : seqnum = 2, acknum = -1, checksum = 50888, YY
+ZZZZZZZZZZZZZZZZ
+******模拟网络环境******：发送方的数据包将在391.637到达对方, 数据包为-->seqnum = 2, acknum = -1,checksum = 50888,payload = YYZZZZZZZZZZZZZZZZZ
+[Sender] Send packet: : seqnum = 3, acknum = -1, checksum = 30860, ZZZ
+AAAAAAAAAAAAAAA
+******模拟网络环境******：发送方的数据包将在393.527到达对方, 数据包为-->seqnum = 3, acknum = -1,checksum = 30860,payload = ZZZAAAAAAAAAAAAAAAA
+[Sender] Send packet: : seqnum = 4, acknum = -1, checksum = 41120, AAAA
+BBBBBBBBBBBBBB
+******模拟网络环境******：发送方的数据包将在397.137到达对方, 数据包为-->seqnum = 4, acknum = -1,checksum = 41120,payload = AAAABBBBBBBBBBBBBBB
+******模拟网络环境******：向上递交给应用层数据：XYYYYYYYYYYYYYYYYYY
+[Receiver] Acknowledge receive: : seqnum = -1, acknum = 1, checksum = 12850, ....................
+******模拟网络环境******：接收方的确认包将在388.507到达对方, 确认包为-->seqnum = -1, acknum = 1,checksum = 12850,payload = .....................
+[Sender] Receive ackPkt successfully: : seqnum = -1, acknum = 1, checksum = 12850, ....................
+******模拟网络环境******：关闭定时器, 当前时间 = 388.507, 定时器报文序号 = 1
+******模拟网络环境******：启动定时器, 当前时间 = 388.507, 定时器报文序号 = 2, 定时器Timeout时间 = 408.507
+******模拟网络环境******：向上递交给应用层数据：YYZZZZZZZZZZZZZZZZZ
+[Receiver] Acknowledge receive: : seqnum = -1, acknum = 2, checksum = 12849, ....................
+******模拟网络环境******：接收方的确认包将在394.527到达对方, 确认包为-->seqnum = -1, acknum = 2,checksum = 12849,payload = .....................
+******模拟网络环境******：向上递交给应用层数据：ZZZAAAAAAAAAAAAAAAA
+[Receiver] Acknowledge receive: : seqnum = -1, acknum = 3, checksum = 12848, ....................
+******模拟网络环境******：网络层数据包损坏,损坏的包为-->seqnum = -1, acknum = 3,checksum = 12848,payload = /....................
+******模拟网络环境******：接收方的确认包将在398.137到达对方, 确认包为-->seqnum = -1, acknum = 3,checksum = 12848,payload = /....................
+[Sender] Receive ackPkt successfully: : seqnum = -1, acknum = 2, checksum = 12849, ....................
+******模拟网络环境******：关闭定时器, 当前时间 = 394.527, 定时器报文序号 = 2
+******模拟网络环境******：启动定时器, 当前时间 = 394.527, 定时器报文序号 = 3, 定时器Timeout时间 = 414.527
+******模拟网络环境******：向上递交给应用层数据：AAAABBBBBBBBBBBBBBB
+[Receiver] Acknowledge receive: : seqnum = -1, acknum = 4, checksum = 12847, ....................
+******模拟网络环境******：接收方的确认包将在404.897到达对方, 确认包为-->seqnum = -1, acknum = 4,checksum = 12847,payload = .....................
+[Sender] ackPkt refused (packet corrupt): : seqnum = -1, acknum = 3, checksum = 12848, /...................
+[Sender] Receive ackPkt successfully: : seqnum = -1, acknum = 4, checksum = 12847, ....................
+******模拟网络环境******：关闭定时器, 当前时间 = 404.897, 定时器报文序号 = 3
+[Sender] Send packet: : seqnum = 5, acknum = -1, checksum = 39827, BBBBB
+CCCCCCCCCCCCC
+******模拟网络环境******：启动定时器, 当前时间 = 405.312, 定时器报文序号 = 5, 定时器Timeout时间 = 425.312
+******模拟网络环境******：网络层数据包损坏,损坏的包为-->seqnum = 5, acknum = -1,checksum = 39827,payload = CBBBBCCCCCCCCCCCCCC
+******模拟网络环境******：发送方的数据包将在407.743到达对方, 数据包为-->seqnum = 5, acknum = -1,checksum = 39827,payload = CBBBBCCCCCCCCCCCCCC
+[Sender] Send packet: : seqnum = 6, acknum = -1, checksum = 36749, CCCCCC
+DDDDDDDDDDDD
+******模拟网络环境******：发送方发送的数据包丢失：seqnum = 6, acknum = -1,checksum = 36749,payload = CCCCCCDDDDDDDDDDDDD
+[Sender] Send packet: : seqnum = 7, acknum = -1, checksum = 35456, DDDDDDD
+EEEEEEEEEEE
+******模拟网络环境******：网络层数据包损坏,损坏的包为-->seqnum = 7, acknum = -1,checksum = 35456,payload = EDDDDDDEEEEEEEEEEEE
+******模拟网络环境******：发送方的数据包将在410.163到达对方, 数据包为-->seqnum = 7, acknum = -1,checksum = 35456,payload = EDDDDDDEEEEEEEEEEEE
+[Sender] Send packet: : seqnum = 0, acknum = -1, checksum = 32386, EEEEEEEE
+FFFFFFFFFF
+******模拟网络环境******：发送方的数据包将在420.733到达对方, 数据包为-->seqnum = 0, acknum = -1,checksum = 32386,payload = EEEEEEEEFFFFFFFFFFF
+[Receiver] Packet refused (Packet Corrupt): : seqnum = 5, acknum = -1, checksum = 39827, CBBBB
+CCCCCCCCCCCCC
+[Receiver] Resend lastAckPkt (Default Behavior): : seqnum = -1, acknum = 4, checksum = 12847, ....................
+******模拟网络环境******：接收方发送的确认包丢失：seqnum = -1, acknum = 4,checksum = 12847,payload = .....................
+[Receiver] Packet refused (Packet Corrupt): : seqnum = 7, acknum = -1, checksum = 35456, EDDDDDD
+EEEEEEEEEEE
+[Receiver] Resend lastAckPkt (Default Behavior): : seqnum = -1, acknum = 4, checksum = 12847, ....................
+******模拟网络环境******：网络层数据包损坏,损坏的包为-->seqnum = -1, acknum = 4,checksum = 12847,payload = /....................
+******模拟网络环境******：接收方的确认包将在416.873到达对方, 确认包为-->seqnum = -1, acknum = 4,checksum = 12847,payload = /....................
+[Sender] ackPkt refused (packet corrupt): : seqnum = -1, acknum = 4, checksum = 12847, /...................
+[Receiver] Packet Refused (Packet Duplicated): : seqnum = 0, acknum = -1, checksum = 32386, EEEEEEEE
+FFFFFFFFFF
+[Receiver] Resend lastAckPkt (Default Behavior): : seqnum = -1, acknum = 4, checksum = 12847, ....................
+******模拟网络环境******：接收方发送的确认包丢失：seqnum = -1, acknum = 4,checksum = 12847,payload = .....................
+******模拟网络环境******：关闭定时器, 当前时间 = 425.312, 定时器报文序号 = 5
+******模拟网络环境******：启动定时器, 当前时间 = 425.312, 定时器报文序号 = 5, 定时器Timeout时间 = 445.312
+[Sender] Time out, resend packet: : seqnum = 5, acknum = -1, checksum = 39827, BBBBB
+CCCCCCCCCCCCC
+******模拟网络环境******：发送方的数据包将在427.493到达对方, 数据包为-->seqnum = 5, acknum = -1,checksum = 39827,payload = BBBBBCCCCCCCCCCCCCC
+[Sender] Time out, resend packet: : seqnum = 6, acknum = -1, checksum = 36749, CCCCCC
+DDDDDDDDDDDD
+******模拟网络环境******：发送方的数据包将在434.243到达对方, 数据包为-->seqnum = 6, acknum = -1,checksum = 36749,payload = CCCCCCDDDDDDDDDDDDD
+[Sender] Time out, resend packet: : seqnum = 7, acknum = -1, checksum = 35456, DDDDDDD
+EEEEEEEEEEE
+******模拟网络环境******：发送方的数据包将在444.273到达对方, 数据包为-->seqnum = 7, acknum = -1,checksum = 35456,payload = DDDDDDDEEEEEEEEEEEE
+[Sender] Time out, resend packet: : seqnum = 0, acknum = -1, checksum = 32386, EEEEEEEE
+FFFFFFFFFF
+******模拟网络环境******：网络层数据包损坏,损坏的包为-->seqnum = 0, acknum = -1,checksum = 32386,payload = FEEEEEEEFFFFFFFFFFF
+******模拟网络环境******：发送方的数据包将在448.373到达对方, 数据包为-->seqnum = 0, acknum = -1,checksum = 32386,payload = FEEEEEEEFFFFFFFFFFF
+******模拟网络环境******：向上递交给应用层数据：BBBBBCCCCCCCCCCCCCC
+[Receiver] Acknowledge receive: : seqnum = -1, acknum = 5, checksum = 12846, ....................
+******模拟网络环境******：接收方的确认包将在435.533到达对方, 确认包为-->seqnum = -1, acknum = 5,checksum = 12846,payload = .....................
+******模拟网络环境******：向上递交给应用层数据：CCCCCCDDDDDDDDDDDDD
+[Receiver] Acknowledge receive: : seqnum = -1, acknum = 6, checksum = 12845, ....................
+******模拟网络环境******：接收方的确认包将在442.643到达对方, 确认包为-->seqnum = -1, acknum = 6,checksum = 12845,payload = .....................
+[Sender] Receive ackPkt successfully: : seqnum = -1, acknum = 5, checksum = 12846, ....................
+******模拟网络环境******：关闭定时器, 当前时间 = 435.533, 定时器报文序号 = 5
+******模拟网络环境******：启动定时器, 当前时间 = 435.533, 定时器报文序号 = 6, 定时器Timeout时间 = 455.533
+[Sender] Receive ackPkt successfully: : seqnum = -1, acknum = 6, checksum = 12845, ....................
+******模拟网络环境******：关闭定时器, 当前时间 = 442.643, 定时器报文序号 = 6
+******模拟网络环境******：启动定时器, 当前时间 = 442.643, 定时器报文序号 = 7, 定时器Timeout时间 = 462.643
+******模拟网络环境******：向上递交给应用层数据：DDDDDDDEEEEEEEEEEEE
+[Receiver] Acknowledge receive: : seqnum = -1, acknum = 7, checksum = 12844, ....................
+******模拟网络环境******：接收方的确认包将在446.323到达对方, 确认包为-->seqnum = -1, acknum = 7,checksum = 12844,payload = .....................
+[Sender] Receive ackPkt successfully: : seqnum = -1, acknum = 7, checksum = 12844, ....................
+******模拟网络环境******：关闭定时器, 当前时间 = 446.323, 定时器报文序号 = 7
+******模拟网络环境******：启动定时器, 当前时间 = 446.323, 定时器报文序号 = 0, 定时器Timeout时间 = 466.323
+[Receiver] Packet refused (Packet Corrupt): : seqnum = 0, acknum = -1, checksum = 32386, FEEEEEEE
+FFFFFFFFFF
+[Receiver] Resend lastAckPkt (Default Behavior): : seqnum = -1, acknum = 7, checksum = 12844, ....................
+******模拟网络环境******：接收方的确认包将在453.523到达对方, 确认包为-->seqnum = -1, acknum = 7,checksum = 12844,payload = .....................
+[Sender] ackPkt refused (duplicate ACK): : seqnum = -1, acknum = 7, checksum = 12844, ....................
+******模拟网络环境******：关闭定时器, 当前时间 = 466.323, 定时器报文序号 = 0
+******模拟网络环境******：启动定时器, 当前时间 = 466.323, 定时器报文序号 = 0, 定时器Timeout时间 = 486.323
+[Sender] Time out, resend packet: : seqnum = 0, acknum = -1, checksum = 32386, EEEEEEEE
+FFFFFFFFFF
+******模拟网络环境******：发送方的数据包将在472.303到达对方, 数据包为-->seqnum = 0, acknum = -1,checksum = 32386,payload = EEEEEEEEFFFFFFFFFFF
+******模拟网络环境******：向上递交给应用层数据：EEEEEEEEFFFFFFFFFFF
+[Receiver] Acknowledge receive: : seqnum = -1, acknum = 0, checksum = 12851, ....................
+******模拟网络环境******：接收方的确认包将在482.393到达对方, 确认包为-->seqnum = -1, acknum = 0,checksum = 12851,payload = .....................
+[Sender] Receive ackPkt successfully: : seqnum = -1, acknum = 0, checksum = 12851, ....................
+******模拟网络环境******：关闭定时器, 当前时间 = 482.393, 定时器报文序号 = 0
+[Sender] Send packet: : seqnum = 1, acknum = -1, checksum = 31093, FFFFFFFFF
+GGGGGGGGG
+******模拟网络环境******：启动定时器, 当前时间 = 482.46, 定时器报文序号 = 1, 定时器Timeout时间 = 502.46
+******模拟网络环境******：发送方的数据包将在485.6到达对方, 数据包为-->seqnum = 1, acknum = -1,checksum = 31093,payload = FFFFFFFFFGGGGGGGGGG
+[Sender] Send packet: : seqnum = 2, acknum = -1, checksum = 28015, GGGGGGGGGG
+HHHHHHHH
+******模拟网络环境******：发送方的数据包将在489.11到达对方, 数据包为-->seqnum = 2, acknum = -1,checksum = 28015,payload = GGGGGGGGGGHHHHHHHHH
+[Sender] Send packet: : seqnum = 3, acknum = -1, checksum = 26722, HHHHHHHHHHH
+IIIIIII
+******模拟网络环境******：发送方的数据包将在493.63到达对方, 数据包为-->seqnum = 3, acknum = -1,checksum = 26722,payload = HHHHHHHHHHHIIIIIIII
+[Sender] Send packet: : seqnum = 4, acknum = -1, checksum = 23644, IIIIIIIIIIII
+JJJJJJ
+******模拟网络环境******：发送方的数据包将在504.1到达对方, 数据包为-->seqnum = 4, acknum = -1,checksum = 23644,payload = IIIIIIIIIIIIJJJJJJJ
+******模拟网络环境******：向上递交给应用层数据：FFFFFFFFFGGGGGGGGGG
+[Receiver] Acknowledge receive: : seqnum = -1, acknum = 1, checksum = 12850, ....................
+******模拟网络环境******：接收方的确认包将在495.94到达对方, 确认包为-->seqnum = -1, acknum = 1,checksum = 12850,payload = .....................
+******模拟网络环境******：向上递交给应用层数据：GGGGGGGGGGHHHHHHHHH
+[Receiver] Acknowledge receive: : seqnum = -1, acknum = 2, checksum = 12849, ....................
+******模拟网络环境******：接收方的确认包将在500.96到达对方, 确认包为-->seqnum = -1, acknum = 2,checksum = 12849,payload = .....................
+******模拟网络环境******：向上递交给应用层数据：HHHHHHHHHHHIIIIIIII
+[Receiver] Acknowledge receive: : seqnum = -1, acknum = 3, checksum = 12848, ....................
+******模拟网络环境******：网络层数据包损坏,损坏的包为-->seqnum = -1, acknum = 3,checksum = 12848,payload = /....................
+******模拟网络环境******：接收方的确认包将在511.75到达对方, 确认包为-->seqnum = -1, acknum = 3,checksum = 12848,payload = /....................
+[Sender] Receive ackPkt successfully: : seqnum = -1, acknum = 1, checksum = 12850, ....................
+******模拟网络环境******：关闭定时器, 当前时间 = 495.94, 定时器报文序号 = 1
+******模拟网络环境******：启动定时器, 当前时间 = 495.94, 定时器报文序号 = 2, 定时器Timeout时间 = 515.94
+[Sender] Receive ackPkt successfully: : seqnum = -1, acknum = 2, checksum = 12849, ....................
+******模拟网络环境******：关闭定时器, 当前时间 = 500.96, 定时器报文序号 = 2
+******模拟网络环境******：启动定时器, 当前时间 = 500.96, 定时器报文序号 = 3, 定时器Timeout时间 = 520.96
+******模拟网络环境******：向上递交给应用层数据：IIIIIIIIIIIIJJJJJJJ
+[Receiver] Acknowledge receive: : seqnum = -1, acknum = 4, checksum = 12847, ....................
+******模拟网络环境******：接收方的确认包将在519.09到达对方, 确认包为-->seqnum = -1, acknum = 4,checksum = 12847,payload = .....................
+[Sender] ackPkt refused (packet corrupt): : seqnum = -1, acknum = 3, checksum = 12848, /...................
+[Sender] Receive ackPkt successfully: : seqnum = -1, acknum = 4, checksum = 12847, ....................
+******模拟网络环境******：关闭定时器, 当前时间 = 519.09, 定时器报文序号 = 3
+[Sender] Send packet: : seqnum = 5, acknum = -1, checksum = 22351, JJJJJJJJJJJJJ
+KKKKK
+******模拟网络环境******：启动定时器, 当前时间 = 519.683, 定时器报文序号 = 5, 定时器Timeout时间 = 539.683
+******模拟网络环境******：发送方的数据包将在524.373到达对方, 数据包为-->seqnum = 5, acknum = -1,checksum = 22351,payload = JJJJJJJJJJJJJKKKKKK
+[Sender] Send packet: : seqnum = 6, acknum = -1, checksum = 19273, KKKKKKKKKKKKKK
+LLLL
+******模拟网络环境******：发送方的数据包将在528.023到达对方, 数据包为-->seqnum = 6, acknum = -1,checksum = 19273,payload = KKKKKKKKKKKKKKLLLLL
+[Sender] Send packet: : seqnum = 7, acknum = -1, checksum = 17980, LLLLLLLLLLLLLLL
+MMM
+******模拟网络环境******：发送方的数据包将在537.263到达对方, 数据包为-->seqnum = 7, acknum = -1,checksum = 17980,payload = LLLLLLLLLLLLLLLMMMM
+[Sender] Send packet: : seqnum = 0, acknum = -1, checksum = 14910, MMMMMMMMMMMMMMMM
+NN
+******模拟网络环境******：网络层数据包损坏,损坏的包为-->seqnum = 0, acknum = -1,checksum = 14910,payload = NMMMMMMMMMMMMMMMNNN
+******模拟网络环境******：发送方的数据包将在546.093到达对方, 数据包为-->seqnum = 0, acknum = -1,checksum = 14910,payload = NMMMMMMMMMMMMMMMNNN
+******模拟网络环境******：向上递交给应用层数据：JJJJJJJJJJJJJKKKKKK
+[Receiver] Acknowledge receive: : seqnum = -1, acknum = 5, checksum = 12846, ....................
+******模拟网络环境******：接收方发送的确认包丢失：seqnum = -1, acknum = 5,checksum = 12846,payload = .....................
+******模拟网络环境******：向上递交给应用层数据：KKKKKKKKKKKKKKLLLLL
+[Receiver] Acknowledge receive: : seqnum = -1, acknum = 6, checksum = 12845, ....................
+******模拟网络环境******：接收方发送的确认包丢失：seqnum = -1, acknum = 6,checksum = 12845,payload = .....................
+******模拟网络环境******：向上递交给应用层数据：LLLLLLLLLLLLLLLMMMM
+[Receiver] Acknowledge receive: : seqnum = -1, acknum = 7, checksum = 12844, ....................
+******模拟网络环境******：接收方的确认包将在545.263到达对方, 确认包为-->seqnum = -1, acknum = 7,checksum = 12844,payload = .....................
+******模拟网络环境******：关闭定时器, 当前时间 = 539.683, 定时器报文序号 = 5
+******模拟网络环境******：启动定时器, 当前时间 = 539.683, 定时器报文序号 = 5, 定时器Timeout时间 = 559.683
+[Sender] Time out, resend packet: : seqnum = 5, acknum = -1, checksum = 22351, JJJJJJJJJJJJJ
+KKKKK
+******模拟网络环境******：发送方的数据包将在555.073到达对方, 数据包为-->seqnum = 5, acknum = -1,checksum = 22351,payload = JJJJJJJJJJJJJKKKKKK
+[Sender] Time out, resend packet: : seqnum = 6, acknum = -1, checksum = 19273, KKKKKKKKKKKKKK
+LLLL
+******模拟网络环境******：发送方的数据包将在563.543到达对方, 数据包为-->seqnum = 6, acknum = -1,checksum = 19273,payload = KKKKKKKKKKKKKKLLLLL
+[Sender] Time out, resend packet: : seqnum = 7, acknum = -1, checksum = 17980, LLLLLLLLLLLLLLL
+MMM
+******模拟网络环境******：发送方的数据包将在574.113到达对方, 数据包为-->seqnum = 7, acknum = -1,checksum = 17980,payload = LLLLLLLLLLLLLLLMMMM
+[Sender] Time out, resend packet: : seqnum = 0, acknum = -1, checksum = 14910, MMMMMMMMMMMMMMMM
+NN
+******模拟网络环境******：发送方的数据包将在577.063到达对方, 数据包为-->seqnum = 0, acknum = -1,checksum = 14910,payload = MMMMMMMMMMMMMMMMNNN
+[Sender] Receive ackPkt successfully: : seqnum = -1, acknum = 7, checksum = 12844, ....................
+******模拟网络环境******：关闭定时器, 当前时间 = 545.263, 定时器报文序号 = 5
+******模拟网络环境******：启动定时器, 当前时间 = 545.263, 定时器报文序号 = 0, 定时器Timeout时间 = 565.263
+[Receiver] Packet refused (Packet Corrupt): : seqnum = 0, acknum = -1, checksum = 14910, NMMMMMMMMMMMMMMM
+NN
+[Receiver] Resend lastAckPkt (Default Behavior): : seqnum = -1, acknum = 7, checksum = 12844, ....................
+******模拟网络环境******：接收方的确认包将在550.963到达对方, 确认包为-->seqnum = -1, acknum = 7,checksum = 12844,payload = .....................
+[Sender] ackPkt refused (duplicate ACK): : seqnum = -1, acknum = 7, checksum = 12844, ....................
+[Receiver] Packet Refused (Packet Duplicated): : seqnum = 5, acknum = -1, checksum = 22351, JJJJJJJJJJJJJ
+KKKKK
+[Receiver] Resend lastAckPkt (Default Behavior): : seqnum = -1, acknum = 7, checksum = 12844, ....................
+******模拟网络环境******：接收方的确认包将在557.483到达对方, 确认包为-->seqnum = -1, acknum = 7,checksum = 12844,payload = .....................
+[Sender] ackPkt refused (duplicate ACK): : seqnum = -1, acknum = 7, checksum = 12844, ....................
+[Receiver] Packet Refused (Packet Duplicated): : seqnum = 6, acknum = -1, checksum = 19273, KKKKKKKKKKKKKK
+LLLL
+[Receiver] Resend lastAckPkt (Default Behavior): : seqnum = -1, acknum = 7, checksum = 12844, ....................
+******模拟网络环境******：接收方的确认包将在568.333到达对方, 确认包为-->seqnum = -1, acknum = 7,checksum = 12844,payload = .....................
+******模拟网络环境******：关闭定时器, 当前时间 = 565.263, 定时器报文序号 = 0
+******模拟网络环境******：启动定时器, 当前时间 = 565.263, 定时器报文序号 = 0, 定时器Timeout时间 = 585.263
+[Sender] Time out, resend packet: : seqnum = 0, acknum = -1, checksum = 14910, MMMMMMMMMMMMMMMM
+NN
+******模拟网络环境******：发送方的数据包将在586.203到达对方, 数据包为-->seqnum = 0, acknum = -1,checksum = 14910,payload = MMMMMMMMMMMMMMMMNNN
+[Sender] ackPkt refused (duplicate ACK): : seqnum = -1, acknum = 7, checksum = 12844, ....................
+[Receiver] Packet Refused (Packet Duplicated): : seqnum = 7, acknum = -1, checksum = 17980, LLLLLLLLLLLLLLL
+MMM
+[Receiver] Resend lastAckPkt (Default Behavior): : seqnum = -1, acknum = 7, checksum = 12844, ....................
+******模拟网络环境******：接收方的确认包将在577.083到达对方, 确认包为-->seqnum = -1, acknum = 7,checksum = 12844,payload = .....................
+******模拟网络环境******：向上递交给应用层数据：MMMMMMMMMMMMMMMMNNN
+[Receiver] Acknowledge receive: : seqnum = -1, acknum = 0, checksum = 12851, ....................
+******模拟网络环境******：接收方的确认包将在580.033到达对方, 确认包为-->seqnum = -1, acknum = 0,checksum = 12851,payload = .....................
+[Sender] ackPkt refused (duplicate ACK): : seqnum = -1, acknum = 7, checksum = 12844, ....................
+[Sender] Receive ackPkt successfully: : seqnum = -1, acknum = 0, checksum = 12851, ....................
+******模拟网络环境******：关闭定时器, 当前时间 = 580.033, 定时器报文序号 = 0
+[Receiver] Packet Refused (Packet Duplicated): : seqnum = 0, acknum = -1, checksum = 14910, MMMMMMMMMMMMMMMM
+NN
+[Receiver] Resend lastAckPkt (Default Behavior): : seqnum = -1, acknum = 0, checksum = 12851, ....................
+******模拟网络环境******：接收方的确认包将在591.613到达对方, 确认包为-->seqnum = -1, acknum = 0,checksum = 12851,payload = .....................
+[Sender] ackPkt refused (duplicate ACK): : seqnum = -1, acknum = 0, checksum = 12851, ....................
+[Sender] Send packet: : seqnum = 1, acknum = -1, checksum = 13617, NNNNNNNNNNNNNNNNN
+O
+******模拟网络环境******：启动定时器, 当前时间 = 591.658, 定时器报文序号 = 1, 定时器Timeout时间 = 611.658
+******模拟网络环境******：网络层数据包损坏,损坏的包为-->seqnum = 1, acknum = -1,checksum = 13617,payload = ONNNNNNNNNNNNNNNNOO
+******模拟网络环境******：发送方的数据包将在596.798到达对方, 数据包为-->seqnum = 1, acknum = -1,checksum = 13617,payload = ONNNNNNNNNNNNNNNNOO
+[Sender] Send packet: : seqnum = 2, acknum = -1, checksum = 10539, OOOOOOOOOOOOOOOOOO
+
+******模拟网络环境******：发送方的数据包将在606.918到达对方, 数据包为-->seqnum = 2, acknum = -1,checksum = 10539,payload = OOOOOOOOOOOOOOOOOOP
+[Sender] Send packet: : seqnum = 3, acknum = -1, checksum = 56605, PPPPPPPPPPPPPPPPPPP
+******模拟网络环境******：发送方的数据包将在617.298到达对方, 数据包为-->seqnum = 3, acknum = -1,checksum = 56605,payload = PPPPPPPPPPPPPPPPPPP
+[Sender] Send packet: : seqnum = 4, acknum = -1, checksum = 53967, QQQQQQQQQQQQQQQQQQQQ
+******模拟网络环境******：发送方发送的数据包丢失：seqnum = 4, acknum = -1,checksum = 53967,payload = QQQQQQQQQQQQQQQQQQQQ
+[Receiver] Packet refused (Packet Corrupt): : seqnum = 1, acknum = -1, checksum = 13617, ONNNNNNNNNNNNNNNN
+O
+[Receiver] Resend lastAckPkt (Default Behavior): : seqnum = -1, acknum = 0, checksum = 12851, ....................
+******模拟网络环境******：接收方的确认包将在605.928到达对方, 确认包为-->seqnum = -1, acknum = 0,checksum = 12851,payload = .....................
+[Sender] ackPkt refused (duplicate ACK): : seqnum = -1, acknum = 0, checksum = 12851, ....................
+[Receiver] Packet Refused (Packet Duplicated): : seqnum = 2, acknum = -1, checksum = 10539, OOOOOOOOOOOOOOOOOO
+
+[Receiver] Resend lastAckPkt (Default Behavior): : seqnum = -1, acknum = 0, checksum = 12851, ....................
+******模拟网络环境******：接收方的确认包将在617.718到达对方, 确认包为-->seqnum = -1, acknum = 0,checksum = 12851,payload = .....................
+******模拟网络环境******：关闭定时器, 当前时间 = 611.658, 定时器报文序号 = 1
+******模拟网络环境******：启动定时器, 当前时间 = 611.658, 定时器报文序号 = 1, 定时器Timeout时间 = 631.658
+[Sender] Time out, resend packet: : seqnum = 1, acknum = -1, checksum = 13617, NNNNNNNNNNNNNNNNN
+O
+******模拟网络环境******：发送方的数据包将在620.068到达对方, 数据包为-->seqnum = 1, acknum = -1,checksum = 13617,payload = NNNNNNNNNNNNNNNNNOO
+[Sender] Time out, resend packet: : seqnum = 2, acknum = -1, checksum = 10539, OOOOOOOOOOOOOOOOOO
+
+******模拟网络环境******：发送方的数据包将在624.788到达对方, 数据包为-->seqnum = 2, acknum = -1,checksum = 10539,payload = OOOOOOOOOOOOOOOOOOP
+[Sender] Time out, resend packet: : seqnum = 3, acknum = -1, checksum = 56605, PPPPPPPPPPPPPPPPPPP
+******模拟网络环境******：发送方发送的数据包丢失：seqnum = 3, acknum = -1,checksum = 56605,payload = PPPPPPPPPPPPPPPPPPP
+[Sender] Time out, resend packet: : seqnum = 4, acknum = -1, checksum = 53967, QQQQQQQQQQQQQQQQQQQQ
+******模拟网络环境******：发送方的数据包将在626.218到达对方, 数据包为-->seqnum = 4, acknum = -1,checksum = 53967,payload = QQQQQQQQQQQQQQQQQQQQ
+[Receiver] Packet Refused (Packet Duplicated): : seqnum = 3, acknum = -1, checksum = 56605, PPPPPPPPPPPPPPPPPPP
+[Receiver] Resend lastAckPkt (Default Behavior): : seqnum = -1, acknum = 0, checksum = 12851, ....................
+******模拟网络环境******：接收方发送的确认包丢失：seqnum = -1, acknum = 0,checksum = 12851,payload = .....................
+[Sender] ackPkt refused (duplicate ACK): : seqnum = -1, acknum = 0, checksum = 12851, ....................
+******模拟网络环境******：向上递交给应用层数据：NNNNNNNNNNNNNNNNNOO
+[Receiver] Acknowledge receive: : seqnum = -1, acknum = 1, checksum = 12850, ....................
+******模拟网络环境******：网络层数据包损坏,损坏的包为-->seqnum = -1, acknum = 1,checksum = 12850,payload = /....................
+******模拟网络环境******：接收方的确认包将在628.718到达对方, 确认包为-->seqnum = -1, acknum = 1,checksum = 12850,payload = /....................
+******模拟网络环境******：向上递交给应用层数据：OOOOOOOOOOOOOOOOOOP
+[Receiver] Acknowledge receive: : seqnum = -1, acknum = 2, checksum = 12849, ....................
+******模拟网络环境******：接收方的确认包将在631.518到达对方, 确认包为-->seqnum = -1, acknum = 2,checksum = 12849,payload = .....................
+[Receiver] Packet Refused (Packet Duplicated): : seqnum = 4, acknum = -1, checksum = 53967, QQQQQQQQQQQQQQQQQQQQ
+[Receiver] Resend lastAckPkt (Default Behavior): : seqnum = -1, acknum = 2, checksum = 12849, ....................
+******模拟网络环境******：接收方的确认包将在636.958到达对方, 确认包为-->seqnum = -1, acknum = 2,checksum = 12849,payload = .....................
+[Sender] ackPkt refused (packet corrupt): : seqnum = -1, acknum = 1, checksum = 12850, /...................
+[Sender] Receive ackPkt successfully: : seqnum = -1, acknum = 2, checksum = 12849, ....................
+******模拟网络环境******：关闭定时器, 当前时间 = 631.518, 定时器报文序号 = 1
+******模拟网络环境******：启动定时器, 当前时间 = 631.518, 定时器报文序号 = 3, 定时器Timeout时间 = 651.518
+[Sender] ackPkt refused (duplicate ACK): : seqnum = -1, acknum = 2, checksum = 12849, ....................
+******模拟网络环境******：关闭定时器, 当前时间 = 651.518, 定时器报文序号 = 3
+******模拟网络环境******：启动定时器, 当前时间 = 651.518, 定时器报文序号 = 3, 定时器Timeout时间 = 671.518
+[Sender] Time out, resend packet: : seqnum = 3, acknum = -1, checksum = 56605, PPPPPPPPPPPPPPPPPPP
+******模拟网络环境******：发送方的数据包将在656.348到达对方, 数据包为-->seqnum = 3, acknum = -1,checksum = 56605,payload = PPPPPPPPPPPPPPPPPPP
+[Sender] Time out, resend packet: : seqnum = 4, acknum = -1, checksum = 53967, QQQQQQQQQQQQQQQQQQQQ
+******模拟网络环境******：发送方发送的数据包丢失：seqnum = 4, acknum = -1,checksum = 53967,payload = QQQQQQQQQQQQQQQQQQQQ
+******模拟网络环境******：向上递交给应用层数据：PPPPPPPPPPPPPPPPPPP
+[Receiver] Acknowledge receive: : seqnum = -1, acknum = 3, checksum = 12848, ....................
+******模拟网络环境******：接收方的确认包将在665.788到达对方, 确认包为-->seqnum = -1, acknum = 3,checksum = 12848,payload = .....................
+[Sender] Receive ackPkt successfully: : seqnum = -1, acknum = 3, checksum = 12848, ....................
+******模拟网络环境******：关闭定时器, 当前时间 = 665.788, 定时器报文序号 = 3
+******模拟网络环境******：启动定时器, 当前时间 = 665.788, 定时器报文序号 = 4, 定时器Timeout时间 = 685.788
+******模拟网络环境******：关闭定时器, 当前时间 = 685.788, 定时器报文序号 = 4
+******模拟网络环境******：启动定时器, 当前时间 = 685.788, 定时器报文序号 = 4, 定时器Timeout时间 = 705.788
+[Sender] Time out, resend packet: : seqnum = 4, acknum = -1, checksum = 53967, QQQQQQQQQQQQQQQQQQQQ
+******模拟网络环境******：发送方的数据包将在688.548到达对方, 数据包为-->seqnum = 4, acknum = -1,checksum = 53967,payload = QQQQQQQQQQQQQQQQQQQQ
+******模拟网络环境******：向上递交给应用层数据：QQQQQQQQQQQQQQQQQQQQ
+[Receiver] Acknowledge receive: : seqnum = -1, acknum = 4, checksum = 12847, ....................
+******模拟网络环境******：接收方的确认包将在693.078到达对方, 确认包为-->seqnum = -1, acknum = 4,checksum = 12847,payload = .....................
+[Sender] Receive ackPkt successfully: : seqnum = -1, acknum = 4, checksum = 12847, ....................
+******模拟网络环境******：关闭定时器, 当前时间 = 693.078, 定时器报文序号 = 4
+[Sender] Send packet: : seqnum = 5, acknum = -1, checksum = 4293, 
+RRRRRRRRRRRRRRRRRRR
+******模拟网络环境******：启动定时器, 当前时间 = 693.185, 定时器报文序号 = 5, 定时器Timeout时间 = 713.185
+******模拟网络环境******：网络层数据包损坏,损坏的包为-->seqnum = 5, acknum = -1,checksum = 4293,payload = RRRRRRRRRRRRRRRRRRRR
+******模拟网络环境******：发送方的数据包将在701.965到达对方, 数据包为-->seqnum = 5, acknum = -1,checksum = 4293,payload = RRRRRRRRRRRRRRRRRRRR
+[Sender] Send packet: : seqnum = 6, acknum = -1, checksum = 1283, 
+SSSSSSSSSSSSSSSSSS
+******模拟网络环境******：网络层数据包损坏,损坏的包为-->seqnum = 6, acknum = -1,checksum = 1283,payload = SSSSSSSSSSSSSSSSSSS
+******模拟网络环境******：发送方的数据包将在709.285到达对方, 数据包为-->seqnum = 6, acknum = -1,checksum = 1283,payload = SSSSSSSSSSSSSSSSSSS
+[Sender] Send packet: : seqnum = 7, acknum = -1, checksum = 65525, S
+TTTTTTTTTTTTTTTTT
+******模拟网络环境******：网络层数据包损坏,损坏的包为-->seqnum = 7, acknum = -1,checksum = 65525,payload = TTTTTTTTTTTTTTTTTTT
+******模拟网络环境******：发送方的数据包将在719.245到达对方, 数据包为-->seqnum = 7, acknum = -1,checksum = 65525,payload = TTTTTTTTTTTTTTTTTTT
+[Sender] Send packet: : seqnum = 0, acknum = -1, checksum = 62455, TT
+UUUUUUUUUUUUUUUU
+******模拟网络环境******：发送方的数据包将在728.135到达对方, 数据包为-->seqnum = 0, acknum = -1,checksum = 62455,payload = TTUUUUUUUUUUUUUUUUU
+[Receiver] Packet refused (Packet Corrupt): : seqnum = 5, acknum = -1, checksum = 4293, RRRRRRRRRRRRRRRRRRR
+[Receiver] Resend lastAckPkt (Default Behavior): : seqnum = -1, acknum = 4, checksum = 12847, ....................
+******模拟网络环境******：接收方的确认包将在707.945到达对方, 确认包为-->seqnum = -1, acknum = 4,checksum = 12847,payload = .....................
+[Sender] ackPkt refused (duplicate ACK): : seqnum = -1, acknum = 4, checksum = 12847, ....................
+[Receiver] Packet refused (Packet Corrupt): : seqnum = 6, acknum = -1, checksum = 1283, 
+SSSSSSSSSSSSSSSSSS
+[Receiver] Resend lastAckPkt (Default Behavior): : seqnum = -1, acknum = 4, checksum = 12847, ....................
+******模拟网络环境******：接收方的确认包将在719.925到达对方, 确认包为-->seqnum = -1, acknum = 4,checksum = 12847,payload = .....................
+******模拟网络环境******：关闭定时器, 当前时间 = 713.185, 定时器报文序号 = 5
+******模拟网络环境******：启动定时器, 当前时间 = 713.185, 定时器报文序号 = 5, 定时器Timeout时间 = 733.185
+[Sender] Time out, resend packet: : seqnum = 5, acknum = -1, checksum = 4293, 
+RRRRRRRRRRRRRRRRRRR
+******模拟网络环境******：发送方的数据包将在735.355到达对方, 数据包为-->seqnum = 5, acknum = -1,checksum = 4293,payload = RRRRRRRRRRRRRRRRRRRR
+[Sender] Time out, resend packet: : seqnum = 6, acknum = -1, checksum = 1283, 
+SSSSSSSSSSSSSSSSSS
+******模拟网络环境******：发送方的数据包将在742.085到达对方, 数据包为-->seqnum = 6, acknum = -1,checksum = 1283,payload = SSSSSSSSSSSSSSSSSSS
+[Sender] Time out, resend packet: : seqnum = 7, acknum = -1, checksum = 65525, S
+TTTTTTTTTTTTTTTTT
+******模拟网络环境******：网络层数据包损坏,损坏的包为-->seqnum = 7, acknum = -999999,checksum = 65525,payload = STTTTTTTTTTTTTTTTTT
+******模拟网络环境******：发送方的数据包将在749.735到达对方, 数据包为-->seqnum = 7, acknum = -999999,checksum = 65525,payload = STTTTTTTTTTTTTTTTTT
+[Sender] Time out, resend packet: : seqnum = 0, acknum = -1, checksum = 62455, TT
+UUUUUUUUUUUUUUUU
+******模拟网络环境******：发送方的数据包将在755.165到达对方, 数据包为-->seqnum = 0, acknum = -1,checksum = 62455,payload = TTUUUUUUUUUUUUUUUUU
+[Receiver] Packet refused (Packet Corrupt): : seqnum = 7, acknum = -1, checksum = 65525, T
+TTTTTTTTTTTTTTTTT
+[Receiver] Resend lastAckPkt (Default Behavior): : seqnum = -1, acknum = 4, checksum = 12847, ....................
+******模拟网络环境******：接收方的确认包将在724.305到达对方, 确认包为-->seqnum = -1, acknum = 4,checksum = 12847,payload = .....................
+[Sender] ackPkt refused (duplicate ACK): : seqnum = -1, acknum = 4, checksum = 12847, ....................
+[Sender] ackPkt refused (duplicate ACK): : seqnum = -1, acknum = 4, checksum = 12847, ....................
+[Receiver] Packet Refused (Packet Duplicated): : seqnum = 0, acknum = -1, checksum = 62455, TT
+UUUUUUUUUUUUUUUU
+[Receiver] Resend lastAckPkt (Default Behavior): : seqnum = -1, acknum = 4, checksum = 12847, ....................
+******模拟网络环境******：接收方的确认包将在733.275到达对方, 确认包为-->seqnum = -1, acknum = 4,checksum = 12847,payload = .....................
+******模拟网络环境******：关闭定时器, 当前时间 = 733.185, 定时器报文序号 = 5
+******模拟网络环境******：启动定时器, 当前时间 = 733.185, 定时器报文序号 = 5, 定时器Timeout时间 = 753.185
+[Sender] Time out, resend packet: : seqnum = 5, acknum = -1, checksum = 4293, 
+RRRRRRRRRRRRRRRRRRR
+******模拟网络环境******：发送方的数据包将在765.505到达对方, 数据包为-->seqnum = 5, acknum = -1,checksum = 4293,payload = RRRRRRRRRRRRRRRRRRRR
+[Sender] Time out, resend packet: : seqnum = 6, acknum = -1, checksum = 1283, 
+SSSSSSSSSSSSSSSSSS
+******模拟网络环境******：发送方的数据包将在774.875到达对方, 数据包为-->seqnum = 6, acknum = -1,checksum = 1283,payload = SSSSSSSSSSSSSSSSSSS
+[Sender] Time out, resend packet: : seqnum = 7, acknum = -1, checksum = 65525, S
+TTTTTTTTTTTTTTTTT
+******模拟网络环境******：发送方发送的数据包丢失：seqnum = 7, acknum = -1,checksum = 65525,payload = STTTTTTTTTTTTTTTTTT
+[Sender] Time out, resend packet: : seqnum = 0, acknum = -1, checksum = 62455, TT
+UUUUUUUUUUUUUUUU
+******模拟网络环境******：发送方的数据包将在781.145到达对方, 数据包为-->seqnum = 0, acknum = -1,checksum = 62455,payload = TTUUUUUUUUUUUUUUUUU
+[Sender] ackPkt refused (duplicate ACK): : seqnum = -1, acknum = 4, checksum = 12847, ....................
+******模拟网络环境******：向上递交给应用层数据：RRRRRRRRRRRRRRRRRRRR
+[Receiver] Acknowledge receive: : seqnum = -1, acknum = 5, checksum = 12846, ....................
+******模拟网络环境******：接收方的确认包将在738.015到达对方, 确认包为-->seqnum = -1, acknum = 5,checksum = 12846,payload = .....................
+[Sender] Receive ackPkt successfully: : seqnum = -1, acknum = 5, checksum = 12846, ....................
+******模拟网络环境******：关闭定时器, 当前时间 = 738.015, 定时器报文序号 = 5
+******模拟网络环境******：启动定时器, 当前时间 = 738.015, 定时器报文序号 = 6, 定时器Timeout时间 = 758.015
+******模拟网络环境******：向上递交给应用层数据：SSSSSSSSSSSSSSSSSSS
+[Receiver] Acknowledge receive: : seqnum = -1, acknum = 6, checksum = 12845, ....................
+******模拟网络环境******：网络层数据包损坏,损坏的包为-->seqnum = -1, acknum = 6,checksum = 12845,payload = /....................
+******模拟网络环境******：接收方的确认包将在743.885到达对方, 确认包为-->seqnum = -1, acknum = 6,checksum = 12845,payload = /....................
+[Sender] ackPkt refused (packet corrupt): : seqnum = -1, acknum = 6, checksum = 12845, /...................
+[Receiver] Packet refused (Packet Corrupt): : seqnum = 7, acknum = -999999, checksum = 65525, S
+TTTTTTTTTTTTTTTTT
+[Receiver] Resend lastAckPkt (Default Behavior): : seqnum = -1, acknum = 6, checksum = 12845, ....................
+******模拟网络环境******：接收方的确认包将在751.225到达对方, 确认包为-->seqnum = -1, acknum = 6,checksum = 12845,payload = .....................
+[Sender] Receive ackPkt successfully: : seqnum = -1, acknum = 6, checksum = 12845, ....................
+******模拟网络环境******：关闭定时器, 当前时间 = 751.225, 定时器报文序号 = 6
+******模拟网络环境******：启动定时器, 当前时间 = 751.225, 定时器报文序号 = 7, 定时器Timeout时间 = 771.225
+[Receiver] Packet Refused (Packet Duplicated): : seqnum = 0, acknum = -1, checksum = 62455, TT
+UUUUUUUUUUUUUUUU
+[Receiver] Resend lastAckPkt (Default Behavior): : seqnum = -1, acknum = 6, checksum = 12845, ....................
+******模拟网络环境******：接收方的确认包将在760.725到达对方, 确认包为-->seqnum = -1, acknum = 6,checksum = 12845,payload = .....................
+[Sender] ackPkt refused (duplicate ACK): : seqnum = -1, acknum = 6, checksum = 12845, ....................
+[Receiver] Packet Refused (Packet Duplicated): : seqnum = 5, acknum = -1, checksum = 4293, 
+RRRRRRRRRRRRRRRRRRR
+[Receiver] Resend lastAckPkt (Default Behavior): : seqnum = -1, acknum = 6, checksum = 12845, ....................
+******模拟网络环境******：接收方的确认包将在773.975到达对方, 确认包为-->seqnum = -1, acknum = 6,checksum = 12845,payload = .....................
+******模拟网络环境******：关闭定时器, 当前时间 = 771.225, 定时器报文序号 = 7
+******模拟网络环境******：启动定时器, 当前时间 = 771.225, 定时器报文序号 = 7, 定时器Timeout时间 = 791.225
+[Sender] Time out, resend packet: : seqnum = 7, acknum = -1, checksum = 65525, S
+TTTTTTTTTTTTTTTTT
+******模拟网络环境******：网络层数据包损坏,损坏的包为-->seqnum = 7, acknum = -1,checksum = 65525,payload = TTTTTTTTTTTTTTTTTTT
+******模拟网络环境******：发送方的数据包将在790.815到达对方, 数据包为-->seqnum = 7, acknum = -1,checksum = 65525,payload = TTTTTTTTTTTTTTTTTTT
+[Sender] Time out, resend packet: : seqnum = 0, acknum = -1, checksum = 62455, TT
+UUUUUUUUUUUUUUUU
+******模拟网络环境******：发送方的数据包将在796.255到达对方, 数据包为-->seqnum = 0, acknum = -1,checksum = 62455,payload = TTUUUUUUUUUUUUUUUUU
+[Sender] ackPkt refused (duplicate ACK): : seqnum = -1, acknum = 6, checksum = 12845, ....................
+[Receiver] Packet Refused (Packet Duplicated): : seqnum = 6, acknum = -1, checksum = 1283, 
+SSSSSSSSSSSSSSSSSS
+[Receiver] Resend lastAckPkt (Default Behavior): : seqnum = -1, acknum = 6, checksum = 12845, ....................
+******模拟网络环境******：接收方的确认包将在783.975到达对方, 确认包为-->seqnum = -1, acknum = 6,checksum = 12845,payload = .....................
+[Receiver] Packet Refused (Packet Duplicated): : seqnum = 0, acknum = -1, checksum = 62455, TT
+UUUUUUUUUUUUUUUU
+[Receiver] Resend lastAckPkt (Default Behavior): : seqnum = -1, acknum = 6, checksum = 12845, ....................
+******模拟网络环境******：接收方的确认包将在785.235到达对方, 确认包为-->seqnum = -1, acknum = 6,checksum = 12845,payload = .....................
+[Sender] ackPkt refused (duplicate ACK): : seqnum = -1, acknum = 6, checksum = 12845, ....................
+[Sender] ackPkt refused (duplicate ACK): : seqnum = -1, acknum = 6, checksum = 12845, ....................
+[Receiver] Packet refused (Packet Corrupt): : seqnum = 7, acknum = -1, checksum = 65525, T
+TTTTTTTTTTTTTTTTT
+[Receiver] Resend lastAckPkt (Default Behavior): : seqnum = -1, acknum = 6, checksum = 12845, ....................
+******模拟网络环境******：接收方的确认包将在793.875到达对方, 确认包为-->seqnum = -1, acknum = 6,checksum = 12845,payload = .....................
+******模拟网络环境******：关闭定时器, 当前时间 = 791.225, 定时器报文序号 = 7
+******模拟网络环境******：启动定时器, 当前时间 = 791.225, 定时器报文序号 = 7, 定时器Timeout时间 = 811.225
+[Sender] Time out, resend packet: : seqnum = 7, acknum = -1, checksum = 65525, S
+TTTTTTTTTTTTTTTTT
+******模拟网络环境******：发送方的数据包将在800.865到达对方, 数据包为-->seqnum = 7, acknum = -1,checksum = 65525,payload = STTTTTTTTTTTTTTTTTT
+[Sender] Time out, resend packet: : seqnum = 0, acknum = -1, checksum = 62455, TT
+UUUUUUUUUUUUUUUU
+******模拟网络环境******：发送方的数据包将在806.275到达对方, 数据包为-->seqnum = 0, acknum = -1,checksum = 62455,payload = TTUUUUUUUUUUUUUUUUU
+[Sender] ackPkt refused (duplicate ACK): : seqnum = -1, acknum = 6, checksum = 12845, ....................
+[Receiver] Packet Refused (Packet Duplicated): : seqnum = 0, acknum = -1, checksum = 62455, TT
+UUUUUUUUUUUUUUUU
+[Receiver] Resend lastAckPkt (Default Behavior): : seqnum = -1, acknum = 6, checksum = 12845, ....................
+******模拟网络环境******：接收方的确认包将在805.675到达对方, 确认包为-->seqnum = -1, acknum = 6,checksum = 12845,payload = .....................
+******模拟网络环境******：向上递交给应用层数据：STTTTTTTTTTTTTTTTTT
+[Receiver] Acknowledge receive: : seqnum = -1, acknum = 7, checksum = 12844, ....................
+******模拟网络环境******：接收方的确认包将在813.175到达对方, 确认包为-->seqnum = -1, acknum = 7,checksum = 12844,payload = .....................
+[Sender] ackPkt refused (duplicate ACK): : seqnum = -1, acknum = 6, checksum = 12845, ....................
+******模拟网络环境******：向上递交给应用层数据：TTUUUUUUUUUUUUUUUUU
+[Receiver] Acknowledge receive: : seqnum = -1, acknum = 0, checksum = 12851, ....................
+******模拟网络环境******：接收方的确认包将在821.675到达对方, 确认包为-->seqnum = -1, acknum = 0,checksum = 12851,payload = .....................
+******模拟网络环境******：关闭定时器, 当前时间 = 811.225, 定时器报文序号 = 7
+******模拟网络环境******：启动定时器, 当前时间 = 811.225, 定时器报文序号 = 7, 定时器Timeout时间 = 831.225
+[Sender] Time out, resend packet: : seqnum = 7, acknum = -1, checksum = 65525, S
+TTTTTTTTTTTTTTTTT
+******模拟网络环境******：发送方的数据包将在819.945到达对方, 数据包为-->seqnum = 7, acknum = -1,checksum = 65525,payload = STTTTTTTTTTTTTTTTTT
+[Sender] Time out, resend packet: : seqnum = 0, acknum = -1, checksum = 62455, TT
+UUUUUUUUUUUUUUUU
+******模拟网络环境******：发送方的数据包将在824.515到达对方, 数据包为-->seqnum = 0, acknum = -1,checksum = 62455,payload = TTUUUUUUUUUUUUUUUUU
+[Sender] Receive ackPkt successfully: : seqnum = -1, acknum = 7, checksum = 12844, ....................
+******模拟网络环境******：关闭定时器, 当前时间 = 813.175, 定时器报文序号 = 7
+******模拟网络环境******：启动定时器, 当前时间 = 813.175, 定时器报文序号 = 0, 定时器Timeout时间 = 833.175
+[Receiver] Packet Refused (Packet Duplicated): : seqnum = 7, acknum = -1, checksum = 65525, S
+TTTTTTTTTTTTTTTTT
+[Receiver] Resend lastAckPkt (Default Behavior): : seqnum = -1, acknum = 0, checksum = 12851, ....................
+******模拟网络环境******：接收方的确认包将在830.065到达对方, 确认包为-->seqnum = -1, acknum = 0,checksum = 12851,payload = .....................
+[Sender] Receive ackPkt successfully: : seqnum = -1, acknum = 0, checksum = 12851, ....................
+******模拟网络环境******：关闭定时器, 当前时间 = 821.675, 定时器报文序号 = 0
+[Receiver] Packet Refused (Packet Duplicated): : seqnum = 0, acknum = -1, checksum = 62455, TT
+UUUUUUUUUUUUUUUU
+[Receiver] Resend lastAckPkt (Default Behavior): : seqnum = -1, acknum = 0, checksum = 12851, ....................
+******模拟网络环境******：接收方的确认包将在836.435到达对方, 确认包为-->seqnum = -1, acknum = 0,checksum = 12851,payload = .....................
+[Sender] ackPkt refused (duplicate ACK): : seqnum = -1, acknum = 0, checksum = 12851, ....................
+[Sender] ackPkt refused (duplicate ACK): : seqnum = -1, acknum = 0, checksum = 12851, ....................
+[Sender] Send packet: : seqnum = 1, acknum = -1, checksum = 61162, UUU
+VVVVVVVVVVVVVVV
+******模拟网络环境******：启动定时器, 当前时间 = 836.778, 定时器报文序号 = 1, 定时器Timeout时间 = 856.778
+******模拟网络环境******：发送方发送的数据包丢失：seqnum = 1, acknum = -1,checksum = 61162,payload = UUUVVVVVVVVVVVVVVVV
+[Sender] Send packet: : seqnum = 2, acknum = -1, checksum = 58084, VVVV
+WWWWWWWWWWWWWW
+******模拟网络环境******：发送方的数据包将在844.753到达对方, 数据包为-->seqnum = 2, acknum = -1,checksum = 58084,payload = VVVVWWWWWWWWWWWWWWW
+[Sender] Send packet: : seqnum = 3, acknum = -1, checksum = 56791, WWWWW
+XXXXXXXXXXXXX
+******模拟网络环境******：发送方发送的数据包丢失：seqnum = 3, acknum = -1,checksum = 56791,payload = WWWWWXXXXXXXXXXXXXX
+[Sender] Send packet: : seqnum = 4, acknum = -1, checksum = 53713, XXXXXX
+YYYYYYYYYYYY
+******模拟网络环境******：发送方的数据包将在854.483到达对方, 数据包为-->seqnum = 4, acknum = -1,checksum = 53713,payload = XXXXXXYYYYYYYYYYYYY
+[Receiver] Packet Refused (Packet Duplicated): : seqnum = 2, acknum = -1, checksum = 58084, VVVV
+WWWWWWWWWWWWWW
+[Receiver] Resend lastAckPkt (Default Behavior): : seqnum = -1, acknum = 0, checksum = 12851, ....................
+******模拟网络环境******：接收方发送的确认包丢失：seqnum = -1, acknum = 0,checksum = 12851,payload = .....................
+[Receiver] Packet Refused (Packet Duplicated): : seqnum = 4, acknum = -1, checksum = 53713, XXXXXX
+YYYYYYYYYYYY
+[Receiver] Resend lastAckPkt (Default Behavior): : seqnum = -1, acknum = 0, checksum = 12851, ....................
+******模拟网络环境******：接收方的确认包将在858.623到达对方, 确认包为-->seqnum = -1, acknum = 0,checksum = 12851,payload = .....................
+******模拟网络环境******：关闭定时器, 当前时间 = 856.778, 定时器报文序号 = 1
+******模拟网络环境******：启动定时器, 当前时间 = 856.778, 定时器报文序号 = 1, 定时器Timeout时间 = 876.778
+[Sender] Time out, resend packet: : seqnum = 1, acknum = -1, checksum = 61162, UUU
+VVVVVVVVVVVVVVV
+******模拟网络环境******：发送方的数据包将在865.577到达对方, 数据包为-->seqnum = 1, acknum = -1,checksum = 61162,payload = UUUVVVVVVVVVVVVVVVV
+[Sender] Time out, resend packet: : seqnum = 2, acknum = -1, checksum = 58084, VVVV
+WWWWWWWWWWWWWW
+******模拟网络环境******：发送方的数据包将在871.227到达对方, 数据包为-->seqnum = 2, acknum = -1,checksum = 58084,payload = VVVVWWWWWWWWWWWWWWW
+[Sender] Time out, resend packet: : seqnum = 3, acknum = -1, checksum = 56791, WWWWW
+XXXXXXXXXXXXX
+******模拟网络环境******：发送方的数据包将在878.178到达对方, 数据包为-->seqnum = 3, acknum = -1,checksum = 56791,payload = WWWWWXXXXXXXXXXXXXX
+[Sender] Time out, resend packet: : seqnum = 4, acknum = -1, checksum = 53713, XXXXXX
+YYYYYYYYYYYY
+******模拟网络环境******：发送方的数据包将在888.058到达对方, 数据包为-->seqnum = 4, acknum = -1,checksum = 53713,payload = XXXXXXYYYYYYYYYYYYY
+[Sender] ackPkt refused (duplicate ACK): : seqnum = -1, acknum = 0, checksum = 12851, ....................
+******模拟网络环境******：向上递交给应用层数据：UUUVVVVVVVVVVVVVVVV
+[Receiver] Acknowledge receive: : seqnum = -1, acknum = 1, checksum = 12850, ....................
+******模拟网络环境******：接收方的确认包将在868.648到达对方, 确认包为-->seqnum = -1, acknum = 1,checksum = 12850,payload = .....................
+[Sender] Receive ackPkt successfully: : seqnum = -1, acknum = 1, checksum = 12850, ....................
+******模拟网络环境******：关闭定时器, 当前时间 = 868.648, 定时器报文序号 = 1
+******模拟网络环境******：启动定时器, 当前时间 = 868.648, 定时器报文序号 = 2, 定时器Timeout时间 = 888.648
+******模拟网络环境******：向上递交给应用层数据：VVVVWWWWWWWWWWWWWWW
+[Receiver] Acknowledge receive: : seqnum = -1, acknum = 2, checksum = 12849, ....................
+******模拟网络环境******：接收方的确认包将在873.067到达对方, 确认包为-->seqnum = -1, acknum = 2,checksum = 12849,payload = .....................
+[Sender] Receive ackPkt successfully: : seqnum = -1, acknum = 2, checksum = 12849, ....................
+******模拟网络环境******：关闭定时器, 当前时间 = 873.067, 定时器报文序号 = 2
+******模拟网络环境******：启动定时器, 当前时间 = 873.067, 定时器报文序号 = 3, 定时器Timeout时间 = 893.067
+******模拟网络环境******：向上递交给应用层数据：WWWWWXXXXXXXXXXXXXX
+[Receiver] Acknowledge receive: : seqnum = -1, acknum = 3, checksum = 12848, ....................
+******模拟网络环境******：接收方的确认包将在882.408到达对方, 确认包为-->seqnum = -1, acknum = 3,checksum = 12848,payload = .....................
+[Sender] Receive ackPkt successfully: : seqnum = -1, acknum = 3, checksum = 12848, ....................
+******模拟网络环境******：关闭定时器, 当前时间 = 882.408, 定时器报文序号 = 3
+******模拟网络环境******：启动定时器, 当前时间 = 882.408, 定时器报文序号 = 4, 定时器Timeout时间 = 902.408
+******模拟网络环境******：向上递交给应用层数据：XXXXXXYYYYYYYYYYYYY
+[Receiver] Acknowledge receive: : seqnum = -1, acknum = 4, checksum = 12847, ....................
+******模拟网络环境******：接收方的确认包将在892.597到达对方, 确认包为-->seqnum = -1, acknum = 4,checksum = 12847,payload = .....................
+[Sender] Receive ackPkt successfully: : seqnum = -1, acknum = 4, checksum = 12847, ....................
+******模拟网络环境******：关闭定时器, 当前时间 = 892.597, 定时器报文序号 = 4
+[Sender] Send packet: : seqnum = 5, acknum = -1, checksum = 52420, YYYYYYY
+ZZZZZZZZZZZ
+******模拟网络环境******：启动定时器, 当前时间 = 893.05, 定时器报文序号 = 5, 定时器Timeout时间 = 913.05
+******模拟网络环境******：发送方的数据包将在902.03到达对方, 数据包为-->seqnum = 5, acknum = -1,checksum = 52420,payload = YYYYYYYZZZZZZZZZZZZ
+[Sender] Send packet: : seqnum = 6, acknum = -1, checksum = 17217, ZZZZZZZZ
+AAAAAAAAAA
+******模拟网络环境******：网络层数据包损坏,损坏的包为-->seqnum = 6, acknum = -1,checksum = 17217,payload = [ZZZZZZZAAAAAAAAAAA
+******模拟网络环境******：发送方的数据包将在911.35到达对方, 数据包为-->seqnum = 6, acknum = -1,checksum = 17217,payload = [ZZZZZZZAAAAAAAAAAA
+[Sender] Send packet: : seqnum = 7, acknum = -1, checksum = 42652, AAAAAAAAA
+BBBBBBBBB
+******模拟网络环境******：发送方的数据包将在921.75到达对方, 数据包为-->seqnum = 7, acknum = -1,checksum = 42652,payload = AAAAAAAAABBBBBBBBBB
+[Sender] Send packet: : seqnum = 0, acknum = -1, checksum = 39582, BBBBBBBBBB
+CCCCCCCC
+******模拟网络环境******：发送方的数据包将在924.13到达对方, 数据包为-->seqnum = 0, acknum = -1,checksum = 39582,payload = BBBBBBBBBBCCCCCCCCC
+******模拟网络环境******：向上递交给应用层数据：YYYYYYYZZZZZZZZZZZZ
+[Receiver] Acknowledge receive: : seqnum = -1, acknum = 5, checksum = 12846, ....................
+******模拟网络环境******：接收方发送的确认包丢失：seqnum = -1, acknum = 5,checksum = 12846,payload = .....................
+[Receiver] Packet refused (Packet Corrupt): : seqnum = 6, acknum = -1, checksum = 17217, [ZZZZZZZ
+AAAAAAAAAA
+[Receiver] Resend lastAckPkt (Default Behavior): : seqnum = -1, acknum = 5, checksum = 12846, ....................
+******模拟网络环境******：接收方发送的确认包丢失：seqnum = -1, acknum = 5,checksum = 12846,payload = .....................
+******模拟网络环境******：关闭定时器, 当前时间 = 913.05, 定时器报文序号 = 5
+******模拟网络环境******：启动定时器, 当前时间 = 913.05, 定时器报文序号 = 5, 定时器Timeout时间 = 933.05
+[Sender] Time out, resend packet: : seqnum = 5, acknum = -1, checksum = 52420, YYYYYYY
+ZZZZZZZZZZZ
+******模拟网络环境******：发送方的数据包将在927.15到达对方, 数据包为-->seqnum = 5, acknum = -1,checksum = 52420,payload = YYYYYYYZZZZZZZZZZZZ
+[Sender] Time out, resend packet: : seqnum = 6, acknum = -1, checksum = 17217, ZZZZZZZZ
+AAAAAAAAAA
+******模拟网络环境******：发送方的数据包将在936.49到达对方, 数据包为-->seqnum = 6, acknum = -1,checksum = 17217,payload = ZZZZZZZZAAAAAAAAAAA
+[Sender] Time out, resend packet: : seqnum = 7, acknum = -1, checksum = 42652, AAAAAAAAA
+BBBBBBBBB
+******模拟网络环境******：发送方发送的数据包丢失：seqnum = 7, acknum = -1,checksum = 42652,payload = AAAAAAAAABBBBBBBBBB
+[Sender] Time out, resend packet: : seqnum = 0, acknum = -1, checksum = 39582, BBBBBBBBBB
+CCCCCCCC
+******模拟网络环境******：发送方的数据包将在944.23到达对方, 数据包为-->seqnum = 0, acknum = -1,checksum = 39582,payload = BBBBBBBBBBCCCCCCCCC
+[Receiver] Packet Refused (Packet Duplicated): : seqnum = 7, acknum = -1, checksum = 42652, AAAAAAAAA
+BBBBBBBBB
+[Receiver] Resend lastAckPkt (Default Behavior): : seqnum = -1, acknum = 5, checksum = 12846, ....................
+******模拟网络环境******：接收方的确认包将在927.9到达对方, 确认包为-->seqnum = -1, acknum = 5,checksum = 12846,payload = .....................
+[Receiver] Packet Refused (Packet Duplicated): : seqnum = 0, acknum = -1, checksum = 39582, BBBBBBBBBB
+CCCCCCCC
+[Receiver] Resend lastAckPkt (Default Behavior): : seqnum = -1, acknum = 5, checksum = 12846, ....................
+******模拟网络环境******：接收方的确认包将在929.63到达对方, 确认包为-->seqnum = -1, acknum = 5,checksum = 12846,payload = .....................
+[Receiver] Packet Refused (Packet Duplicated): : seqnum = 5, acknum = -1, checksum = 52420, YYYYYYY
+ZZZZZZZZZZZ
+[Receiver] Resend lastAckPkt (Default Behavior): : seqnum = -1, acknum = 5, checksum = 12846, ....................
+******模拟网络环境******：接收方发送的确认包丢失：seqnum = -1, acknum = 5,checksum = 12846,payload = .....................
+[Sender] Receive ackPkt successfully: : seqnum = -1, acknum = 5, checksum = 12846, ....................
+******模拟网络环境******：关闭定时器, 当前时间 = 927.9, 定时器报文序号 = 5
+******模拟网络环境******：启动定时器, 当前时间 = 927.9, 定时器报文序号 = 6, 定时器Timeout时间 = 947.9
+[Sender] ackPkt refused (duplicate ACK): : seqnum = -1, acknum = 5, checksum = 12846, ....................
+******模拟网络环境******：向上递交给应用层数据：ZZZZZZZZAAAAAAAAAAA
+[Receiver] Acknowledge receive: : seqnum = -1, acknum = 6, checksum = 12845, ....................
+******模拟网络环境******：接收方的确认包将在942.62到达对方, 确认包为-->seqnum = -1, acknum = 6,checksum = 12845,payload = .....................
+[Sender] Receive ackPkt successfully: : seqnum = -1, acknum = 6, checksum = 12845, ....................
+******模拟网络环境******：关闭定时器, 当前时间 = 942.62, 定时器报文序号 = 6
+******模拟网络环境******：启动定时器, 当前时间 = 942.62, 定时器报文序号 = 7, 定时器Timeout时间 = 962.62
+[Receiver] Packet Refused (Packet Duplicated): : seqnum = 0, acknum = -1, checksum = 39582, BBBBBBBBBB
+CCCCCCCC
+[Receiver] Resend lastAckPkt (Default Behavior): : seqnum = -1, acknum = 6, checksum = 12845, ....................
+******模拟网络环境******：接收方发送的确认包丢失：seqnum = -1, acknum = 6,checksum = 12845,payload = .....................
+******模拟网络环境******：关闭定时器, 当前时间 = 962.62, 定时器报文序号 = 7
+******模拟网络环境******：启动定时器, 当前时间 = 962.62, 定时器报文序号 = 7, 定时器Timeout时间 = 982.62
+[Sender] Time out, resend packet: : seqnum = 7, acknum = -1, checksum = 42652, AAAAAAAAA
+BBBBBBBBB
+******模拟网络环境******：发送方的数据包将在965.93到达对方, 数据包为-->seqnum = 7, acknum = -1,checksum = 42652,payload = AAAAAAAAABBBBBBBBBB
+[Sender] Time out, resend packet: : seqnum = 0, acknum = -1, checksum = 39582, BBBBBBBBBB
+CCCCCCCC
+******模拟网络环境******：发送方的数据包将在967.02到达对方, 数据包为-->seqnum = 0, acknum = -1,checksum = 39582,payload = BBBBBBBBBBCCCCCCCCC
+******模拟网络环境******：向上递交给应用层数据：AAAAAAAAABBBBBBBBBB
+[Receiver] Acknowledge receive: : seqnum = -1, acknum = 7, checksum = 12844, ....................
+******模拟网络环境******：接收方的确认包将在967.21到达对方, 确认包为-->seqnum = -1, acknum = 7,checksum = 12844,payload = .....................
+******模拟网络环境******：向上递交给应用层数据：BBBBBBBBBBCCCCCCCCC
+[Receiver] Acknowledge receive: : seqnum = -1, acknum = 0, checksum = 12851, ....................
+******模拟网络环境******：接收方的确认包将在974.26到达对方, 确认包为-->seqnum = -1, acknum = 0,checksum = 12851,payload = .....................
+[Sender] Receive ackPkt successfully: : seqnum = -1, acknum = 7, checksum = 12844, ....................
+******模拟网络环境******：关闭定时器, 当前时间 = 967.21, 定时器报文序号 = 7
+******模拟网络环境******：启动定时器, 当前时间 = 967.21, 定时器报文序号 = 0, 定时器Timeout时间 = 987.21
+[Sender] Receive ackPkt successfully: : seqnum = -1, acknum = 0, checksum = 12851, ....................
+******模拟网络环境******：关闭定时器, 当前时间 = 974.26, 定时器报文序号 = 0
+[Sender] Send packet: : seqnum = 1, acknum = -1, checksum = 38289, CCCCCCCCCCC
+DDDDDDD
+******模拟网络环境******：启动定时器, 当前时间 = 974.277, 定时器报文序号 = 1, 定时器Timeout时间 = 994.277
+******模拟网络环境******：发送方的数据包将在978.017到达对方, 数据包为-->seqnum = 1, acknum = -1,checksum = 38289,payload = CCCCCCCCCCCDDDDDDDD
+[Sender] Send packet: : seqnum = 2, acknum = -1, checksum = 35211, DDDDDDDDDDDD
+EEEEEE
+******模拟网络环境******：发送方的数据包将在980.427到达对方, 数据包为-->seqnum = 2, acknum = -1,checksum = 35211,payload = DDDDDDDDDDDDEEEEEEE
+[Sender] Send packet: : seqnum = 3, acknum = -1, checksum = 33918, EEEEEEEEEEEEE
+FFFFF
+******模拟网络环境******：发送方的数据包将在983.577到达对方, 数据包为-->seqnum = 3, acknum = -1,checksum = 33918,payload = EEEEEEEEEEEEEFFFFFF
+[Sender] Send packet: : seqnum = 4, acknum = -1, checksum = 30840, FFFFFFFFFFFFFF
+GGGG
+******模拟网络环境******：发送方的数据包将在988.957到达对方, 数据包为-->seqnum = 4, acknum = -1,checksum = 30840,payload = FFFFFFFFFFFFFFGGGGG
+******模拟网络环境******：向上递交给应用层数据：CCCCCCCCCCCDDDDDDDD
+[Receiver] Acknowledge receive: : seqnum = -1, acknum = 1, checksum = 12850, ....................
+******模拟网络环境******：网络层数据包损坏,损坏的包为-->seqnum = -1, acknum = -999999,checksum = 12850,payload = .....................
+******模拟网络环境******：接收方的确认包将在981.427到达对方, 确认包为-->seqnum = -1, acknum = -999999,checksum = 12850,payload = .....................
+******模拟网络环境******：向上递交给应用层数据：DDDDDDDDDDDDEEEEEEE
+[Receiver] Acknowledge receive: : seqnum = -1, acknum = 2, checksum = 12849, ....................
+******模拟网络环境******：接收方的确认包将在984.937到达对方, 确认包为-->seqnum = -1, acknum = 2,checksum = 12849,payload = .....................
+[Sender] ackPkt refused (packet corrupt): : seqnum = -1, acknum = -999999, checksum = 12850, ....................
+******模拟网络环境******：向上递交给应用层数据：EEEEEEEEEEEEEFFFFFF
+[Receiver] Acknowledge receive: : seqnum = -1, acknum = 3, checksum = 12848, ....................
+******模拟网络环境******：接收方的确认包将在992.247到达对方, 确认包为-->seqnum = -1, acknum = 3,checksum = 12848,payload = .....................
+[Sender] Receive ackPkt successfully: : seqnum = -1, acknum = 2, checksum = 12849, ....................
+******模拟网络环境******：关闭定时器, 当前时间 = 984.937, 定时器报文序号 = 1
+******模拟网络环境******：启动定时器, 当前时间 = 984.937, 定时器报文序号 = 3, 定时器Timeout时间 = 1004.94
+******模拟网络环境******：向上递交给应用层数据：FFFFFFFFFFFFFFGGGGG
+[Receiver] Acknowledge receive: : seqnum = -1, acknum = 4, checksum = 12847, ....................
+******模拟网络环境******：接收方的确认包将在995.607到达对方, 确认包为-->seqnum = -1, acknum = 4,checksum = 12847,payload = .....................
+[Sender] Receive ackPkt successfully: : seqnum = -1, acknum = 3, checksum = 12848, ....................
+******模拟网络环境******：关闭定时器, 当前时间 = 992.247, 定时器报文序号 = 3
+******模拟网络环境******：启动定时器, 当前时间 = 992.247, 定时器报文序号 = 4, 定时器Timeout时间 = 1012.25
+[Sender] Receive ackPkt successfully: : seqnum = -1, acknum = 4, checksum = 12847, ....................
+******模拟网络环境******：关闭定时器, 当前时间 = 995.607, 定时器报文序号 = 4
+[Sender] Send packet: : seqnum = 5, acknum = -1, checksum = 29547, GGGGGGGGGGGGGGG
+HHH
+******模拟网络环境******：启动定时器, 当前时间 = 996.002, 定时器报文序号 = 5, 定时器Timeout时间 = 1016
+******模拟网络环境******：发送方的数据包将在1004.92到达对方, 数据包为-->seqnum = 5, acknum = -1,checksum = 29547,payload = GGGGGGGGGGGGGGGHHHH
+[Sender] Send packet: : seqnum = 6, acknum = -1, checksum = 26469, HHHHHHHHHHHHHHHH
+II
+******模拟网络环境******：网络层数据包损坏,损坏的包为-->seqnum = -999999, acknum = -1,checksum = 26469,payload = HHHHHHHHHHHHHHHHIII
+******模拟网络环境******：发送方的数据包将在1015.4到达对方, 数据包为-->seqnum = -999999, acknum = -1,checksum = 26469,payload = HHHHHHHHHHHHHHHHIII
+[Sender] Send packet: : seqnum = 7, acknum = -1, checksum = 25176, IIIIIIIIIIIIIIIII
+J
+******模拟网络环境******：发送方的数据包将在1025.5到达对方, 数据包为-->seqnum = 7, acknum = -1,checksum = 25176,payload = IIIIIIIIIIIIIIIIIJJ
+[Sender] Send packet: : seqnum = 0, acknum = -1, checksum = 22106, JJJJJJJJJJJJJJJJJJ
+
+******模拟网络环境******：发送方的数据包将在1035.71到达对方, 数据包为-->seqnum = 0, acknum = -1,checksum = 22106,payload = JJJJJJJJJJJJJJJJJJK
+******模拟网络环境******：向上递交给应用层数据：GGGGGGGGGGGGGGGHHHH
+[Receiver] Acknowledge receive: : seqnum = -1, acknum = 5, checksum = 12846, ....................
+******模拟网络环境******：接收方的确认包将在1007.54到达对方, 确认包为-->seqnum = -1, acknum = 5,checksum = 12846,payload = .....................
+[Sender] Receive ackPkt successfully: : seqnum = -1, acknum = 5, checksum = 12846, ....................
+******模拟网络环境******：关闭定时器, 当前时间 = 1007.54, 定时器报文序号 = 5
+******模拟网络环境******：启动定时器, 当前时间 = 1007.54, 定时器报文序号 = 6, 定时器Timeout时间 = 1027.54
+[Receiver] Packet refused (Packet Corrupt): : seqnum = -999999, acknum = -1, checksum = 26469, HHHHHHHHHHHHHHHH
+II
+[Receiver] Resend lastAckPkt (Default Behavior): : seqnum = -1, acknum = 5, checksum = 12846, ....................
+******模拟网络环境******：接收方的确认包将在1024.05到达对方, 确认包为-->seqnum = -1, acknum = 5,checksum = 12846,payload = .....................
+[Sender] ackPkt refused (duplicate ACK): : seqnum = -1, acknum = 5, checksum = 12846, ....................
+[Receiver] Packet Refused (Packet Duplicated): : seqnum = 7, acknum = -1, checksum = 25176, IIIIIIIIIIIIIIIII
+J
+[Receiver] Resend lastAckPkt (Default Behavior): : seqnum = -1, acknum = 5, checksum = 12846, ....................
+******模拟网络环境******：接收方的确认包将在1030.46到达对方, 确认包为-->seqnum = -1, acknum = 5,checksum = 12846,payload = .....................
+******模拟网络环境******：关闭定时器, 当前时间 = 1027.54, 定时器报文序号 = 6
+******模拟网络环境******：启动定时器, 当前时间 = 1027.54, 定时器报文序号 = 6, 定时器Timeout时间 = 1047.54
+[Sender] Time out, resend packet: : seqnum = 6, acknum = -1, checksum = 26469, HHHHHHHHHHHHHHHH
+II
+******模拟网络环境******：发送方的数据包将在1043.04到达对方, 数据包为-->seqnum = 6, acknum = -1,checksum = 26469,payload = HHHHHHHHHHHHHHHHIII
+[Sender] Time out, resend packet: : seqnum = 7, acknum = -1, checksum = 25176, IIIIIIIIIIIIIIIII
+J
+******模拟网络环境******：发送方的数据包将在1048.93到达对方, 数据包为-->seqnum = 7, acknum = -1,checksum = 25176,payload = IIIIIIIIIIIIIIIIIJJ
+[Sender] Time out, resend packet: : seqnum = 0, acknum = -1, checksum = 22106, JJJJJJJJJJJJJJJJJJ
+
+******模拟网络环境******：发送方的数据包将在1059.42到达对方, 数据包为-->seqnum = 0, acknum = -1,checksum = 22106,payload = JJJJJJJJJJJJJJJJJJK
+[Sender] ackPkt refused (duplicate ACK): : seqnum = -1, acknum = 5, checksum = 12846, ....................
+[Receiver] Packet Refused (Packet Duplicated): : seqnum = 0, acknum = -1, checksum = 22106, JJJJJJJJJJJJJJJJJJ
+
+[Receiver] Resend lastAckPkt (Default Behavior): : seqnum = -1, acknum = 5, checksum = 12846, ....................
+******模拟网络环境******：接收方的确认包将在1037.29到达对方, 确认包为-->seqnum = -1, acknum = 5,checksum = 12846,payload = .....................
+[Sender] ackPkt refused (duplicate ACK): : seqnum = -1, acknum = 5, checksum = 12846, ....................
+******模拟网络环境******：向上递交给应用层数据：HHHHHHHHHHHHHHHHIII
+[Receiver] Acknowledge receive: : seqnum = -1, acknum = 6, checksum = 12845, ....................
+******模拟网络环境******：接收方的确认包将在1044.9到达对方, 确认包为-->seqnum = -1, acknum = 6,checksum = 12845,payload = .....................
+[Sender] Receive ackPkt successfully: : seqnum = -1, acknum = 6, checksum = 12845, ....................
+******模拟网络环境******：关闭定时器, 当前时间 = 1044.9, 定时器报文序号 = 6
+******模拟网络环境******：启动定时器, 当前时间 = 1044.9, 定时器报文序号 = 7, 定时器Timeout时间 = 1064.9
+******模拟网络环境******：向上递交给应用层数据：IIIIIIIIIIIIIIIIIJJ
+[Receiver] Acknowledge receive: : seqnum = -1, acknum = 7, checksum = 12844, ....................
+******模拟网络环境******：接收方的确认包将在1058.1到达对方, 确认包为-->seqnum = -1, acknum = 7,checksum = 12844,payload = .....................
+[Sender] Receive ackPkt successfully: : seqnum = -1, acknum = 7, checksum = 12844, ....................
+******模拟网络环境******：关闭定时器, 当前时间 = 1058.1, 定时器报文序号 = 7
+******模拟网络环境******：启动定时器, 当前时间 = 1058.1, 定时器报文序号 = 0, 定时器Timeout时间 = 1078.1
+******模拟网络环境******：向上递交给应用层数据：JJJJJJJJJJJJJJJJJJK
+[Receiver] Acknowledge receive: : seqnum = -1, acknum = 0, checksum = 12851, ....................
+******模拟网络环境******：接收方的确认包将在1064.54到达对方, 确认包为-->seqnum = -1, acknum = 0,checksum = 12851,payload = .....................
+[Sender] Receive ackPkt successfully: : seqnum = -1, acknum = 0, checksum = 12851, ....................
+******模拟网络环境******：关闭定时器, 当前时间 = 1064.54, 定时器报文序号 = 0
+[Sender] Send packet: : seqnum = 1, acknum = -1, checksum = 3917, KKKKKKKKKKKKKKKKKKK
+******模拟网络环境******：启动定时器, 当前时间 = 1065.23, 定时器报文序号 = 1, 定时器Timeout时间 = 1085.23
+******模拟网络环境******：发送方发送的数据包丢失：seqnum = 1, acknum = -1,checksum = 3917,payload = KKKKKKKKKKKKKKKKKKK
+[Sender] Send packet: : seqnum = 2, acknum = -1, checksum = 1284, LLLLLLLLLLLLLLLLLLLL
+******模拟网络环境******：发送方的数据包将在1072.63到达对方, 数据包为-->seqnum = 2, acknum = -1,checksum = 1284,payload = LLLLLLLLLLLLLLLLLLLL
+[Sender] Send packet: : seqnum = 3, acknum = -1, checksum = 15865, 
+MMMMMMMMMMMMMMMMMMM
+******模拟网络环境******：发送方的数据包将在1081.5到达对方, 数据包为-->seqnum = 3, acknum = -1,checksum = 15865,payload = MMMMMMMMMMMMMMMMMMMM
+[Sender] Send packet: : seqnum = 4, acknum = -1, checksum = 12850, 
+NNNNNNNNNNNNNNNNNN
+******模拟网络环境******：发送方的数据包将在1091.98到达对方, 数据包为-->seqnum = 4, acknum = -1,checksum = 12850,payload = NNNNNNNNNNNNNNNNNNN
+[Receiver] Packet Refused (Packet Duplicated): : seqnum = 2, acknum = -1, checksum = 1284, LLLLLLLLLLLLLLLLLLLL
+[Receiver] Resend lastAckPkt (Default Behavior): : seqnum = -1, acknum = 0, checksum = 12851, ....................
+******模拟网络环境******：接收方的确认包将在1083.41到达对方, 确认包为-->seqnum = -1, acknum = 0,checksum = 12851,payload = .....................
+[Receiver] Packet Refused (Packet Duplicated): : seqnum = 3, acknum = -1, checksum = 15865, 
+MMMMMMMMMMMMMMMMMMM
+[Receiver] Resend lastAckPkt (Default Behavior): : seqnum = -1, acknum = 0, checksum = 12851, ....................
+******模拟网络环境******：接收方的确认包将在1092.42到达对方, 确认包为-->seqnum = -1, acknum = 0,checksum = 12851,payload = .....................
+[Sender] ackPkt refused (duplicate ACK): : seqnum = -1, acknum = 0, checksum = 12851, ....................
+******模拟网络环境******：关闭定时器, 当前时间 = 1085.23, 定时器报文序号 = 1
+******模拟网络环境******：启动定时器, 当前时间 = 1085.23, 定时器报文序号 = 1, 定时器Timeout时间 = 1105.23
+[Sender] Time out, resend packet: : seqnum = 1, acknum = -1, checksum = 3917, KKKKKKKKKKKKKKKKKKK
+******模拟网络环境******：发送方的数据包将在1102.08到达对方, 数据包为-->seqnum = 1, acknum = -1,checksum = 3917,payload = KKKKKKKKKKKKKKKKKKK
+[Sender] Time out, resend packet: : seqnum = 2, acknum = -1, checksum = 1284, LLLLLLLLLLLLLLLLLLLL
+******模拟网络环境******：发送方的数据包将在1108.28到达对方, 数据包为-->seqnum = 2, acknum = -1,checksum = 1284,payload = LLLLLLLLLLLLLLLLLLLL
+[Sender] Time out, resend packet: : seqnum = 3, acknum = -1, checksum = 15865, 
+MMMMMMMMMMMMMMMMMMM
+******模拟网络环境******：发送方的数据包将在1113.5到达对方, 数据包为-->seqnum = 3, acknum = -1,checksum = 15865,payload = MMMMMMMMMMMMMMMMMMMM
+[Sender] Time out, resend packet: : seqnum = 4, acknum = -1, checksum = 12850, 
+NNNNNNNNNNNNNNNNNN
+******模拟网络环境******：发送方的数据包将在1120.19到达对方, 数据包为-->seqnum = 4, acknum = -1,checksum = 12850,payload = NNNNNNNNNNNNNNNNNNN
+[Receiver] Packet Refused (Packet Duplicated): : seqnum = 4, acknum = -1, checksum = 12850, 
+NNNNNNNNNNNNNNNNNN
+[Receiver] Resend lastAckPkt (Default Behavior): : seqnum = -1, acknum = 0, checksum = 12851, ....................
+******模拟网络环境******：网络层数据包损坏,损坏的包为-->seqnum = -1, acknum = 0,checksum = 12851,payload = /....................
+******模拟网络环境******：接收方的确认包将在1101.97到达对方, 确认包为-->seqnum = -1, acknum = 0,checksum = 12851,payload = /....................
+[Sender] ackPkt refused (duplicate ACK): : seqnum = -1, acknum = 0, checksum = 12851, ....................
+[Sender] ackPkt refused (packet corrupt): : seqnum = -1, acknum = 0, checksum = 12851, /...................
+******模拟网络环境******：向上递交给应用层数据：KKKKKKKKKKKKKKKKKKK
+[Receiver] Acknowledge receive: : seqnum = -1, acknum = 1, checksum = 12850, ....................
+******模拟网络环境******：接收方发送的确认包丢失：seqnum = -1, acknum = 1,checksum = 12850,payload = .....................
+******模拟网络环境******：关闭定时器, 当前时间 = 1105.23, 定时器报文序号 = 1
+******模拟网络环境******：启动定时器, 当前时间 = 1105.23, 定时器报文序号 = 1, 定时器Timeout时间 = 1125.23
+[Sender] Time out, resend packet: : seqnum = 1, acknum = -1, checksum = 3917, KKKKKKKKKKKKKKKKKKK
+******模拟网络环境******：发送方发送的数据包丢失：seqnum = 1, acknum = -1,checksum = 3917,payload = KKKKKKKKKKKKKKKKKKK
+[Sender] Time out, resend packet: : seqnum = 2, acknum = -1, checksum = 1284, LLLLLLLLLLLLLLLLLLLL
+******模拟网络环境******：发送方的数据包将在1124.52到达对方, 数据包为-->seqnum = 2, acknum = -1,checksum = 1284,payload = LLLLLLLLLLLLLLLLLLLL
+[Sender] Time out, resend packet: : seqnum = 3, acknum = -1, checksum = 15865, 
+MMMMMMMMMMMMMMMMMMM
+******模拟网络环境******：网络层数据包损坏,损坏的包为-->seqnum = 3, acknum = -1,checksum = 15865,payload = MMMMMMMMMMMMMMMMMMMM
+******模拟网络环境******：发送方的数据包将在1133.91到达对方, 数据包为-->seqnum = 3, acknum = -1,checksum = 15865,payload = MMMMMMMMMMMMMMMMMMMM
+[Sender] Time out, resend packet: : seqnum = 4, acknum = -1, checksum = 12850, 
+NNNNNNNNNNNNNNNNNN
+******模拟网络环境******：发送方的数据包将在1143.09到达对方, 数据包为-->seqnum = 4, acknum = -1,checksum = 12850,payload = NNNNNNNNNNNNNNNNNNN
+******模拟网络环境******：向上递交给应用层数据：LLLLLLLLLLLLLLLLLLLL
+[Receiver] Acknowledge receive: : seqnum = -1, acknum = 2, checksum = 12849, ....................
+******模拟网络环境******：接收方的确认包将在1118.99到达对方, 确认包为-->seqnum = -1, acknum = 2,checksum = 12849,payload = .....................
+******模拟网络环境******：向上递交给应用层数据：MMMMMMMMMMMMMMMMMMMM
+[Receiver] Acknowledge receive: : seqnum = -1, acknum = 3, checksum = 12848, ....................
+******模拟网络环境******：接收方的确认包将在1128.81到达对方, 确认包为-->seqnum = -1, acknum = 3,checksum = 12848,payload = .....................
+[Sender] Receive ackPkt successfully: : seqnum = -1, acknum = 2, checksum = 12849, ....................
+******模拟网络环境******：关闭定时器, 当前时间 = 1118.99, 定时器报文序号 = 1
+******模拟网络环境******：启动定时器, 当前时间 = 1118.99, 定时器报文序号 = 3, 定时器Timeout时间 = 1138.99
+******模拟网络环境******：向上递交给应用层数据：NNNNNNNNNNNNNNNNNNN
+[Receiver] Acknowledge receive: : seqnum = -1, acknum = 4, checksum = 12847, ....................
+******模拟网络环境******：接收方的确认包将在1133.83到达对方, 确认包为-->seqnum = -1, acknum = 4,checksum = 12847,payload = .....................
+[Receiver] Packet Refused (Packet Duplicated): : seqnum = 2, acknum = -1, checksum = 1284, LLLLLLLLLLLLLLLLLLLL
+[Receiver] Resend lastAckPkt (Default Behavior): : seqnum = -1, acknum = 4, checksum = 12847, ....................
+******模拟网络环境******：接收方的确认包将在1136.59到达对方, 确认包为-->seqnum = -1, acknum = 4,checksum = 12847,payload = .....................
+[Sender] Receive ackPkt successfully: : seqnum = -1, acknum = 3, checksum = 12848, ....................
+******模拟网络环境******：关闭定时器, 当前时间 = 1128.81, 定时器报文序号 = 3
+******模拟网络环境******：启动定时器, 当前时间 = 1128.81, 定时器报文序号 = 4, 定时器Timeout时间 = 1148.81
+[Sender] Receive ackPkt successfully: : seqnum = -1, acknum = 4, checksum = 12847, ....................
+******模拟网络环境******：关闭定时器, 当前时间 = 1133.83, 定时器报文序号 = 4
+[Receiver] Packet refused (Packet Corrupt): : seqnum = 3, acknum = -1, checksum = 15865, MMMMMMMMMMMMMMMMMMM
+[Receiver] Resend lastAckPkt (Default Behavior): : seqnum = -1, acknum = 4, checksum = 12847, ....................
+******模拟网络环境******：接收方的确认包将在1145.04到达对方, 确认包为-->seqnum = -1, acknum = 4,checksum = 12847,payload = .....................
+[Sender] ackPkt refused (duplicate ACK): : seqnum = -1, acknum = 4, checksum = 12847, ....................
+[Receiver] Packet Refused (Packet Duplicated): : seqnum = 4, acknum = -1, checksum = 12850, 
+NNNNNNNNNNNNNNNNNN
+[Receiver] Resend lastAckPkt (Default Behavior): : seqnum = -1, acknum = 4, checksum = 12847, ....................
+******模拟网络环境******：接收方的确认包将在1149.11到达对方, 确认包为-->seqnum = -1, acknum = 4,checksum = 12847,payload = .....................
+[Sender] ackPkt refused (duplicate ACK): : seqnum = -1, acknum = 4, checksum = 12847, ....................
+[Sender] ackPkt refused (duplicate ACK): : seqnum = -1, acknum = 4, checksum = 12847, ....................
+[Sender] Send packet: : seqnum = 5, acknum = -1, checksum = 11557, N
+OOOOOOOOOOOOOOOOO
+******模拟网络环境******：启动定时器, 当前时间 = 1149.38, 定时器报文序号 = 5, 定时器Timeout时间 = 1169.38
+******模拟网络环境******：发送方的数据包将在1158.7到达对方, 数据包为-->seqnum = 5, acknum = -1,checksum = 11557,payload = NOOOOOOOOOOOOOOOOOO
+[Sender] Send packet: : seqnum = 6, acknum = -1, checksum = 8479, OO
+PPPPPPPPPPPPPPPP
+******模拟网络环境******：网络层数据包损坏,损坏的包为-->seqnum = 6, acknum = -1,checksum = 8479,payload = POPPPPPPPPPPPPPPPPP
+******模拟网络环境******：发送方的数据包将在1166.62到达对方, 数据包为-->seqnum = 6, acknum = -1,checksum = 8479,payload = POPPPPPPPPPPPPPPPPP
+[Sender] Send packet: : seqnum = 7, acknum = -1, checksum = 7186, PPP
+QQQQQQQQQQQQQQQ
+******模拟网络环境******：网络层数据包损坏,损坏的包为-->seqnum = 7, acknum = -1,checksum = 7186,payload = QPPQQQQQQQQQQQQQQQQ
+******模拟网络环境******：发送方的数据包将在1169.04到达对方, 数据包为-->seqnum = 7, acknum = -1,checksum = 7186,payload = QPPQQQQQQQQQQQQQQQQ
+[Sender] Send packet: : seqnum = 0, acknum = -1, checksum = 4116, QQQQ
+RRRRRRRRRRRRRR
+******模拟网络环境******：发送方的数据包将在1170.28到达对方, 数据包为-->seqnum = 0, acknum = -1,checksum = 4116,payload = QQQQRRRRRRRRRRRRRRR
+******模拟网络环境******：向上递交给应用层数据：NOOOOOOOOOOOOOOOOOO
+[Receiver] Acknowledge receive: : seqnum = -1, acknum = 5, checksum = 12846, ....................
+******模拟网络环境******：接收方发送的确认包丢失：seqnum = -1, acknum = 5,checksum = 12846,payload = .....................
+[Receiver] Packet refused (Packet Corrupt): : seqnum = 6, acknum = -1, checksum = 8479, PO
+PPPPPPPPPPPPPPPP
+[Receiver] Resend lastAckPkt (Default Behavior): : seqnum = -1, acknum = 5, checksum = 12846, ....................
+******模拟网络环境******：接收方的确认包将在1177.22到达对方, 确认包为-->seqnum = -1, acknum = 5,checksum = 12846,payload = .....................
+[Receiver] Packet refused (Packet Corrupt): : seqnum = 7, acknum = -1, checksum = 7186, QPP
+QQQQQQQQQQQQQQQ
+[Receiver] Resend lastAckPkt (Default Behavior): : seqnum = -1, acknum = 5, checksum = 12846, ....................
+******模拟网络环境******：接收方的确认包将在1179.26到达对方, 确认包为-->seqnum = -1, acknum = 5,checksum = 12846,payload = .....................
+******模拟网络环境******：关闭定时器, 当前时间 = 1169.38, 定时器报文序号 = 5
+******模拟网络环境******：启动定时器, 当前时间 = 1169.38, 定时器报文序号 = 5, 定时器Timeout时间 = 1189.38
+[Sender] Time out, resend packet: : seqnum = 5, acknum = -1, checksum = 11557, N
+OOOOOOOOOOOOOOOOO
+******模拟网络环境******：网络层数据包损坏,损坏的包为-->seqnum = 5, acknum = -1,checksum = 11557,payload = OOOOOOOOOOOOOOOOOOO
+******模拟网络环境******：发送方的数据包将在1172.07到达对方, 数据包为-->seqnum = 5, acknum = -1,checksum = 11557,payload = OOOOOOOOOOOOOOOOOOO
+[Sender] Time out, resend packet: : seqnum = 6, acknum = -1, checksum = 8479, OO
+PPPPPPPPPPPPPPPP
+******模拟网络环境******：发送方的数据包将在1174.95到达对方, 数据包为-->seqnum = 6, acknum = -1,checksum = 8479,payload = OOPPPPPPPPPPPPPPPPP
+[Sender] Time out, resend packet: : seqnum = 7, acknum = -1, checksum = 7186, PPP
+QQQQQQQQQQQQQQQ
+******模拟网络环境******：发送方的数据包将在1185.94到达对方, 数据包为-->seqnum = 7, acknum = -1,checksum = 7186,payload = PPPQQQQQQQQQQQQQQQQ
+[Sender] Time out, resend packet: : seqnum = 0, acknum = -1, checksum = 4116, QQQQ
+RRRRRRRRRRRRRR
+******模拟网络环境******：发送方的数据包将在1188.77到达对方, 数据包为-->seqnum = 0, acknum = -1,checksum = 4116,payload = QQQQRRRRRRRRRRRRRRR
+[Receiver] Packet Refused (Packet Duplicated): : seqnum = 0, acknum = -1, checksum = 4116, QQQQ
+RRRRRRRRRRRRRR
+[Receiver] Resend lastAckPkt (Default Behavior): : seqnum = -1, acknum = 5, checksum = 12846, ....................
+******模拟网络环境******：接收方的确认包将在1182.23到达对方, 确认包为-->seqnum = -1, acknum = 5,checksum = 12846,payload = .....................
+[Receiver] Packet refused (Packet Corrupt): : seqnum = 5, acknum = -1, checksum = 11557, O
+OOOOOOOOOOOOOOOOO
+[Receiver] Resend lastAckPkt (Default Behavior): : seqnum = -1, acknum = 5, checksum = 12846, ....................
+******模拟网络环境******：接收方的确认包将在1185.32到达对方, 确认包为-->seqnum = -1, acknum = 5,checksum = 12846,payload = .....................
+******模拟网络环境******：向上递交给应用层数据：OOPPPPPPPPPPPPPPPPP
+[Receiver] Acknowledge receive: : seqnum = -1, acknum = 6, checksum = 12845, ....................
+******模拟网络环境******：接收方的确认包将在1187.22到达对方, 确认包为-->seqnum = -1, acknum = 6,checksum = 12845,payload = .....................
+[Sender] Receive ackPkt successfully: : seqnum = -1, acknum = 5, checksum = 12846, ....................
+******模拟网络环境******：关闭定时器, 当前时间 = 1177.22, 定时器报文序号 = 5
+******模拟网络环境******：启动定时器, 当前时间 = 1177.22, 定时器报文序号 = 6, 定时器Timeout时间 = 1197.22
+[Sender] ackPkt refused (duplicate ACK): : seqnum = -1, acknum = 5, checksum = 12846, ....................
+[Sender] ackPkt refused (duplicate ACK): : seqnum = -1, acknum = 5, checksum = 12846, ....................
+[Sender] ackPkt refused (duplicate ACK): : seqnum = -1, acknum = 5, checksum = 12846, ....................
+******模拟网络环境******：向上递交给应用层数据：PPPQQQQQQQQQQQQQQQQ
+[Receiver] Acknowledge receive: : seqnum = -1, acknum = 7, checksum = 12844, ....................
+******模拟网络环境******：接收方的确认包将在1192.69到达对方, 确认包为-->seqnum = -1, acknum = 7,checksum = 12844,payload = .....................
+[Sender] Receive ackPkt successfully: : seqnum = -1, acknum = 6, checksum = 12845, ....................
+******模拟网络环境******：关闭定时器, 当前时间 = 1187.22, 定时器报文序号 = 6
+******模拟网络环境******：启动定时器, 当前时间 = 1187.22, 定时器报文序号 = 7, 定时器Timeout时间 = 1207.22
+******模拟网络环境******：向上递交给应用层数据：QQQQRRRRRRRRRRRRRRR
+[Receiver] Acknowledge receive: : seqnum = -1, acknum = 0, checksum = 12851, ....................
+******模拟网络环境******：接收方发送的确认包丢失：seqnum = -1, acknum = 0,checksum = 12851,payload = .....................
+[Sender] Receive ackPkt successfully: : seqnum = -1, acknum = 7, checksum = 12844, ....................
+******模拟网络环境******：关闭定时器, 当前时间 = 1192.69, 定时器报文序号 = 7
+******模拟网络环境******：启动定时器, 当前时间 = 1192.69, 定时器报文序号 = 0, 定时器Timeout时间 = 1212.69
+******模拟网络环境******：关闭定时器, 当前时间 = 1212.69, 定时器报文序号 = 0
+******模拟网络环境******：启动定时器, 当前时间 = 1212.69, 定时器报文序号 = 0, 定时器Timeout时间 = 1232.69
+[Sender] Time out, resend packet: : seqnum = 0, acknum = -1, checksum = 4116, QQQQ
+RRRRRRRRRRRRRR
+******模拟网络环境******：发送方的数据包将在1223.66到达对方, 数据包为-->seqnum = 0, acknum = -1,checksum = 4116,payload = QQQQRRRRRRRRRRRRRRR
+[Receiver] Packet Refused (Packet Duplicated): : seqnum = 0, acknum = -1, checksum = 4116, QQQQ
+RRRRRRRRRRRRRR
+[Receiver] Resend lastAckPkt (Default Behavior): : seqnum = -1, acknum = 0, checksum = 12851, ....................
+******模拟网络环境******：接收方发送的确认包丢失：seqnum = -1, acknum = 0,checksum = 12851,payload = .....................
+******模拟网络环境******：关闭定时器, 当前时间 = 1232.69, 定时器报文序号 = 0
+******模拟网络环境******：启动定时器, 当前时间 = 1232.69, 定时器报文序号 = 0, 定时器Timeout时间 = 1252.69
+[Sender] Time out, resend packet: : seqnum = 0, acknum = -1, checksum = 4116, QQQQ
+RRRRRRRRRRRRRR
+******模拟网络环境******：发送方的数据包将在1235.02到达对方, 数据包为-->seqnum = 0, acknum = -1,checksum = 4116,payload = QQQQRRRRRRRRRRRRRRR
+[Receiver] Packet Refused (Packet Duplicated): : seqnum = 0, acknum = -1, checksum = 4116, QQQQ
+RRRRRRRRRRRRRR
+[Receiver] Resend lastAckPkt (Default Behavior): : seqnum = -1, acknum = 0, checksum = 12851, ....................
+******模拟网络环境******：接收方的确认包将在1244.47到达对方, 确认包为-->seqnum = -1, acknum = 0,checksum = 12851,payload = .....................
+[Sender] Receive ackPkt successfully: : seqnum = -1, acknum = 0, checksum = 12851, ....................
+******模拟网络环境******：关闭定时器, 当前时间 = 1244.47, 定时器报文序号 = 0
+[Sender] Send packet: : seqnum = 1, acknum = -1, checksum = 2823, RRRRR
+SSSSSSSSSSSSS
+******模拟网络环境******：启动定时器, 当前时间 = 1245.21, 定时器报文序号 = 1, 定时器Timeout时间 = 1265.21
+******模拟网络环境******：发送方的数据包将在1247.57到达对方, 数据包为-->seqnum = 1, acknum = -1,checksum = 2823,payload = RRRRRSSSSSSSSSSSSSS
+[Sender] Send packet: : seqnum = 2, acknum = -1, checksum = 65280, SSSSSS
+TTTTTTTTTTTT
+******模拟网络环境******：发送方的数据包将在1255.43到达对方, 数据包为-->seqnum = 2, acknum = -1,checksum = 65280,payload = SSSSSSTTTTTTTTTTTTT
+[Sender] Send packet: : seqnum = 3, acknum = -1, checksum = 63987, TTTTTTT
+UUUUUUUUUUU
+******模拟网络环境******：发送方的数据包将在1258.9到达对方, 数据包为-->seqnum = 3, acknum = -1,checksum = 63987,payload = TTTTTTTUUUUUUUUUUUU
+[Sender] Send packet: : seqnum = 4, acknum = -1, checksum = 60909, UUUUUUUU
+VVVVVVVVVV
+******模拟网络环境******：网络层数据包损坏,损坏的包为-->seqnum = 4, acknum = -1,checksum = 60909,payload = VUUUUUUUVVVVVVVVVVV
+******模拟网络环境******：发送方的数据包将在1263.33到达对方, 数据包为-->seqnum = 4, acknum = -1,checksum = 60909,payload = VUUUUUUUVVVVVVVVVVV
+******模拟网络环境******：向上递交给应用层数据：RRRRRSSSSSSSSSSSSSS
+[Receiver] Acknowledge receive: : seqnum = -1, acknum = 1, checksum = 12850, ....................
+******模拟网络环境******：接收方发送的确认包丢失：seqnum = -1, acknum = 1,checksum = 12850,payload = .....................
+******模拟网络环境******：向上递交给应用层数据：SSSSSSTTTTTTTTTTTTT
+[Receiver] Acknowledge receive: : seqnum = -1, acknum = 2, checksum = 12849, ....................
+******模拟网络环境******：接收方的确认包将在1257.7到达对方, 确认包为-->seqnum = -1, acknum = 2,checksum = 12849,payload = .....................
+[Sender] Receive ackPkt successfully: : seqnum = -1, acknum = 2, checksum = 12849, ....................
+******模拟网络环境******：关闭定时器, 当前时间 = 1257.7, 定时器报文序号 = 1
+******模拟网络环境******：启动定时器, 当前时间 = 1257.7, 定时器报文序号 = 3, 定时器Timeout时间 = 1277.7
+******模拟网络环境******：向上递交给应用层数据：TTTTTTTUUUUUUUUUUUU
+[Receiver] Acknowledge receive: : seqnum = -1, acknum = 3, checksum = 12848, ....................
+******模拟网络环境******：接收方的确认包将在1261.97到达对方, 确认包为-->seqnum = -1, acknum = 3,checksum = 12848,payload = .....................
+[Sender] Receive ackPkt successfully: : seqnum = -1, acknum = 3, checksum = 12848, ....................
+******模拟网络环境******：关闭定时器, 当前时间 = 1261.97, 定时器报文序号 = 3
+******模拟网络环境******：启动定时器, 当前时间 = 1261.97, 定时器报文序号 = 4, 定时器Timeout时间 = 1281.97
+[Receiver] Packet refused (Packet Corrupt): : seqnum = 4, acknum = -1, checksum = 60909, VUUUUUUU
+VVVVVVVVVV
+[Receiver] Resend lastAckPkt (Default Behavior): : seqnum = -1, acknum = 3, checksum = 12848, ....................
+******模拟网络环境******：接收方发送的确认包丢失：seqnum = -1, acknum = 3,checksum = 12848,payload = .....................
+******模拟网络环境******：关闭定时器, 当前时间 = 1281.97, 定时器报文序号 = 4
+******模拟网络环境******：启动定时器, 当前时间 = 1281.97, 定时器报文序号 = 4, 定时器Timeout时间 = 1301.97
+[Sender] Time out, resend packet: : seqnum = 4, acknum = -1, checksum = 60909, UUUUUUUU
+VVVVVVVVVV
+******模拟网络环境******：发送方发送的数据包丢失：seqnum = 4, acknum = -1,checksum = 60909,payload = UUUUUUUUVVVVVVVVVVV
+******模拟网络环境******：关闭定时器, 当前时间 = 1301.97, 定时器报文序号 = 4
+******模拟网络环境******：启动定时器, 当前时间 = 1301.97, 定时器报文序号 = 4, 定时器Timeout时间 = 1321.97
+[Sender] Time out, resend packet: : seqnum = 4, acknum = -1, checksum = 60909, UUUUUUUU
+VVVVVVVVVV
+******模拟网络环境******：发送方的数据包将在1307.69到达对方, 数据包为-->seqnum = 4, acknum = -1,checksum = 60909,payload = UUUUUUUUVVVVVVVVVVV
+******模拟网络环境******：向上递交给应用层数据：UUUUUUUUVVVVVVVVVVV
+[Receiver] Acknowledge receive: : seqnum = -1, acknum = 4, checksum = 12847, ....................
+******模拟网络环境******：接收方的确认包将在1312.95到达对方, 确认包为-->seqnum = -1, acknum = 4,checksum = 12847,payload = .....................
+[Sender] Receive ackPkt successfully: : seqnum = -1, acknum = 4, checksum = 12847, ....................
+******模拟网络环境******：关闭定时器, 当前时间 = 1312.95, 定时器报文序号 = 4
+[Sender] Send packet: : seqnum = 5, acknum = -1, checksum = 59616, VVVVVVVVV
+WWWWWWWWW
+******模拟网络环境******：启动定时器, 当前时间 = 1313.04, 定时器报文序号 = 5, 定时器Timeout时间 = 1333.04
+******模拟网络环境******：发送方的数据包将在1317.02到达对方, 数据包为-->seqnum = 5, acknum = -1,checksum = 59616,payload = VVVVVVVVVWWWWWWWWWW
+[Sender] Send packet: : seqnum = 6, acknum = -1, checksum = 56538, WWWWWWWWWW
+XXXXXXXX
+******模拟网络环境******：发送方的数据包将在1324.87到达对方, 数据包为-->seqnum = 6, acknum = -1,checksum = 56538,payload = WWWWWWWWWWXXXXXXXXX
+[Sender] Send packet: : seqnum = 7, acknum = -1, checksum = 55245, XXXXXXXXXXX
+YYYYYYY
+******模拟网络环境******：发送方的数据包将在1326.31到达对方, 数据包为-->seqnum = 7, acknum = -1,checksum = 55245,payload = XXXXXXXXXXXYYYYYYYY
+[Sender] Send packet: : seqnum = 0, acknum = -1, checksum = 52175, YYYYYYYYYYYY
+ZZZZZZ
+******模拟网络环境******：发送方的数据包将在1331.28到达对方, 数据包为-->seqnum = 0, acknum = -1,checksum = 52175,payload = YYYYYYYYYYYYZZZZZZZ
+******模拟网络环境******：向上递交给应用层数据：VVVVVVVVVWWWWWWWWWW
+[Receiver] Acknowledge receive: : seqnum = -1, acknum = 5, checksum = 12846, ....................
+******模拟网络环境******：接收方的确认包将在1323.26到达对方, 确认包为-->seqnum = -1, acknum = 5,checksum = 12846,payload = .....................
+[Sender] Receive ackPkt successfully: : seqnum = -1, acknum = 5, checksum = 12846, ....................
+******模拟网络环境******：关闭定时器, 当前时间 = 1323.26, 定时器报文序号 = 5
+******模拟网络环境******：启动定时器, 当前时间 = 1323.26, 定时器报文序号 = 6, 定时器Timeout时间 = 1343.26
+******模拟网络环境******：向上递交给应用层数据：WWWWWWWWWWXXXXXXXXX
+[Receiver] Acknowledge receive: : seqnum = -1, acknum = 6, checksum = 12845, ....................
+******模拟网络环境******：接收方的确认包将在1333.19到达对方, 确认包为-->seqnum = -1, acknum = 6,checksum = 12845,payload = .....................
+******模拟网络环境******：向上递交给应用层数据：XXXXXXXXXXXYYYYYYYY
+[Receiver] Acknowledge receive: : seqnum = -1, acknum = 7, checksum = 12844, ....................
+******模拟网络环境******：接收方的确认包将在1338.43到达对方, 确认包为-->seqnum = -1, acknum = 7,checksum = 12844,payload = .....................
+******模拟网络环境******：向上递交给应用层数据：YYYYYYYYYYYYZZZZZZZ
+[Receiver] Acknowledge receive: : seqnum = -1, acknum = 0, checksum = 12851, ....................
+******模拟网络环境******：接收方的确认包将在1349.05到达对方, 确认包为-->seqnum = -1, acknum = 0,checksum = 12851,payload = .....................
+[Sender] Receive ackPkt successfully: : seqnum = -1, acknum = 6, checksum = 12845, ....................
+******模拟网络环境******：关闭定时器, 当前时间 = 1333.19, 定时器报文序号 = 6
+******模拟网络环境******：启动定时器, 当前时间 = 1333.19, 定时器报文序号 = 7, 定时器Timeout时间 = 1353.19
+[Sender] Receive ackPkt successfully: : seqnum = -1, acknum = 7, checksum = 12844, ....................
+******模拟网络环境******：关闭定时器, 当前时间 = 1338.43, 定时器报文序号 = 7
+******模拟网络环境******：启动定时器, 当前时间 = 1338.43, 定时器报文序号 = 0, 定时器Timeout时间 = 1358.43
+[Sender] Receive ackPkt successfully: : seqnum = -1, acknum = 0, checksum = 12851, ....................
+******模拟网络环境******：关闭定时器, 当前时间 = 1349.05, 定时器报文序号 = 0
+[Sender] Send packet: : seqnum = 1, acknum = -1, checksum = 64272, ZZZZZZZZZZZZZ
+AAAAA
+******模拟网络环境******：启动定时器, 当前时间 = 1349.12, 定时器报文序号 = 1, 定时器Timeout时间 = 1369.12
+******模拟网络环境******：发送方的数据包将在1359.91到达对方, 数据包为-->seqnum = 1, acknum = -1,checksum = 64272,payload = ZZZZZZZZZZZZZAAAAAA
+[Sender] Send packet: : seqnum = 2, acknum = -1, checksum = 42407, AAAAAAAAAAAAAA
+BBBB
+******模拟网络环境******：发送方的数据包将在1363.28到达对方, 数据包为-->seqnum = 2, acknum = -1,checksum = 42407,payload = AAAAAAAAAAAAAABBBBB
+[Sender] Send packet: : seqnum = 3, acknum = -1, checksum = 41114, BBBBBBBBBBBBBBB
+CCC
+******模拟网络环境******：发送方的数据包将在1371.71到达对方, 数据包为-->seqnum = 3, acknum = -1,checksum = 41114,payload = BBBBBBBBBBBBBBBCCCC
+[Sender] Send packet: : seqnum = 4, acknum = -1, checksum = 38036, CCCCCCCCCCCCCCCC
+DD
+******模拟网络环境******：发送方发送的数据包丢失：seqnum = 4, acknum = -1,checksum = 38036,payload = CCCCCCCCCCCCCCCCDDD
+******模拟网络环境******：向上递交给应用层数据：ZZZZZZZZZZZZZAAAAAA
+[Receiver] Acknowledge receive: : seqnum = -1, acknum = 1, checksum = 12850, ....................
+******模拟网络环境******：接收方的确认包将在1370.59到达对方, 确认包为-->seqnum = -1, acknum = 1,checksum = 12850,payload = .....................
+******模拟网络环境******：向上递交给应用层数据：AAAAAAAAAAAAAABBBBB
+[Receiver] Acknowledge receive: : seqnum = -1, acknum = 2, checksum = 12849, ....................
+******模拟网络环境******：接收方的确认包将在1381.21到达对方, 确认包为-->seqnum = -1, acknum = 2,checksum = 12849,payload = .....................
+******模拟网络环境******：关闭定时器, 当前时间 = 1369.12, 定时器报文序号 = 1
+******模拟网络环境******：启动定时器, 当前时间 = 1369.12, 定时器报文序号 = 1, 定时器Timeout时间 = 1389.12
+[Sender] Time out, resend packet: : seqnum = 1, acknum = -1, checksum = 64272, ZZZZZZZZZZZZZ
+AAAAA
+******模拟网络环境******：发送方的数据包将在1379.51到达对方, 数据包为-->seqnum = 1, acknum = -1,checksum = 64272,payload = ZZZZZZZZZZZZZAAAAAA
+[Sender] Time out, resend packet: : seqnum = 2, acknum = -1, checksum = 42407, AAAAAAAAAAAAAA
+BBBB
+******模拟网络环境******：发送方的数据包将在1388.59到达对方, 数据包为-->seqnum = 2, acknum = -1,checksum = 42407,payload = AAAAAAAAAAAAAABBBBB
+[Sender] Time out, resend packet: : seqnum = 3, acknum = -1, checksum = 41114, BBBBBBBBBBBBBBB
+CCC
+******模拟网络环境******：发送方的数据包将在1393.67到达对方, 数据包为-->seqnum = 3, acknum = -1,checksum = 41114,payload = BBBBBBBBBBBBBBBCCCC
+[Sender] Time out, resend packet: : seqnum = 4, acknum = -1, checksum = 38036, CCCCCCCCCCCCCCCC
+DD
+******模拟网络环境******：发送方的数据包将在1402.54到达对方, 数据包为-->seqnum = 4, acknum = -1,checksum = 38036,payload = CCCCCCCCCCCCCCCCDDD
+[Sender] Receive ackPkt successfully: : seqnum = -1, acknum = 1, checksum = 12850, ....................
+******模拟网络环境******：关闭定时器, 当前时间 = 1370.59, 定时器报文序号 = 1
+******模拟网络环境******：启动定时器, 当前时间 = 1370.59, 定时器报文序号 = 2, 定时器Timeout时间 = 1390.59
+******模拟网络环境******：向上递交给应用层数据：BBBBBBBBBBBBBBBCCCC
+[Receiver] Acknowledge receive: : seqnum = -1, acknum = 3, checksum = 12848, ....................
+******模拟网络环境******：接收方发送的确认包丢失：seqnum = -1, acknum = 3,checksum = 12848,payload = .....................
+[Receiver] Packet Refused (Packet Duplicated): : seqnum = 1, acknum = -1, checksum = 64272, ZZZZZZZZZZZZZ
+AAAAA
+[Receiver] Resend lastAckPkt (Default Behavior): : seqnum = -1, acknum = 3, checksum = 12848, ....................
+******模拟网络环境******：接收方的确认包将在1388.1到达对方, 确认包为-->seqnum = -1, acknum = 3,checksum = 12848,payload = .....................
+[Sender] Receive ackPkt successfully: : seqnum = -1, acknum = 2, checksum = 12849, ....................
+******模拟网络环境******：关闭定时器, 当前时间 = 1381.21, 定时器报文序号 = 2
+******模拟网络环境******：启动定时器, 当前时间 = 1381.21, 定时器报文序号 = 3, 定时器Timeout时间 = 1401.21
+[Sender] Receive ackPkt successfully: : seqnum = -1, acknum = 3, checksum = 12848, ....................
+******模拟网络环境******：关闭定时器, 当前时间 = 1388.1, 定时器报文序号 = 3
+******模拟网络环境******：启动定时器, 当前时间 = 1388.1, 定时器报文序号 = 4, 定时器Timeout时间 = 1408.1
+[Receiver] Packet Refused (Packet Duplicated): : seqnum = 2, acknum = -1, checksum = 42407, AAAAAAAAAAAAAA
+BBBB
+[Receiver] Resend lastAckPkt (Default Behavior): : seqnum = -1, acknum = 3, checksum = 12848, ....................
+******模拟网络环境******：接收方的确认包将在1396.72到达对方, 确认包为-->seqnum = -1, acknum = 3,checksum = 12848,payload = .....................
+[Receiver] Packet Refused (Packet Duplicated): : seqnum = 3, acknum = -1, checksum = 41114, BBBBBBBBBBBBBBB
+CCC
+[Receiver] Resend lastAckPkt (Default Behavior): : seqnum = -1, acknum = 3, checksum = 12848, ....................
+******模拟网络环境******：接收方发送的确认包丢失：seqnum = -1, acknum = 3,checksum = 12848,payload = .....................
+[Sender] ackPkt refused (duplicate ACK): : seqnum = -1, acknum = 3, checksum = 12848, ....................
+******模拟网络环境******：向上递交给应用层数据：CCCCCCCCCCCCCCCCDDD
+[Receiver] Acknowledge receive: : seqnum = -1, acknum = 4, checksum = 12847, ....................
+******模拟网络环境******：接收方的确认包将在1404.95到达对方, 确认包为-->seqnum = -1, acknum = 4,checksum = 12847,payload = .....................
+[Sender] Receive ackPkt successfully: : seqnum = -1, acknum = 4, checksum = 12847, ....................
+******模拟网络环境******：关闭定时器, 当前时间 = 1404.95, 定时器报文序号 = 4
+[Sender] Send packet: : seqnum = 5, acknum = -1, checksum = 36743, DDDDDDDDDDDDDDDDD
+E
+******模拟网络环境******：启动定时器, 当前时间 = 1406.19, 定时器报文序号 = 5, 定时器Timeout时间 = 1426.19
+******模拟网络环境******：发送方的数据包将在1415.96到达对方, 数据包为-->seqnum = 5, acknum = -1,checksum = 36743,payload = DDDDDDDDDDDDDDDDDEE
+[Sender] Send packet: : seqnum = 6, acknum = -1, checksum = 33665, EEEEEEEEEEEEEEEEEE
+
+******模拟网络环境******：发送方的数据包将在1426.05到达对方, 数据包为-->seqnum = 6, acknum = -1,checksum = 33665,payload = EEEEEEEEEEEEEEEEEEF
+[Sender] Send packet: : seqnum = 7, acknum = -1, checksum = 16756, FFFFFFFFFFFFFFFFFFF
+******模拟网络环境******：发送方的数据包将在1434.23到达对方, 数据包为-->seqnum = 7, acknum = -1,checksum = 16756,payload = FFFFFFFFFFFFFFFFFFF
+[Sender] Send packet: : seqnum = 0, acknum = -1, checksum = 14136, GGGGGGGGGGGGGGGGGGGG
+******模拟网络环境******：发送方的数据包将在1440.01到达对方, 数据包为-->seqnum = 0, acknum = -1,checksum = 14136,payload = GGGGGGGGGGGGGGGGGGGG
+******模拟网络环境******：向上递交给应用层数据：DDDDDDDDDDDDDDDDDEE
+[Receiver] Acknowledge receive: : seqnum = -1, acknum = 5, checksum = 12846, ....................
+******模拟网络环境******：接收方的确认包将在1419.61到达对方, 确认包为-->seqnum = -1, acknum = 5,checksum = 12846,payload = .....................
+[Sender] Receive ackPkt successfully: : seqnum = -1, acknum = 5, checksum = 12846, ....................
+******模拟网络环境******：关闭定时器, 当前时间 = 1419.61, 定时器报文序号 = 5
+******模拟网络环境******：启动定时器, 当前时间 = 1419.61, 定时器报文序号 = 6, 定时器Timeout时间 = 1439.61
+******模拟网络环境******：向上递交给应用层数据：EEEEEEEEEEEEEEEEEEF
+[Receiver] Acknowledge receive: : seqnum = -1, acknum = 6, checksum = 12845, ....................
+******模拟网络环境******：接收方发送的确认包丢失：seqnum = -1, acknum = 6,checksum = 12845,payload = .....................
+******模拟网络环境******：向上递交给应用层数据：FFFFFFFFFFFFFFFFFFF
+[Receiver] Acknowledge receive: : seqnum = -1, acknum = 7, checksum = 12844, ....................
+******模拟网络环境******：接收方的确认包将在1441.33到达对方, 确认包为-->seqnum = -1, acknum = 7,checksum = 12844,payload = .....................
+******模拟网络环境******：关闭定时器, 当前时间 = 1439.61, 定时器报文序号 = 6
+******模拟网络环境******：启动定时器, 当前时间 = 1439.61, 定时器报文序号 = 6, 定时器Timeout时间 = 1459.61
+[Sender] Time out, resend packet: : seqnum = 6, acknum = -1, checksum = 33665, EEEEEEEEEEEEEEEEEE
+
+******模拟网络环境******：发送方的数据包将在1447.76到达对方, 数据包为-->seqnum = 6, acknum = -1,checksum = 33665,payload = EEEEEEEEEEEEEEEEEEF
+[Sender] Time out, resend packet: : seqnum = 7, acknum = -1, checksum = 16756, FFFFFFFFFFFFFFFFFFF
+******模拟网络环境******：发送方的数据包将在1457.42到达对方, 数据包为-->seqnum = 7, acknum = -1,checksum = 16756,payload = FFFFFFFFFFFFFFFFFFF
+[Sender] Time out, resend packet: : seqnum = 0, acknum = -1, checksum = 14136, GGGGGGGGGGGGGGGGGGGG
+******模拟网络环境******：发送方的数据包将在1466.54到达对方, 数据包为-->seqnum = 0, acknum = -1,checksum = 14136,payload = GGGGGGGGGGGGGGGGGGGG
+******模拟网络环境******：向上递交给应用层数据：GGGGGGGGGGGGGGGGGGGG
+[Receiver] Acknowledge receive: : seqnum = -1, acknum = 0, checksum = 12851, ....................
+******模拟网络环境******：接收方的确认包将在1449.6到达对方, 确认包为-->seqnum = -1, acknum = 0,checksum = 12851,payload = .....................
+[Sender] Receive ackPkt successfully: : seqnum = -1, acknum = 7, checksum = 12844, ....................
+******模拟网络环境******：关闭定时器, 当前时间 = 1441.33, 定时器报文序号 = 6
+******模拟网络环境******：启动定时器, 当前时间 = 1441.33, 定时器报文序号 = 0, 定时器Timeout时间 = 1461.33
+[Receiver] Packet Refused (Packet Duplicated): : seqnum = 6, acknum = -1, checksum = 33665, EEEEEEEEEEEEEEEEEE
+
+[Receiver] Resend lastAckPkt (Default Behavior): : seqnum = -1, acknum = 0, checksum = 12851, ....................
+******模拟网络环境******：网络层数据包损坏,损坏的包为-->seqnum = -999999, acknum = 0,checksum = 12851,payload = .....................
+******模拟网络环境******：接收方的确认包将在1450.6到达对方, 确认包为-->seqnum = -999999, acknum = 0,checksum = 12851,payload = .....................
+[Sender] Receive ackPkt successfully: : seqnum = -1, acknum = 0, checksum = 12851, ....................
+******模拟网络环境******：关闭定时器, 当前时间 = 1449.6, 定时器报文序号 = 0
+[Sender] ackPkt refused (packet corrupt): : seqnum = -999999, acknum = 0, checksum = 12851, ....................
+[Receiver] Packet Refused (Packet Duplicated): : seqnum = 7, acknum = -1, checksum = 16756, FFFFFFFFFFFFFFFFFFF
+[Receiver] Resend lastAckPkt (Default Behavior): : seqnum = -1, acknum = 0, checksum = 12851, ....................
+******模拟网络环境******：网络层数据包损坏,损坏的包为-->seqnum = -1, acknum = -999999,checksum = 12851,payload = .....................
+******模拟网络环境******：接收方的确认包将在1461.69到达对方, 确认包为-->seqnum = -1, acknum = -999999,checksum = 12851,payload = .....................
+[Sender] ackPkt refused (packet corrupt): : seqnum = -1, acknum = -999999, checksum = 12851, ....................
+[Receiver] Packet Refused (Packet Duplicated): : seqnum = 0, acknum = -1, checksum = 14136, GGGGGGGGGGGGGGGGGGGG
+[Receiver] Resend lastAckPkt (Default Behavior): : seqnum = -1, acknum = 0, checksum = 12851, ....................
+******模拟网络环境******：接收方的确认包将在1470.04到达对方, 确认包为-->seqnum = -1, acknum = 0,checksum = 12851,payload = .....................
+[Sender] ackPkt refused (duplicate ACK): : seqnum = -1, acknum = 0, checksum = 12851, ....................
+[Sender] Send packet: : seqnum = 1, acknum = -1, checksum = 27437, 
+HHHHHHHHHHHHHHHHHHH
+******模拟网络环境******：启动定时器, 当前时间 = 1470.21, 定时器报文序号 = 1, 定时器Timeout时间 = 1490.21
+******模拟网络环境******：发送方的数据包将在1480.59到达对方, 数据包为-->seqnum = 1, acknum = -1,checksum = 27437,payload = HHHHHHHHHHHHHHHHHHHH
+[Sender] Send packet: : seqnum = 2, acknum = -1, checksum = 24417, 
+IIIIIIIIIIIIIIIIII
+******模拟网络环境******：发送方的数据包将在1486.58到达对方, 数据包为-->seqnum = 2, acknum = -1,checksum = 24417,payload = IIIIIIIIIIIIIIIIIII
+[Sender] Send packet: : seqnum = 3, acknum = -1, checksum = 23124, I
+JJJJJJJJJJJJJJJJJ
+******模拟网络环境******：网络层数据包损坏,损坏的包为-->seqnum = 3, acknum = -1,checksum = 23124,payload = JJJJJJJJJJJJJJJJJJJ
+******模拟网络环境******：发送方的数据包将在1496.96到达对方, 数据包为-->seqnum = 3, acknum = -1,checksum = 23124,payload = JJJJJJJJJJJJJJJJJJJ
+[Sender] Send packet: : seqnum = 4, acknum = -1, checksum = 20046, JJ
+KKKKKKKKKKKKKKKK
+******模拟网络环境******：发送方的数据包将在1498.13到达对方, 数据包为-->seqnum = 4, acknum = -1,checksum = 20046,payload = JJKKKKKKKKKKKKKKKKK
+******模拟网络环境******：向上递交给应用层数据：HHHHHHHHHHHHHHHHHHHH
+[Receiver] Acknowledge receive: : seqnum = -1, acknum = 1, checksum = 12850, ....................
+******模拟网络环境******：接收方的确认包将在1491.32到达对方, 确认包为-->seqnum = -1, acknum = 1,checksum = 12850,payload = .....................
+******模拟网络环境******：向上递交给应用层数据：IIIIIIIIIIIIIIIIIII
+[Receiver] Acknowledge receive: : seqnum = -1, acknum = 2, checksum = 12849, ....................
+******模拟网络环境******：接收方的确认包将在1500.71到达对方, 确认包为-->seqnum = -1, acknum = 2,checksum = 12849,payload = .....................
+******模拟网络环境******：关闭定时器, 当前时间 = 1490.21, 定时器报文序号 = 1
+******模拟网络环境******：启动定时器, 当前时间 = 1490.21, 定时器报文序号 = 1, 定时器Timeout时间 = 1510.21
+[Sender] Time out, resend packet: : seqnum = 1, acknum = -1, checksum = 27437, 
+HHHHHHHHHHHHHHHHHHH
+******模拟网络环境******：网络层数据包损坏,损坏的包为-->seqnum = -999999, acknum = -1,checksum = 27437,payload = HHHHHHHHHHHHHHHHHHHH
+******模拟网络环境******：发送方的数据包将在1505.18到达对方, 数据包为-->seqnum = -999999, acknum = -1,checksum = 27437,payload = HHHHHHHHHHHHHHHHHHHH
+[Sender] Time out, resend packet: : seqnum = 2, acknum = -1, checksum = 24417, 
+IIIIIIIIIIIIIIIIII
+******模拟网络环境******：发送方的数据包将在1506.82到达对方, 数据包为-->seqnum = 2, acknum = -1,checksum = 24417,payload = IIIIIIIIIIIIIIIIIII
+[Sender] Time out, resend packet: : seqnum = 3, acknum = -1, checksum = 23124, I
+JJJJJJJJJJJJJJJJJ
+******模拟网络环境******：网络层数据包损坏,损坏的包为-->seqnum = 3, acknum = -1,checksum = 23124,payload = JJJJJJJJJJJJJJJJJJJ
+******模拟网络环境******：发送方的数据包将在1515.48到达对方, 数据包为-->seqnum = 3, acknum = -1,checksum = 23124,payload = JJJJJJJJJJJJJJJJJJJ
+[Sender] Time out, resend packet: : seqnum = 4, acknum = -1, checksum = 20046, JJ
+KKKKKKKKKKKKKKKK
+******模拟网络环境******：发送方的数据包将在1517.04到达对方, 数据包为-->seqnum = 4, acknum = -1,checksum = 20046,payload = JJKKKKKKKKKKKKKKKKK
+[Sender] Receive ackPkt successfully: : seqnum = -1, acknum = 1, checksum = 12850, ....................
+******模拟网络环境******：关闭定时器, 当前时间 = 1491.32, 定时器报文序号 = 1
+******模拟网络环境******：启动定时器, 当前时间 = 1491.32, 定时器报文序号 = 2, 定时器Timeout时间 = 1511.32
+[Receiver] Packet refused (Packet Corrupt): : seqnum = 3, acknum = -1, checksum = 23124, J
+JJJJJJJJJJJJJJJJJ
+[Receiver] Resend lastAckPkt (Default Behavior): : seqnum = -1, acknum = 2, checksum = 12849, ....................
+******模拟网络环境******：接收方的确认包将在1507.27到达对方, 确认包为-->seqnum = -1, acknum = 2,checksum = 12849,payload = .....................
+[Receiver] Packet Refused (Packet Duplicated): : seqnum = 4, acknum = -1, checksum = 20046, JJ
+KKKKKKKKKKKKKKKK
+[Receiver] Resend lastAckPkt (Default Behavior): : seqnum = -1, acknum = 2, checksum = 12849, ....................
+******模拟网络环境******：接收方的确认包将在1510.05到达对方, 确认包为-->seqnum = -1, acknum = 2,checksum = 12849,payload = .....................
+[Sender] Receive ackPkt successfully: : seqnum = -1, acknum = 2, checksum = 12849, ....................
+******模拟网络环境******：关闭定时器, 当前时间 = 1500.71, 定时器报文序号 = 2
+******模拟网络环境******：启动定时器, 当前时间 = 1500.71, 定时器报文序号 = 3, 定时器Timeout时间 = 1520.71
+[Receiver] Packet refused (Packet Corrupt): : seqnum = -999999, acknum = -1, checksum = 27437, 
+HHHHHHHHHHHHHHHHHHH
+[Receiver] Resend lastAckPkt (Default Behavior): : seqnum = -1, acknum = 2, checksum = 12849, ....................
+******模拟网络环境******：网络层数据包损坏,损坏的包为-->seqnum = -1, acknum = 2,checksum = 12849,payload = /....................
+******模拟网络环境******：接收方的确认包将在1517.97到达对方, 确认包为-->seqnum = -1, acknum = 2,checksum = 12849,payload = /....................
+[Receiver] Packet Refused (Packet Duplicated): : seqnum = 2, acknum = -1, checksum = 24417, 
+IIIIIIIIIIIIIIIIII
+[Receiver] Resend lastAckPkt (Default Behavior): : seqnum = -1, acknum = 2, checksum = 12849, ....................
+******模拟网络环境******：接收方的确认包将在1525.63到达对方, 确认包为-->seqnum = -1, acknum = 2,checksum = 12849,payload = .....................
+[Sender] ackPkt refused (duplicate ACK): : seqnum = -1, acknum = 2, checksum = 12849, ....................
+[Sender] ackPkt refused (duplicate ACK): : seqnum = -1, acknum = 2, checksum = 12849, ....................
+[Receiver] Packet refused (Packet Corrupt): : seqnum = 3, acknum = -1, checksum = 23124, J
+JJJJJJJJJJJJJJJJJ
+[Receiver] Resend lastAckPkt (Default Behavior): : seqnum = -1, acknum = 2, checksum = 12849, ....................
+******模拟网络环境******：接收方的确认包将在1535.2到达对方, 确认包为-->seqnum = -1, acknum = 2,checksum = 12849,payload = .....................
+[Receiver] Packet Refused (Packet Duplicated): : seqnum = 4, acknum = -1, checksum = 20046, JJ
+KKKKKKKKKKKKKKKK
+[Receiver] Resend lastAckPkt (Default Behavior): : seqnum = -1, acknum = 2, checksum = 12849, ....................
+******模拟网络环境******：接收方的确认包将在1546.03到达对方, 确认包为-->seqnum = -1, acknum = 2,checksum = 12849,payload = .....................
+[Sender] ackPkt refused (packet corrupt): : seqnum = -1, acknum = 2, checksum = 12849, /...................
+******模拟网络环境******：关闭定时器, 当前时间 = 1520.71, 定时器报文序号 = 3
+******模拟网络环境******：启动定时器, 当前时间 = 1520.71, 定时器报文序号 = 3, 定时器Timeout时间 = 1540.71
+[Sender] Time out, resend packet: : seqnum = 3, acknum = -1, checksum = 23124, I
+JJJJJJJJJJJJJJJJJ
+******模拟网络环境******：发送方的数据包将在1526.95到达对方, 数据包为-->seqnum = 3, acknum = -1,checksum = 23124,payload = IJJJJJJJJJJJJJJJJJJ
+[Sender] Time out, resend packet: : seqnum = 4, acknum = -1, checksum = 20046, JJ
+KKKKKKKKKKKKKKKK
+******模拟网络环境******：发送方发送的数据包丢失：seqnum = 4, acknum = -1,checksum = 20046,payload = JJKKKKKKKKKKKKKKKKK
+[Sender] ackPkt refused (duplicate ACK): : seqnum = -1, acknum = 2, checksum = 12849, ....................
+******模拟网络环境******：向上递交给应用层数据：IJJJJJJJJJJJJJJJJJJ
+[Receiver] Acknowledge receive: : seqnum = -1, acknum = 3, checksum = 12848, ....................
+******模拟网络环境******：网络层数据包损坏,损坏的包为-->seqnum = -1, acknum = 3,checksum = 12848,payload = /....................
+******模拟网络环境******：接收方的确认包将在1550.78到达对方, 确认包为-->seqnum = -1, acknum = 3,checksum = 12848,payload = /....................
+[Sender] ackPkt refused (duplicate ACK): : seqnum = -1, acknum = 2, checksum = 12849, ....................
+******模拟网络环境******：关闭定时器, 当前时间 = 1540.71, 定时器报文序号 = 3
+******模拟网络环境******：启动定时器, 当前时间 = 1540.71, 定时器报文序号 = 3, 定时器Timeout时间 = 1560.71
+[Sender] Time out, resend packet: : seqnum = 3, acknum = -1, checksum = 23124, I
+JJJJJJJJJJJJJJJJJ
+******模拟网络环境******：发送方的数据包将在1549.57到达对方, 数据包为-->seqnum = 3, acknum = -1,checksum = 23124,payload = IJJJJJJJJJJJJJJJJJJ
+[Sender] Time out, resend packet: : seqnum = 4, acknum = -1, checksum = 20046, JJ
+KKKKKKKKKKKKKKKK
+******模拟网络环境******：发送方的数据包将在1556.85到达对方, 数据包为-->seqnum = 4, acknum = -1,checksum = 20046,payload = JJKKKKKKKKKKKKKKKKK
+[Sender] ackPkt refused (duplicate ACK): : seqnum = -1, acknum = 2, checksum = 12849, ....................
+[Receiver] Packet Refused (Packet Duplicated): : seqnum = 3, acknum = -1, checksum = 23124, I
+JJJJJJJJJJJJJJJJJ
+[Receiver] Resend lastAckPkt (Default Behavior): : seqnum = -1, acknum = 3, checksum = 12848, ....................
+******模拟网络环境******：接收方的确认包将在1560.79到达对方, 确认包为-->seqnum = -1, acknum = 3,checksum = 12848,payload = .....................
+[Sender] ackPkt refused (packet corrupt): : seqnum = -1, acknum = 3, checksum = 12848, /...................
+******模拟网络环境******：向上递交给应用层数据：JJKKKKKKKKKKKKKKKKK
+[Receiver] Acknowledge receive: : seqnum = -1, acknum = 4, checksum = 12847, ....................
+******模拟网络环境******：接收方的确认包将在1564.62到达对方, 确认包为-->seqnum = -1, acknum = 4,checksum = 12847,payload = .....................
+******模拟网络环境******：关闭定时器, 当前时间 = 1560.71, 定时器报文序号 = 3
+******模拟网络环境******：启动定时器, 当前时间 = 1560.71, 定时器报文序号 = 3, 定时器Timeout时间 = 1580.71
+[Sender] Time out, resend packet: : seqnum = 3, acknum = -1, checksum = 23124, I
+JJJJJJJJJJJJJJJJJ
+******模拟网络环境******：发送方的数据包将在1565.88到达对方, 数据包为-->seqnum = 3, acknum = -1,checksum = 23124,payload = IJJJJJJJJJJJJJJJJJJ
+[Sender] Time out, resend packet: : seqnum = 4, acknum = -1, checksum = 20046, JJ
+KKKKKKKKKKKKKKKK
+******模拟网络环境******：发送方的数据包将在1567.09到达对方, 数据包为-->seqnum = 4, acknum = -1,checksum = 20046,payload = JJKKKKKKKKKKKKKKKKK
+[Sender] Receive ackPkt successfully: : seqnum = -1, acknum = 3, checksum = 12848, ....................
+******模拟网络环境******：关闭定时器, 当前时间 = 1560.79, 定时器报文序号 = 3
+******模拟网络环境******：启动定时器, 当前时间 = 1560.79, 定时器报文序号 = 4, 定时器Timeout时间 = 1580.79
+[Sender] Receive ackPkt successfully: : seqnum = -1, acknum = 4, checksum = 12847, ....................
+******模拟网络环境******：关闭定时器, 当前时间 = 1564.62, 定时器报文序号 = 4
+[Receiver] Packet Refused (Packet Duplicated): : seqnum = 3, acknum = -1, checksum = 23124, I
+JJJJJJJJJJJJJJJJJ
+[Receiver] Resend lastAckPkt (Default Behavior): : seqnum = -1, acknum = 4, checksum = 12847, ....................
+******模拟网络环境******：接收方的确认包将在1571.73到达对方, 确认包为-->seqnum = -1, acknum = 4,checksum = 12847,payload = .....................
+[Receiver] Packet Refused (Packet Duplicated): : seqnum = 4, acknum = -1, checksum = 20046, JJ
+KKKKKKKKKKKKKKKK
+[Receiver] Resend lastAckPkt (Default Behavior): : seqnum = -1, acknum = 4, checksum = 12847, ....................
+******模拟网络环境******：接收方发送的确认包丢失：seqnum = -1, acknum = 4,checksum = 12847,payload = .....................
+[Sender] ackPkt refused (duplicate ACK): : seqnum = -1, acknum = 4, checksum = 12847, ....................
+[Sender] Send packet: : seqnum = 5, acknum = -1, checksum = 18753, KKK
+LLLLLLLLLLLLLLL
+******模拟网络环境******：启动定时器, 当前时间 = 1571.92, 定时器报文序号 = 5, 定时器Timeout时间 = 1591.92
+******模拟网络环境******：网络层数据包损坏,损坏的包为-->seqnum = 5, acknum = -1,checksum = 18753,payload = LKKLLLLLLLLLLLLLLLL
+******模拟网络环境******：发送方的数据包将在1581.54到达对方, 数据包为-->seqnum = 5, acknum = -1,checksum = 18753,payload = LKKLLLLLLLLLLLLLLLL
+[Sender] Send packet: : seqnum = 6, acknum = -1, checksum = 15675, LLLL
+MMMMMMMMMMMMMM
+******模拟网络环境******：发送方的数据包将在1589.02到达对方, 数据包为-->seqnum = 6, acknum = -1,checksum = 15675,payload = LLLLMMMMMMMMMMMMMMM
+[Sender] Send packet: : seqnum = 7, acknum = -1, checksum = 14382, MMMMM
+NNNNNNNNNNNNN
+******模拟网络环境******：发送方的数据包将在1596.3到达对方, 数据包为-->seqnum = 7, acknum = -1,checksum = 14382,payload = MMMMMNNNNNNNNNNNNNN
+[Sender] Send packet: : seqnum = 0, acknum = -1, checksum = 11312, NNNNNN
+OOOOOOOOOOOO
+******模拟网络环境******：发送方的数据包将在1606.12到达对方, 数据包为-->seqnum = 0, acknum = -1,checksum = 11312,payload = NNNNNNOOOOOOOOOOOOO
+[Receiver] Packet refused (Packet Corrupt): : seqnum = 5, acknum = -1, checksum = 18753, LKK
+LLLLLLLLLLLLLLL
+[Receiver] Resend lastAckPkt (Default Behavior): : seqnum = -1, acknum = 4, checksum = 12847, ....................
+******模拟网络环境******：接收方的确认包将在1587.71到达对方, 确认包为-->seqnum = -1, acknum = 4,checksum = 12847,payload = .....................
+[Sender] ackPkt refused (duplicate ACK): : seqnum = -1, acknum = 4, checksum = 12847, ....................
+[Receiver] Packet Refused (Packet Duplicated): : seqnum = 6, acknum = -1, checksum = 15675, LLLL
+MMMMMMMMMMMMMM
+[Receiver] Resend lastAckPkt (Default Behavior): : seqnum = -1, acknum = 4, checksum = 12847, ....................
+******模拟网络环境******：接收方的确认包将在1599.36到达对方, 确认包为-->seqnum = -1, acknum = 4,checksum = 12847,payload = .....................
+******模拟网络环境******：关闭定时器, 当前时间 = 1591.92, 定时器报文序号 = 5
+******模拟网络环境******：启动定时器, 当前时间 = 1591.92, 定时器报文序号 = 5, 定时器Timeout时间 = 1611.92
+[Sender] Time out, resend packet: : seqnum = 5, acknum = -1, checksum = 18753, KKK
+LLLLLLLLLLLLLLL
+******模拟网络环境******：发送方的数据包将在1616.67到达对方, 数据包为-->seqnum = 5, acknum = -1,checksum = 18753,payload = KKKLLLLLLLLLLLLLLLL
+[Sender] Time out, resend packet: : seqnum = 6, acknum = -1, checksum = 15675, LLLL
+MMMMMMMMMMMMMM
+******模拟网络环境******：发送方的数据包将在1622.07到达对方, 数据包为-->seqnum = 6, acknum = -1,checksum = 15675,payload = LLLLMMMMMMMMMMMMMMM
+[Sender] Time out, resend packet: : seqnum = 7, acknum = -1, checksum = 14382, MMMMM
+NNNNNNNNNNNNN
+******模拟网络环境******：发送方的数据包将在1628.85到达对方, 数据包为-->seqnum = 7, acknum = -1,checksum = 14382,payload = MMMMMNNNNNNNNNNNNNN
+[Sender] Time out, resend packet: : seqnum = 0, acknum = -1, checksum = 11312, NNNNNN
+OOOOOOOOOOOO
+******模拟网络环境******：发送方的数据包将在1631.44到达对方, 数据包为-->seqnum = 0, acknum = -1,checksum = 11312,payload = NNNNNNOOOOOOOOOOOOO
+[Receiver] Packet Refused (Packet Duplicated): : seqnum = 7, acknum = -1, checksum = 14382, MMMMM
+NNNNNNNNNNNNN
+[Receiver] Resend lastAckPkt (Default Behavior): : seqnum = -1, acknum = 4, checksum = 12847, ....................
+******模拟网络环境******：接收方的确认包将在1606.33到达对方, 确认包为-->seqnum = -1, acknum = 4,checksum = 12847,payload = .....................
+[Sender] ackPkt refused (duplicate ACK): : seqnum = -1, acknum = 4, checksum = 12847, ....................
+[Receiver] Packet Refused (Packet Duplicated): : seqnum = 0, acknum = -1, checksum = 11312, NNNNNN
+OOOOOOOOOOOO
+[Receiver] Resend lastAckPkt (Default Behavior): : seqnum = -1, acknum = 4, checksum = 12847, ....................
+******模拟网络环境******：接收方的确认包将在1612.7到达对方, 确认包为-->seqnum = -1, acknum = 4,checksum = 12847,payload = .....................
+[Sender] ackPkt refused (duplicate ACK): : seqnum = -1, acknum = 4, checksum = 12847, ....................
+******模拟网络环境******：关闭定时器, 当前时间 = 1611.92, 定时器报文序号 = 5
+******模拟网络环境******：启动定时器, 当前时间 = 1611.92, 定时器报文序号 = 5, 定时器Timeout时间 = 1631.92
+[Sender] Time out, resend packet: : seqnum = 5, acknum = -1, checksum = 18753, KKK
+LLLLLLLLLLLLLLL
+******模拟网络环境******：发送方的数据包将在1638.35到达对方, 数据包为-->seqnum = 5, acknum = -1,checksum = 18753,payload = KKKLLLLLLLLLLLLLLLL
+[Sender] Time out, resend packet: : seqnum = 6, acknum = -1, checksum = 15675, LLLL
+MMMMMMMMMMMMMM
+******模拟网络环境******：发送方的数据包将在1647.26到达对方, 数据包为-->seqnum = 6, acknum = -1,checksum = 15675,payload = LLLLMMMMMMMMMMMMMMM
+[Sender] Time out, resend packet: : seqnum = 7, acknum = -1, checksum = 14382, MMMMM
+NNNNNNNNNNNNN
+******模拟网络环境******：发送方发送的数据包丢失：seqnum = 7, acknum = -1,checksum = 14382,payload = MMMMMNNNNNNNNNNNNNN
+[Sender] Time out, resend packet: : seqnum = 0, acknum = -1, checksum = 11312, NNNNNN
+OOOOOOOOOOOO
+******模拟网络环境******：发送方的数据包将在1653.75到达对方, 数据包为-->seqnum = 0, acknum = -1,checksum = 11312,payload = NNNNNNOOOOOOOOOOOOO
+[Sender] ackPkt refused (duplicate ACK): : seqnum = -1, acknum = 4, checksum = 12847, ....................
+******模拟网络环境******：向上递交给应用层数据：KKKLLLLLLLLLLLLLLLL
+[Receiver] Acknowledge receive: : seqnum = -1, acknum = 5, checksum = 12846, ....................
+******模拟网络环境******：接收方的确认包将在1622.5到达对方, 确认包为-->seqnum = -1, acknum = 5,checksum = 12846,payload = .....................
+******模拟网络环境******：向上递交给应用层数据：LLLLMMMMMMMMMMMMMMM
+[Receiver] Acknowledge receive: : seqnum = -1, acknum = 6, checksum = 12845, ....................
+******模拟网络环境******：接收方的确认包将在1631.4到达对方, 确认包为-->seqnum = -1, acknum = 6,checksum = 12845,payload = .....................
+[Sender] Receive ackPkt successfully: : seqnum = -1, acknum = 5, checksum = 12846, ....................
+******模拟网络环境******：关闭定时器, 当前时间 = 1622.5, 定时器报文序号 = 5
+******模拟网络环境******：启动定时器, 当前时间 = 1622.5, 定时器报文序号 = 6, 定时器Timeout时间 = 1642.5
+******模拟网络环境******：向上递交给应用层数据：MMMMMNNNNNNNNNNNNNN
+[Receiver] Acknowledge receive: : seqnum = -1, acknum = 7, checksum = 12844, ....................
+******模拟网络环境******：接收方的确认包将在1638.23到达对方, 确认包为-->seqnum = -1, acknum = 7,checksum = 12844,payload = .....................
+[Sender] Receive ackPkt successfully: : seqnum = -1, acknum = 6, checksum = 12845, ....................
+******模拟网络环境******：关闭定时器, 当前时间 = 1631.4, 定时器报文序号 = 6
+******模拟网络环境******：启动定时器, 当前时间 = 1631.4, 定时器报文序号 = 7, 定时器Timeout时间 = 1651.4
+******模拟网络环境******：向上递交给应用层数据：NNNNNNOOOOOOOOOOOOO
+[Receiver] Acknowledge receive: : seqnum = -1, acknum = 0, checksum = 12851, ....................
+******模拟网络环境******：接收方的确认包将在1640.84到达对方, 确认包为-->seqnum = -1, acknum = 0,checksum = 12851,payload = .....................
+[Sender] Receive ackPkt successfully: : seqnum = -1, acknum = 7, checksum = 12844, ....................
+******模拟网络环境******：关闭定时器, 当前时间 = 1638.23, 定时器报文序号 = 7
+******模拟网络环境******：启动定时器, 当前时间 = 1638.23, 定时器报文序号 = 0, 定时器Timeout时间 = 1658.23
+[Receiver] Packet Refused (Packet Duplicated): : seqnum = 5, acknum = -1, checksum = 18753, KKK
+LLLLLLLLLLLLLLL
+[Receiver] Resend lastAckPkt (Default Behavior): : seqnum = -1, acknum = 0, checksum = 12851, ....................
+******模拟网络环境******：接收方的确认包将在1648.57到达对方, 确认包为-->seqnum = -1, acknum = 0,checksum = 12851,payload = .....................
+[Sender] Receive ackPkt successfully: : seqnum = -1, acknum = 0, checksum = 12851, ....................
+******模拟网络环境******：关闭定时器, 当前时间 = 1640.84, 定时器报文序号 = 0
+[Receiver] Packet Refused (Packet Duplicated): : seqnum = 6, acknum = -1, checksum = 15675, LLLL
+MMMMMMMMMMMMMM
+[Receiver] Resend lastAckPkt (Default Behavior): : seqnum = -1, acknum = 0, checksum = 12851, ....................
+******模拟网络环境******：网络层数据包损坏,损坏的包为-->seqnum = -1, acknum = 0,checksum = 12851,payload = /....................
+******模拟网络环境******：接收方的确认包将在1654.61到达对方, 确认包为-->seqnum = -1, acknum = 0,checksum = 12851,payload = /....................
+[Sender] ackPkt refused (duplicate ACK): : seqnum = -1, acknum = 0, checksum = 12851, ....................
+[Receiver] Packet Refused (Packet Duplicated): : seqnum = 0, acknum = -1, checksum = 11312, NNNNNN
+OOOOOOOOOOOO
+[Receiver] Resend lastAckPkt (Default Behavior): : seqnum = -1, acknum = 0, checksum = 12851, ....................
+******模拟网络环境******：接收方的确认包将在1662.35到达对方, 确认包为-->seqnum = -1, acknum = 0,checksum = 12851,payload = .....................
+[Sender] ackPkt refused (packet corrupt): : seqnum = -1, acknum = 0, checksum = 12851, /...................
+[Sender] ackPkt refused (duplicate ACK): : seqnum = -1, acknum = 0, checksum = 12851, ....................
+[Sender] Send packet: : seqnum = 1, acknum = -1, checksum = 10019, OOOOOOO
+PPPPPPPPPPP
+******模拟网络环境******：启动定时器, 当前时间 = 1662.68, 定时器报文序号 = 1, 定时器Timeout时间 = 1682.68
+******模拟网络环境******：发送方的数据包将在1667.79到达对方, 数据包为-->seqnum = 1, acknum = -1,checksum = 10019,payload = OOOOOOOPPPPPPPPPPPP
+[Sender] Send packet: : seqnum = 2, acknum = -1, checksum = 6941, PPPPPPPP
+QQQQQQQQQQ
+******模拟网络环境******：发送方的数据包将在1673.97到达对方, 数据包为-->seqnum = 2, acknum = -1,checksum = 6941,payload = PPPPPPPPQQQQQQQQQQQ
+[Sender] Send packet: : seqnum = 3, acknum = -1, checksum = 5648, QQQQQQQQQ
+RRRRRRRRR
+******模拟网络环境******：发送方的数据包将在1675.96到达对方, 数据包为-->seqnum = 3, acknum = -1,checksum = 5648,payload = QQQQQQQQQRRRRRRRRRR
+[Sender] Send packet: : seqnum = 4, acknum = -1, checksum = 2570, RRRRRRRRRR
+SSSSSSSS
+******模拟网络环境******：发送方的数据包将在1679.42到达对方, 数据包为-->seqnum = 4, acknum = -1,checksum = 2570,payload = RRRRRRRRRRSSSSSSSSS
+******模拟网络环境******：向上递交给应用层数据：OOOOOOOPPPPPPPPPPPP
+[Receiver] Acknowledge receive: : seqnum = -1, acknum = 1, checksum = 12850, ....................
+******模拟网络环境******：接收方的确认包将在1669.15到达对方, 确认包为-->seqnum = -1, acknum = 1,checksum = 12850,payload = .....................
+[Sender] Receive ackPkt successfully: : seqnum = -1, acknum = 1, checksum = 12850, ....................
+******模拟网络环境******：关闭定时器, 当前时间 = 1669.15, 定时器报文序号 = 1
+******模拟网络环境******：启动定时器, 当前时间 = 1669.15, 定时器报文序号 = 2, 定时器Timeout时间 = 1689.15
+******模拟网络环境******：向上递交给应用层数据：PPPPPPPPQQQQQQQQQQQ
+[Receiver] Acknowledge receive: : seqnum = -1, acknum = 2, checksum = 12849, ....................
+******模拟网络环境******：接收方的确认包将在1679.18到达对方, 确认包为-->seqnum = -1, acknum = 2,checksum = 12849,payload = .....................
+******模拟网络环境******：向上递交给应用层数据：QQQQQQQQQRRRRRRRRRR
+[Receiver] Acknowledge receive: : seqnum = -1, acknum = 3, checksum = 12848, ....................
+******模拟网络环境******：接收方的确认包将在1684.66到达对方, 确认包为-->seqnum = -1, acknum = 3,checksum = 12848,payload = .....................
+[Sender] Receive ackPkt successfully: : seqnum = -1, acknum = 2, checksum = 12849, ....................
+******模拟网络环境******：关闭定时器, 当前时间 = 1679.18, 定时器报文序号 = 2
+******模拟网络环境******：启动定时器, 当前时间 = 1679.18, 定时器报文序号 = 3, 定时器Timeout时间 = 1699.18
+******模拟网络环境******：向上递交给应用层数据：RRRRRRRRRRSSSSSSSSS
+[Receiver] Acknowledge receive: : seqnum = -1, acknum = 4, checksum = 12847, ....................
+******模拟网络环境******：接收方的确认包将在1690.02到达对方, 确认包为-->seqnum = -1, acknum = 4,checksum = 12847,payload = .....................
+[Sender] Receive ackPkt successfully: : seqnum = -1, acknum = 3, checksum = 12848, ....................
+******模拟网络环境******：关闭定时器, 当前时间 = 1684.66, 定时器报文序号 = 3
+******模拟网络环境******：启动定时器, 当前时间 = 1684.66, 定时器报文序号 = 4, 定时器Timeout时间 = 1704.66
+[Sender] Receive ackPkt successfully: : seqnum = -1, acknum = 4, checksum = 12847, ....................
+******模拟网络环境******：关闭定时器, 当前时间 = 1690.02, 定时器报文序号 = 4
+[Sender] Send packet: : seqnum = 5, acknum = -1, checksum = 1277, SSSSSSSSSSS
+TTTTTTT
+******模拟网络环境******：启动定时器, 当前时间 = 1690.11, 定时器报文序号 = 5, 定时器Timeout时间 = 1710.11
+******模拟网络环境******：发送方的数据包将在1692.51到达对方, 数据包为-->seqnum = 5, acknum = -1,checksum = 1277,payload = SSSSSSSSSSSTTTTTTTT
+[Sender] Send packet: : seqnum = 6, acknum = -1, checksum = 63734, TTTTTTTTTTTT
+UUUUUU
+******模拟网络环境******：发送方的数据包将在1702.5到达对方, 数据包为-->seqnum = 6, acknum = -1,checksum = 63734,payload = TTTTTTTTTTTTUUUUUUU
+[Sender] Send packet: : seqnum = 7, acknum = -1, checksum = 62441, UUUUUUUUUUUUU
+VVVVV
+******模拟网络环境******：发送方的数据包将在1708.44到达对方, 数据包为-->seqnum = 7, acknum = -1,checksum = 62441,payload = UUUUUUUUUUUUUVVVVVV
+[Sender] Send packet: : seqnum = 0, acknum = -1, checksum = 59371, VVVVVVVVVVVVVV
+WWWW
+******模拟网络环境******：发送方的数据包将在1718.23到达对方, 数据包为-->seqnum = 0, acknum = -1,checksum = 59371,payload = VVVVVVVVVVVVVVWWWWW
+******模拟网络环境******：向上递交给应用层数据：SSSSSSSSSSSTTTTTTTT
+[Receiver] Acknowledge receive: : seqnum = -1, acknum = 5, checksum = 12846, ....................
+******模拟网络环境******：接收方的确认包将在1695.5到达对方, 确认包为-->seqnum = -1, acknum = 5,checksum = 12846,payload = .....................
+[Sender] Receive ackPkt successfully: : seqnum = -1, acknum = 5, checksum = 12846, ....................
+******模拟网络环境******：关闭定时器, 当前时间 = 1695.5, 定时器报文序号 = 5
+******模拟网络环境******：启动定时器, 当前时间 = 1695.5, 定时器报文序号 = 6, 定时器Timeout时间 = 1715.5
+******模拟网络环境******：向上递交给应用层数据：TTTTTTTTTTTTUUUUUUU
+[Receiver] Acknowledge receive: : seqnum = -1, acknum = 6, checksum = 12845, ....................
+******模拟网络环境******：接收方的确认包将在1710.3到达对方, 确认包为-->seqnum = -1, acknum = 6,checksum = 12845,payload = .....................
+******模拟网络环境******：向上递交给应用层数据：UUUUUUUUUUUUUVVVVVV
+[Receiver] Acknowledge receive: : seqnum = -1, acknum = 7, checksum = 12844, ....................
+******模拟网络环境******：接收方发送的确认包丢失：seqnum = -1, acknum = 7,checksum = 12844,payload = .....................
+[Sender] Receive ackPkt successfully: : seqnum = -1, acknum = 6, checksum = 12845, ....................
+******模拟网络环境******：关闭定时器, 当前时间 = 1710.3, 定时器报文序号 = 6
+******模拟网络环境******：启动定时器, 当前时间 = 1710.3, 定时器报文序号 = 7, 定时器Timeout时间 = 1730.3
+******模拟网络环境******：向上递交给应用层数据：VVVVVVVVVVVVVVWWWWW
+[Receiver] Acknowledge receive: : seqnum = -1, acknum = 0, checksum = 12851, ....................
+******模拟网络环境******：接收方的确认包将在1721.96到达对方, 确认包为-->seqnum = -1, acknum = 0,checksum = 12851,payload = .....................
+[Sender] Receive ackPkt successfully: : seqnum = -1, acknum = 0, checksum = 12851, ....................
+******模拟网络环境******：关闭定时器, 当前时间 = 1721.96, 定时器报文序号 = 7
+[Sender] Send packet: : seqnum = 1, acknum = -1, checksum = 58078, WWWWWWWWWWWWWWW
+XXX
+******模拟网络环境******：启动定时器, 当前时间 = 1721.96, 定时器报文序号 = 1, 定时器Timeout时间 = 1741.96
+******模拟网络环境******：发送方的数据包将在1729.38到达对方, 数据包为-->seqnum = 1, acknum = -1,checksum = 58078,payload = WWWWWWWWWWWWWWWXXXX
+[Sender] Send packet: : seqnum = 2, acknum = -1, checksum = 55000, XXXXXXXXXXXXXXXX
+YY
+******模拟网络环境******：发送方发送的数据包丢失：seqnum = 2, acknum = -1,checksum = 55000,payload = XXXXXXXXXXXXXXXXYYY
+[Sender] Send packet: : seqnum = 3, acknum = -1, checksum = 53707, YYYYYYYYYYYYYYYYY
+Z
+******模拟网络环境******：发送方的数据包将在1732.16到达对方, 数据包为-->seqnum = 3, acknum = -1,checksum = 53707,payload = YYYYYYYYYYYYYYYYYZZ
+[Sender] Send packet: : seqnum = 4, acknum = -1, checksum = 50629, ZZZZZZZZZZZZZZZZZZ
+
+******模拟网络环境******：发送方的数据包将在1737.45到达对方, 数据包为-->seqnum = 4, acknum = -1,checksum = 50629,payload = ZZZZZZZZZZZZZZZZZZE
+******模拟网络环境******：向上递交给应用层数据：WWWWWWWWWWWWWWWXXXX
+[Receiver] Acknowledge receive: : seqnum = -1, acknum = 1, checksum = 12850, ....................
+******模拟网络环境******：接收方的确认包将在1739.61到达对方, 确认包为-->seqnum = -1, acknum = 1,checksum = 12850,payload = .....................
+[Receiver] Packet Refused (Packet Duplicated): : seqnum = 3, acknum = -1, checksum = 53707, YYYYYYYYYYYYYYYYY
+Z
+[Receiver] Resend lastAckPkt (Default Behavior): : seqnum = -1, acknum = 1, checksum = 12850, ....................
+******模拟网络环境******：接收方的确认包将在1742.15到达对方, 确认包为-->seqnum = -1, acknum = 1,checksum = 12850,payload = .....................
+[Receiver] Packet Refused (Packet Duplicated): : seqnum = 4, acknum = -1, checksum = 50629, ZZZZZZZZZZZZZZZZZZ
+
+[Receiver] Resend lastAckPkt (Default Behavior): : seqnum = -1, acknum = 1, checksum = 12850, ....................
+******模拟网络环境******：接收方发送的确认包丢失：seqnum = -1, acknum = 1,checksum = 12850,payload = .....................
+[Sender] Receive ackPkt successfully: : seqnum = -1, acknum = 1, checksum = 12850, ....................
+******模拟网络环境******：关闭定时器, 当前时间 = 1739.61, 定时器报文序号 = 1
+******模拟网络环境******：启动定时器, 当前时间 = 1739.61, 定时器报文序号 = 2, 定时器Timeout时间 = 1759.61
+[Sender] ackPkt refused (duplicate ACK): : seqnum = -1, acknum = 1, checksum = 12850, ....................
+******模拟网络环境******：关闭定时器, 当前时间 = 1759.61, 定时器报文序号 = 2
+******模拟网络环境******：启动定时器, 当前时间 = 1759.61, 定时器报文序号 = 2, 定时器Timeout时间 = 1779.61
+[Sender] Time out, resend packet: : seqnum = 2, acknum = -1, checksum = 55000, XXXXXXXXXXXXXXXX
+YY
+******模拟网络环境******：发送方的数据包将在1769.11到达对方, 数据包为-->seqnum = 2, acknum = -1,checksum = 55000,payload = XXXXXXXXXXXXXXXXYYY
+[Sender] Time out, resend packet: : seqnum = 3, acknum = -1, checksum = 53707, YYYYYYYYYYYYYYYYY
+Z
+******模拟网络环境******：发送方的数据包将在1772.63到达对方, 数据包为-->seqnum = 3, acknum = -1,checksum = 53707,payload = YYYYYYYYYYYYYYYYYZZ
+[Sender] Time out, resend packet: : seqnum = 4, acknum = -1, checksum = 50629, ZZZZZZZZZZZZZZZZZZ
+
+******模拟网络环境******：发送方的数据包将在1778.88到达对方, 数据包为-->seqnum = 4, acknum = -1,checksum = 50629,payload = ZZZZZZZZZZZZZZZZZZE
+******模拟网络环境******：向上递交给应用层数据：XXXXXXXXXXXXXXXXYYY
+[Receiver] Acknowledge receive: : seqnum = -1, acknum = 2, checksum = 12849, ....................
+******模拟网络环境******：接收方的确认包将在1778.88到达对方, 确认包为-->seqnum = -1, acknum = 2,checksum = 12849,payload = .....................
+******模拟网络环境******：向上递交给应用层数据：YYYYYYYYYYYYYYYYYZZ
+[Receiver] Acknowledge receive: : seqnum = -1, acknum = 3, checksum = 12848, ....................
+******模拟网络环境******：接收方的确认包将在1783.24到达对方, 确认包为-->seqnum = -1, acknum = 3,checksum = 12848,payload = .....................
+[Sender] Receive ackPkt successfully: : seqnum = -1, acknum = 2, checksum = 12849, ....................
+******模拟网络环境******：关闭定时器, 当前时间 = 1778.88, 定时器报文序号 = 2
+******模拟网络环境******：启动定时器, 当前时间 = 1778.88, 定时器报文序号 = 3, 定时器Timeout时间 = 1798.88
+******模拟网络环境******：向上递交给应用层数据：ZZZZZZZZZZZZZZZZZZE
+[Receiver] Acknowledge receive: : seqnum = -1, acknum = 4, checksum = 12847, ....................
+******模拟网络环境******：接收方的确认包将在1787.97到达对方, 确认包为-->seqnum = -1, acknum = 4,checksum = 12847,payload = .....................
+[Sender] Receive ackPkt successfully: : seqnum = -1, acknum = 3, checksum = 12848, ....................
+******模拟网络环境******：关闭定时器, 当前时间 = 1783.24, 定时器报文序号 = 3
+******模拟网络环境******：启动定时器, 当前时间 = 1783.24, 定时器报文序号 = 4, 定时器Timeout时间 = 1803.24
+[Sender] Receive ackPkt successfully: : seqnum = -1, acknum = 4, checksum = 12847, ....................
+******模拟网络环境******：关闭定时器, 当前时间 = 1787.97, 定时器报文序号 = 4
+[Sender] Send packet: : seqnum = 5, acknum = -1, checksum = 45237, OF                  
+******模拟网络环境******：启动定时器, 当前时间 = 1788.17, 定时器报文序号 = 5, 定时器Timeout时间 = 1808.17
+******模拟网络环境******：网络层数据包损坏,损坏的包为-->seqnum = 5, acknum = -1,checksum = 45237,payload = PF                   
+******模拟网络环境******：发送方的数据包将在1791.73到达对方, 数据包为-->seqnum = 5, acknum = -1,checksum = 45237,payload = PF                   
+[Receiver] Packet refused (Packet Corrupt): : seqnum = 5, acknum = -1, checksum = 45237, PF                  
+[Receiver] Resend lastAckPkt (Default Behavior): : seqnum = -1, acknum = 4, checksum = 12847, ....................
+******模拟网络环境******：接收方的确认包将在1800.36到达对方, 确认包为-->seqnum = -1, acknum = 4,checksum = 12847,payload = .....................
+[Sender] ackPkt refused (duplicate ACK): : seqnum = -1, acknum = 4, checksum = 12847, ....................
+******模拟网络环境******：关闭定时器, 当前时间 = 1808.17, 定时器报文序号 = 5
+******模拟网络环境******：启动定时器, 当前时间 = 1808.17, 定时器报文序号 = 5, 定时器Timeout时间 = 1828.17
+[Sender] Time out, resend packet: : seqnum = 5, acknum = -1, checksum = 45237, OF                  
+******模拟网络环境******：发送方的数据包将在1813.85到达对方, 数据包为-->seqnum = 5, acknum = -1,checksum = 45237,payload = OF                   
+******模拟网络环境******：向上递交给应用层数据：OF                   
+[Receiver] Acknowledge receive: : seqnum = -1, acknum = 5, checksum = 12846, ....................
+******模拟网络环境******：接收方发送的确认包丢失：seqnum = -1, acknum = 5,checksum = 12846,payload = .....................
+******模拟网络环境******：关闭定时器, 当前时间 = 1828.17, 定时器报文序号 = 5
+******模拟网络环境******：启动定时器, 当前时间 = 1828.17, 定时器报文序号 = 5, 定时器Timeout时间 = 1848.17
+[Sender] Time out, resend packet: : seqnum = 5, acknum = -1, checksum = 45237, OF                  
+******模拟网络环境******：发送方的数据包将在1832.58到达对方, 数据包为-->seqnum = 5, acknum = -1,checksum = 45237,payload = OF                   
+[Receiver] Packet Refused (Packet Duplicated): : seqnum = 5, acknum = -1, checksum = 45237, OF                  
+[Receiver] Resend lastAckPkt (Default Behavior): : seqnum = -1, acknum = 5, checksum = 12846, ....................
+******模拟网络环境******：接收方的确认包将在1835.76到达对方, 确认包为-->seqnum = -1, acknum = 5,checksum = 12846,payload = .....................
+[Sender] Receive ackPkt successfully: : seqnum = -1, acknum = 5, checksum = 12846, ....................
+******模拟网络环境******：关闭定时器, 当前时间 = 1835.76, 定时器报文序号 = 5
+******模拟网络环境******：模拟网络环境已发送完应用层数据，关闭模拟网络环境
+已发送应用层Message个数: 110
+发送到网络层数据Packet个数: 215
+网络层丢失的数据Packet个数: 17
+网络层损坏的数据pakcet个数:26
+发送到网络层确认Packet个数:198
+网络层丢失的确认Packet个数: 25
+网络层损坏的确认Packet个数: 13
+
