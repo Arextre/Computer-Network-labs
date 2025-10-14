@@ -1,3 +1,0 @@
-/home/mihari/codes/labs/Computer-Network/module2/GBN/CMakeFiles/stop_wait.dir
-/home/mihari/codes/labs/Computer-Network/module2/GBN/CMakeFiles/edit_cache.dir
-/home/mihari/codes/labs/Computer-Network/module2/GBN/CMakeFiles/rebuild_cache.dir
