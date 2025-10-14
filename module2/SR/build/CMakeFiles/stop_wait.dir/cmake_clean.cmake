@@ -1,9 +1,12 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/stop_wait.dir/src/StopWait.cpp.o"
-  "CMakeFiles/stop_wait.dir/src/StopWaitRdtReceiver.cpp.o"
-  "CMakeFiles/stop_wait.dir/src/StopWaitRdtSender.cpp.o"
-  "../bin/stop_wait.pdb"
   "../bin/stop_wait"
+  "../bin/stop_wait.pdb"
+  "CMakeFiles/stop_wait.dir/src/SRRdtReceiver.cpp.o"
+  "CMakeFiles/stop_wait.dir/src/SRRdtReceiver.cpp.o.d"
+  "CMakeFiles/stop_wait.dir/src/SRRdtSender.cpp.o"
+  "CMakeFiles/stop_wait.dir/src/SRRdtSender.cpp.o.d"
+  "CMakeFiles/stop_wait.dir/src/main.cpp.o"
+  "CMakeFiles/stop_wait.dir/src/main.cpp.o.d"
 )
 
 # Per-language clean rules from dependency scanning.

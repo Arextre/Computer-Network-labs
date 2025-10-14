@@ -3,7 +3,7 @@ project(StopWait)
 
 
 
-SET(CMAKE_C_COMPTLER GCC)
+SET(CMAKE_C_COMPILER GCC)
 set(CMAKE_CXX FLAGS -fexec-charset=GBK)
 add_definitions(-std=c++11)
 INCLUDE_DIRECTORIES(${PROJECT_SOURCE_DIR}/include)

@@ -2,7 +2,7 @@
 #include "SRRdtReceiver.h"
 
 SRRdtReceiver::SRRdtReceiver(): expectSequenceNumberRcvd(0), base(0),
-                                     winlen(4), seqlen(8) {
+                                winlen(4), seqlen(8) {
     lastAckPkt.seqnum = -1; // ignored
     lastAckPkt.acknum = -1; // for the first packet error
     for (int i = 0; i < Configuration::PAYLOAD_SIZE; ++i)
@@ -16,14 +16,16 @@ SRRdtReceiver::~SRRdtReceiver() {
 
 void SRRdtReceiver::printWindow(FILE *out = stdout,
                                 char split = ',',
-                                char ends = '\n') {
-    fprintf(out, "[Sender] Window size = %d, contents: ", winlen);
+                                char ends = '\n') const {
+    fprintf(out, "[Receiver] Window size = %d, contents: ", winlen);
     for (int i = 0; i < winlen; ++i) {
-        printf("%d(%c)", this->base + i, "01"[window[i].rcvd]);
+        fprintf(out, "%2d(%c)",
+                (this->base + i) % this->seqlen,
+                "01"[window[i].rcvd]);
         if (i != winlen - 1)
-            putchar(split);
+            fprintf(out, "%c", split);
     }
-    putchar(ends);
+    fprintf(out, "%c", ends);
 }
 
 void SRRdtReceiver::receive(const Packet &packet) {
@@ -36,9 +38,10 @@ void SRRdtReceiver::receive(const Packet &packet) {
         
         // log info print
         pUtils->printPacket("[Receiver] Packet Received Successfully", packet);
-        fprintf(stdout, "[Receiver]: offset = %d, " \
-                        "window before update: \n", offset);
-        this->printWindow();
+        FILE *windowlog = fopen("./logs/window_log_receiver.txt", "a");
+        fprintf(windowlog, "[Receiver]: offset = %d, base = %d, " \
+                           "window before update: \n", offset, this->base);
+        this->printWindow(windowlog);
 
         // store the packet in the buffer window
         window[offset].rcvd = true;
@@ -59,8 +62,9 @@ void SRRdtReceiver::receive(const Packet &packet) {
             window.push_back(rcvPkt{false, Packet()});
         }
 
-        fprintf(stdout, "[Receiver] Window after update: ");
-        this->printWindow();
+        fprintf(windowlog, "[Receiver] Window after update:\n");
+        this->printWindow(windowlog);
+        fclose(windowlog);
 
         // send ACK to sender
         lastAckPkt.acknum = packet.seqnum;

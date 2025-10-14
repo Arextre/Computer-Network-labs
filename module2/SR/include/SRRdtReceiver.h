@@ -24,12 +24,13 @@ private:
     Packet lastAckPkt;
 
 public:
+    void receive(const Packet &packet) override;
+    void printWindow(FILE *out, char split, char ends) const;
+
+public:
     SRRdtReceiver();
     virtual ~SRRdtReceiver();
 
-public:
-    void receive(const Packet &packet);
-    void printWindow(FILE *OUT = stdout, char split = ',', char ends = '\n');
 };
 
 #endif

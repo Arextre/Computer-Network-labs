@@ -1,3 +1,3 @@
-/home/guxiwu/cpp/rdt/StopWait/build/CMakeFiles/rebuild_cache.dir
-/home/guxiwu/cpp/rdt/StopWait/build/CMakeFiles/stop_wait.dir
-/home/guxiwu/cpp/rdt/StopWait/build/CMakeFiles/edit_cache.dir
+/home/mihari/codes/labs/Computer-Network/module2/SR/build/CMakeFiles/stop_wait.dir
+/home/mihari/codes/labs/Computer-Network/module2/SR/build/CMakeFiles/edit_cache.dir
+/home/mihari/codes/labs/Computer-Network/module2/SR/build/CMakeFiles/rebuild_cache.dir

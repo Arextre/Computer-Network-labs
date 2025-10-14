@@ -1,18 +1,16 @@
+
+# Consider dependencies only in project.
+set(CMAKE_DEPENDS_IN_PROJECT_ONLY OFF)
+
 # The set of languages for which implicit dependencies are needed:
 set(CMAKE_DEPENDS_LANGUAGES
-  "CXX"
   )
-# The set of files for implicit dependencies of each language:
-set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/guxiwu/cpp/rdt/StopWait/src/StopWait.cpp" "/home/guxiwu/cpp/rdt/StopWait/build/CMakeFiles/stop_wait.dir/src/StopWait.cpp.o"
-  "/home/guxiwu/cpp/rdt/StopWait/src/StopWaitRdtReceiver.cpp" "/home/guxiwu/cpp/rdt/StopWait/build/CMakeFiles/stop_wait.dir/src/StopWaitRdtReceiver.cpp.o"
-  "/home/guxiwu/cpp/rdt/StopWait/src/StopWaitRdtSender.cpp" "/home/guxiwu/cpp/rdt/StopWait/build/CMakeFiles/stop_wait.dir/src/StopWaitRdtSender.cpp.o"
-  )
-set(CMAKE_CXX_COMPILER_ID "GNU")
 
-# The include file search paths:
-set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "../include"
+# The set of dependency files which are needed:
+set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/home/mihari/codes/labs/Computer-Network/module2/SR/src/SRRdtReceiver.cpp" "CMakeFiles/stop_wait.dir/src/SRRdtReceiver.cpp.o" "gcc" "CMakeFiles/stop_wait.dir/src/SRRdtReceiver.cpp.o.d"
+  "/home/mihari/codes/labs/Computer-Network/module2/SR/src/SRRdtSender.cpp" "CMakeFiles/stop_wait.dir/src/SRRdtSender.cpp.o" "gcc" "CMakeFiles/stop_wait.dir/src/SRRdtSender.cpp.o.d"
+  "/home/mihari/codes/labs/Computer-Network/module2/SR/src/main.cpp" "CMakeFiles/stop_wait.dir/src/main.cpp.o" "gcc" "CMakeFiles/stop_wait.dir/src/main.cpp.o.d"
   )
 
 # Targets to which this target links.
