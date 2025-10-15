@@ -75,7 +75,9 @@ void TCP_GBNRdtSender::receive(const Packet &ackPkt) {
         // print the contents of window
         int acknum = ackPkt.acknum;
         FILE *windowlog = fopen("./logs/window_log_sender.txt", "a");
-        fprintf(windowlog, "[Sender] base = %d, target = %d, window_size = %d\n", this->base, (acknum + 1) % this->seqlen, window_size);
+        fprintf(windowlog,
+                "[Sender] base = %d, target = %d, window_size = %d\n",
+                this->base, (acknum + 1) % this->seqlen, window_size);
         fprintf(windowlog, "[Sender] Contents of window before update: ");
         this->printWindow(windowlog);
         
