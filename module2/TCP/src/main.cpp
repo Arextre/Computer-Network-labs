@@ -1,11 +1,11 @@
 #include "Global.h"
-#include "GBNRdtSender.h"
-#include "GBNRdtReceiver.h"
+#include "TCP_GBNRdtSender.h"
+#include "TCP_GBNRdtReceiver.h"
 
 int main(int argc, char* argv[]) {
     // create environment
-    RdtSender *sender = new GBNRdtSender();
-    RdtReceiver *receiver = new GBNRdtReceiver();
+    RdtSender *sender = new TCP_GBNRdtSender();
+    RdtReceiver *receiver = new TCP_GBNRdtReceiver();
     pns->setRunMode(0); // verbose mode
     pns->init();
     pns->setRtdSender(sender);

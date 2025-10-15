@@ -15,10 +15,10 @@ private:
 	int winlen;						// size of window
 	int seqlen;						// seqnum range
 	deque<Packet> window;			// queue of window, FIFO
+    int RdAck;                      // Redundant ACK counter
 	Packet packetWaitingAck;		// packet sent and waited to be ACK
 
 public:
-
 	bool getWaitingState() override;
 	bool send(const Message &msg) override;						        // send packet from AppLayer, invoked by NetworkService Simulator. True if send sucessfully to NetworkLayer, else return false if at waiting-ACK status and refuse sending the packet.
 	void receive(const Packet &ackPkt) override;						// receive ACK, invoked by NetworkServiceSimulator	

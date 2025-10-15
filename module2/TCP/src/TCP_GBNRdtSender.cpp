@@ -91,6 +91,9 @@ void TCP_GBNRdtSender::receive(const Packet &ackPkt) {
         this->printWindow(windowlog);
         fprintf(windowlog, "[Sender] base = %d, window_size = %d\n", this->base, static_cast<int>(window.size()));
 
+        // clear Redundant ACK counter when successfully receive ACK
+        this->RdAck = 0;
+
         // restart timer if window not empty
         if (!window.empty())
             pns->startTimer(SENDER, Configuration::TIME_OUT, this->base);
@@ -98,9 +101,16 @@ void TCP_GBNRdtSender::receive(const Packet &ackPkt) {
     } else if (checksum != ackPkt.checksum) {
         pUtils->printPacket("[Sender] ackPkt refused (packet corrupt): ",
                             ackPkt);
-    } else {
-        pUtils->printPacket("[Sender] ackPkt refused (duplicate ACK): ",
-                            ackPkt);
+    } else if (ackPkt.acknum == (this->base - 1 + this->seqlen) % this->seqlen) {
+        // ACK number is the last ACKed packet
+        pUtils->printPacket("[Sender] Redundant ACK received", ackPkt);
+        this->RdAck++;
+        if (this->RdAck == 3 && !window.empty()) {
+            pUtils->printPacket("[Sender] Fast Recovery Mechanism Activate",
+                                window.front());
+            pns->sendToNetworkLayer(RECEIVER, window.front());
+            this->RdAck = 0;
+        }
     }
 }
 
