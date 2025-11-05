@@ -1,0 +1,28 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build http-server",
+            "type": "shell",
+            "command": "D:\\mingw64\\bin\\g++.exe",
+            "args": [
+                "-fdiagnostics-color=always",
+                "-g",
+                "${workspaceFolder}/module1/src/${fileBasename}",
+                "-o",
+                "${workspaceFolder}/module1/bin/server.exe",
+                "-lws2_32",
+            ],
+            "options": {
+                "cwd": "D:/mingw64/bin/",
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}
